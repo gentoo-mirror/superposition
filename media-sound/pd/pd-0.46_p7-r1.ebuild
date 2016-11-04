@@ -15,10 +15,7 @@ SRC_URI="http://msp.ucsd.edu/Software/${MY_P}.src.tar.gz
 
 LICENSE="|| ( BSD as-is )"
 SLOT="0"
-
-#this version is not working with jack => masked
-#KEYWORDS="~amd64 ~ppc ~sparc ~x86"
-
+KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE="alsa debug fftw jack portaudio"
 #portmidi is not working
 
