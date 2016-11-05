@@ -6,6 +6,6 @@
   <name>Philip Miess</name>
 </maintainer>
 <longdescription lang="en">
-Pd, a patchable environment for audio analysis, synthesis, and processing, with a rich set of multimedia capabilities.
+Pure Data (aka Pd) is an open source visual programming language that can run on anything from personal computers and Raspberry Pis to smartphones (via libpd, pddroidparty, and Rjdj). Pd enables musicians, visual artists, performers, researchers, and developers to create software graphically without writing lines of code. Pd is used to process and generate sound, video, 2D/3D graphics, and interface sensors, input devices, and MIDI. Pd can easily work over local and remote networks to integrate wearable technology, motor systems, lighting rigs, and other equipment. Pd is suitable for learning basic multimedia processing and visual programming methods as well as for realizing complex systems for large-scale projects.
 </longdescription>
 </pkgmetadata>
