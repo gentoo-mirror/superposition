@@ -11,7 +11,7 @@ MY_P=${P/_p/-}
 DESCRIPTION="real-time music and multimedia environment"
 HOMEPAGE="http://msp.ucsd.edu/software.html"
 SRC_URI="http://msp.ucsd.edu/Software/${MY_P}.src.tar.gz
-	http://puredata.info/portal_css/Plone%20Default/logo.png"
+	http://puredata.info/Members/hans/pd.png"
 
 LICENSE="BSD"
 SLOT="0"
