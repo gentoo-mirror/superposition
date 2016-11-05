@@ -13,14 +13,14 @@ HOMEPAGE="http://msp.ucsd.edu/software.html"
 SRC_URI="http://msp.ucsd.edu/Software/${MY_P}.src.tar.gz
 	http://puredata.info/Members/hans/pd.png"
 
-LICENSE="|| ( BSD as-is )"
+LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE="alsa debug fftw jack portaudio"
 #portmidi is not working
 
-RDEPEND=">=dev-lang/tcl-8.3.3
-	>=dev-lang/tk-8.3.3
+RDEPEND=">=dev-lang/tcl-8.3.3:0
+	>=dev-lang/tk-8.3.3:0
 	alsa? ( >=media-libs/alsa-lib-0.9.0_rc2 )
 	jack? ( >=media-sound/jack-audio-connection-kit-0.99.0-r1 )
 	fftw? ( >=sci-libs/fftw-3 )
