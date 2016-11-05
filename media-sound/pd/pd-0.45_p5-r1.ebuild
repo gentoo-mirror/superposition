@@ -13,7 +13,7 @@ HOMEPAGE="http://msp.ucsd.edu/software.html"
 SRC_URI="http://msp.ucsd.edu/Software/${MY_P}.src.tar.gz
 	http://puredata.info/Members/hans/pd.png"
 
-LICENSE="|| ( BSD as-is )"
+LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE="alsa debug fftw jack portaudio"
