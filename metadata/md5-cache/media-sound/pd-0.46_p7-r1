@@ -5,10 +5,10 @@ EAPI=5
 HOMEPAGE=http://msp.ucsd.edu/software.html
 IUSE=alsa debug fftw jack portaudio
 KEYWORDS=~amd64 ~ppc ~sparc ~x86
-LICENSE=|| ( BSD as-is )
+LICENSE=BSD
 RDEPEND=>=dev-lang/tcl-8.3.3 >=dev-lang/tk-8.3.3 alsa? ( >=media-libs/alsa-lib-0.9.0_rc2 ) jack? ( >=media-sound/jack-audio-connection-kit-0.99.0-r1 ) fftw? ( >=sci-libs/fftw-3 ) portaudio? ( media-libs/portaudio )
 SLOT=0
 SRC_URI=http://msp.ucsd.edu/Software/pd-0.46-7.src.tar.gz http://puredata.info/Members/hans/pd.png
 _eclass_exported_funcs=src_prepare:- src_configure:- src_compile:- src_install:-
 _eclasses_=autotools	07e71b3b5690738ef7e8bc097077e00c	eutils	b83a2420b796f7c6eff682679d08fe25	libtool	4890219c51da247200223277f993e054	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
-_md5_=789d96fedb8f1aea320fec0e428a22e6
+_md5_=b5280dafa642864ad6a235bff7e06010
