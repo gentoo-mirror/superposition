@@ -2,8 +2,10 @@
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 <maintainer type="person">
-<email>phil_miess@yahoo.com</email>
+  <email>phil_miess@yahoo.com</email>
+  <name>Philip Miess</name>
 </maintainer>
 <longdescription lang="en">
+Pd, a patchable environment for audio analysis, synthesis, and processing, with a rich set of multimedia capabilities.
 </longdescription>
 </pkgmetadata>
