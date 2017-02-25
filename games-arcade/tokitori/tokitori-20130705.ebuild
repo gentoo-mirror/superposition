@@ -1,9 +1,13 @@
+# Copyright 1999-2017 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Id$
+
 EAPI="5"
 
 inherit base games unpacker-nixstaller
 
 MY_PN="${PN^^t}"
-MY_P="${MY_PN}_${PV:0:4}-${PV:4:2}-${PV:6:2}.sh"
+MY_P="${MY_PN}-Linux-${PV:0:4}-${PV:4:2}-${PV:6:2}"
 
 DESCRIPTION="Help a baby chicken save all the eggs."
 HOMEPAGE="http://www.tokitori.com/"
