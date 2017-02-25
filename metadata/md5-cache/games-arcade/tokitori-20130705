@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup unpack
+DESCRIPTION=Help a baby chicken save all the eggs.
+EAPI=5
+HOMEPAGE=http://www.tokitori.com/
+KEYWORDS=-* ~amd64 ~x86
+LICENSE=as-is
+RDEPEND=media-libs/libsdl2 media-libs/openal sys-libs/zlib games-misc/games-envd
+RESTRICT=fetch
+SLOT=0
+SRC_URI=TokiTori-Linux-2013-07-05.sh
+_eclass_exported_funcs=pkg_preinst:games pkg_postinst:games pkg_setup:games src_unpack:- src_prepare:base src_configure:games src_compile:games src_install:-
+_eclasses_=base	3fe4f8980633fd7bc69e9887209ba2fe	eutils	708f85bc1bf00876604e223fb56e062a	games	2cf0d67d765e6358b435ccda30c13ad8	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783	unpacker	45d07319df5f40ee6af58418b0f930be	unpacker-nixstaller	850de22907d109efbf45d47a3bcd02cd	user	e10ccb95af96d45f86016fa982a949bb
+_md5_=367aa0c1a7a353e93095568710208bdd
