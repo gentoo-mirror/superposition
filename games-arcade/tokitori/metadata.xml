@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<maintainer type="person">
+  <email>phil_miess@yahoo.com</email>
+  <name>Philip Miess</name>
+</maintainer>
+<longdescription lang="en">
+The gameplay in Toki Tori is a blend of two genres. While it looks like a platform game, it's a puzzle game by heart. Players will have to look and plan ahead carefully while using a variety of items, such as the Telewarp, Freeze-o-Matic and InstantRock™ to name but a few.
+</longdescription>
+</pkgmetadata>
