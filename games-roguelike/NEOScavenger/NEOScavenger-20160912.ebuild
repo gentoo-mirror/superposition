@@ -3,7 +3,7 @@
 
 EAPI=6
 
-inherit multilib
+inherit multilib eutils
 
 DESCRIPTION="survive in the wasteland long enough to figure out who you are"
 HOMEPAGE="http://bluebottlegames.com/main/node/2"
