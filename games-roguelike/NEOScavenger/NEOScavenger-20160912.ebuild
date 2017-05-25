@@ -61,7 +61,7 @@ pkg_nofetch() {
 }
 
 src_install() {
-	local dir ="/opt/${PN}"
+	local dir="/opt/${PN}"
 	dodir "${dir}"
 	into "${dir}"
 
