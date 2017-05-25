@@ -53,7 +53,7 @@ RDEPEND="${DEPEND}
 	)"
 
 REQUIRED_USE="amd64? ( multilib )"
-
+S=${WORKDIR}
 pkg_nofetch() {
 	ewarn
 	ewarn "Place ${SRC_URI} to ${DISTDIR}"
