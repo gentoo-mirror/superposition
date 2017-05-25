@@ -52,13 +52,11 @@ RDEPEND="${DEPEND}
 		x11-libs/pango
 	)"
 
-S="${WORKDIR}/${PN}"
-
 REQUIRED_USE="amd64? ( multilib )"
 
 pkg_nofetch() {
 	ewarn
-	ewarn "Place ${A} to ${DISTDIR}"
+	ewarn "Place ${SRC_URI} to ${DISTDIR}"
 	ewarn
 }
 
