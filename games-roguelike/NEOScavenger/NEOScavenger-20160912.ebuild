@@ -1,9 +1,9 @@
 # Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=5
+EAPI=6
 
-inherit multilib
+inherit multilib eutils
 
 DESCRIPTION="survive in the wasteland long enough to figure out who you are"
 HOMEPAGE="http://bluebottlegames.com/main/node/2"
@@ -53,7 +53,7 @@ RDEPEND="${DEPEND}
 	)"
 
 REQUIRED_USE="amd64? ( multilib )"
-
+S=${WORKDIR}
 pkg_nofetch() {
 	ewarn
 	ewarn "Place ${SRC_URI} to ${DISTDIR}"
@@ -61,7 +61,7 @@ pkg_nofetch() {
 }
 
 src_install() {
-	local dir ="/opt/${PN}"
+	local dir="/opt/${PN}"
 	dodir "${dir}"
 	into "${dir}"
 
