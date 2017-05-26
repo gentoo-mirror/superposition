@@ -33,6 +33,8 @@ RDEPEND="${DEPEND}
 		x11-libs/libXrender[abi_x86_32]
 		x11-libs/libXt[abi_x86_32]
 		x11-libs/pango[abi_x86_32]
+		net-misc/curl[abi_x86_32]
+
 	)
 	!multilib? (
 		dev-libs/atk
@@ -50,6 +52,8 @@ RDEPEND="${DEPEND}
 		x11-libs/libXrender
 		x11-libs/libXt
 		x11-libs/pango
+		net-misc/curl
+
 	)"
 
 REQUIRED_USE="amd64? ( multilib )"
@@ -65,7 +69,6 @@ src_install() {
 	dodir "${dir}"
 	insinto "${dir}"
 	exeinto "${dir}"
-	insinto "${dir}"
 
 	doexe "${PN}"
 	dodoc _readme.txt
