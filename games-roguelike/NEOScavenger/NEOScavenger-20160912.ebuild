@@ -63,7 +63,9 @@ pkg_nofetch() {
 src_install() {
 	local dir="/opt/${PN}"
 	dodir "${dir}"
-	into "${dir}"
+	insinto "${dir}"
+	exeinto "${dir}"
+	insinto "${dir}"
 
 	doexe "${PN}"
 	dodoc _readme.txt
