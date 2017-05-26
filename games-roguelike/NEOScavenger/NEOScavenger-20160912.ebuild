@@ -71,6 +71,7 @@ src_install() {
 	exeinto "${dir}"
 
 	doexe "${PN}"
+	fperms +x "${dir}/${PN}"
 	dodoc _readme.txt
 	doins -r *
 
