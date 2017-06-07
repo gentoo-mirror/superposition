@@ -31,8 +31,7 @@ python_prepare_all() {
 }
 
 python_install_all() {
-	distutils-r1_install_all
-
+	distutils-r1_python_install_all
 
 	exeinto "/usr/sbin/"
 	doexe "${WORKDIR}/0distutils"
