@@ -8,10 +8,11 @@ inherit distutils-r1
 
 DESCRIPTION="Zeroinstall Injector allows regular users to install software themselves"
 HOMEPAGE="http://0install.net/"
-SRC_URI="mirror://sourceforge/projects/zero-install/files/${PN}/${PV}/${P}.tar.bz2"
+SRC_URI="mirror://sourceforge/projects/zero-install/${PN}/${PV}/${P}.tar.bz2"
 # https://sourceforge.net/projects/zero-install/files/0install/1.16/0install-1.16.tar.bz2/download
 #  http://download.sourceforge.net/zero-install/files/0install/1.16/0install-1.16.tar.bz2
 # https://downloads.sourceforge.net/project/zero-install/0install/1.16/0install-1.16.tar.bz2
+# https://ayera.dl.sourceforge.net/project/zero-install/0install/1.16/0install-1.16.tar.bz2
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86"
