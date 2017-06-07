@@ -20,7 +20,6 @@ DEPEND=""
 RDEPEND=">=dev-python/pygtk-2.0[${PYTHON_USEDEP}]
 	app-crypt/gnupg"
 
-PYTHON_MODNAME="zeroinstall"
 
 python_prepare_all() {
 	# Change manpage install path (Bug 207495)
