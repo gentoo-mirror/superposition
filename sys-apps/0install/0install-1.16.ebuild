@@ -8,8 +8,7 @@ inherit distutils-r1
 
 DESCRIPTION="Zeroinstall Injector allows regular users to install software themselves"
 HOMEPAGE="http://0install.net/"
-SRC_URI="mirror://sourceforge/projects/zero-install/${PN}/${PV}/${P}.tar.bz2"
-# https://sourceforge.net/projects/zero-install/files/0install/1.16/0install-1.16.tar.bz2/download
+SRC_URI="https://sourceforge.net/projects/zero-install/files/${PN}/${PV}/${P}.tar.bz2"
 #  http://download.sourceforge.net/zero-install/files/0install/1.16/0install-1.16.tar.bz2
 # https://downloads.sourceforge.net/project/zero-install/0install/1.16/0install-1.16.tar.bz2
 # https://ayera.dl.sourceforge.net/project/zero-install/0install/1.16/0install-1.16.tar.bz2
@@ -21,7 +20,6 @@ DEPEND=""
 RDEPEND=">=dev-python/pygtk-2.0[${PYTHON_USEDEP}]
 	app-crypt/gnupg"
 
-PYTHON_MODNAME="zeroinstall"
 
 python_prepare_all() {
 	# Change manpage install path (Bug 207495)
