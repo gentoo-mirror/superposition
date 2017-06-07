@@ -1,0 +1,51 @@
+# Copyright 1999-2013 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+
+EAPI="5"
+PYTHON_COMPAT=( python2_7 )
+PYTHON_REQ_USE="xml"
+inherit distutils-r1
+
+DESCRIPTION="Zeroinstall Injector allows regular users to install software themselves"
+HOMEPAGE="http://0install.net/"
+SRC_URI="mirror://sourceforge/projects/zero-install/files/${PN}/${PV}/${P}.tar.bz2"
+# https://sourceforge.net/projects/zero-install/files/0install/1.16/0install-1.16.tar.bz2/download
+#  http://download.sourceforge.net/zero-install/files/0install/1.16/0install-1.16.tar.bz2
+# https://downloads.sourceforge.net/project/zero-install/0install/1.16/0install-1.16.tar.bz2
+LICENSE="GPL-2"
+SLOT="0"
+KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86"
+
+DEPEND=""
+RDEPEND=">=dev-python/pygtk-2.0[${PYTHON_USEDEP}]
+	app-crypt/gnupg"
+
+PYTHON_MODNAME="zeroinstall"
+
+python_prepare_all() {
+	# Change manpage install path (Bug 207495)
+	sed -i 's:man/man1:share/man/man1:' setup.py || die 'Documentation path fix sed failed.'
+	cp "${FILESDIR}/0distutils-r2" "${WORKDIR}/0distutils" || die 'Copying 0distutils to work directory failed.'
+	distutils-r1_python_prepare_all
+}
+
+python_install_all() {
+	distutils-r1_install_all
+
+	fix_0launch_gui() {
+		python_convert_shebangs "$(python_get_version)" \
+			"${ED}$(python_get_sitedir)/zeroinstall/0launch-gui/0launch-gui"
+	}
+	python_execute_function -q fix_0launch_gui
+
+	exeinto "/usr/sbin/"
+	doexe "${WORKDIR}/0distutils"
+
+	local BASE_XDG_CONFIG="/etc/xdg/0install.net"
+	local BASE_XDG_DATA="/usr/share/0install.net"
+
+	insinto "${BASE_XDG_CONFIG}/injector"
+	newins "${FILESDIR}/global.cfg" global
+
+	dodir "${BASE_XDG_DATA}/native_feeds"
+}
