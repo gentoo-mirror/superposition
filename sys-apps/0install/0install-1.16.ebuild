@@ -3,7 +3,8 @@
 
 EAPI="5"
 PYTHON_COMPAT=( python2_7 )
-PYTHON_REQ_USE="xml"
+DISTUTILS_SINGLE_IMPL=1
+PYTHON_REQ_USE="xml(+)"
 inherit distutils-r1
 
 DESCRIPTION="Zeroinstall Injector allows regular users to install software themselves"
@@ -25,17 +26,12 @@ python_prepare_all() {
 	# Change manpage install path (Bug 207495)
 	sed -i 's:man/man1:share/man/man1:' setup.py || die 'Documentation path fix sed failed.'
 	cp "${FILESDIR}/0distutils-r2" "${WORKDIR}/0distutils" || die 'Copying 0distutils to work directory failed.'
+	python_fix_shebang .
 	distutils-r1_python_prepare_all
 }
 
 python_install_all() {
-	distutils-r1_install_all
-
-	fix_0launch_gui() {
-		python_convert_shebangs "$(python_get_version)" \
-			"${ED}$(python_get_sitedir)/zeroinstall/0launch-gui/0launch-gui"
-	}
-	python_execute_function -q fix_0launch_gui
+	distutils-r1_python_install_all
 
 	exeinto "/usr/sbin/"
 	doexe "${WORKDIR}/0distutils"
