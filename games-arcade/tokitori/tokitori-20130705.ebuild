@@ -4,7 +4,7 @@
 
 EAPI="5"
 
-inherit base games unpacker-nixstaller
+inherit unpacker-nixstaller
 
 MY_PN="${PN^^t}"
 MY_P="${MY_PN}-Linux-${PV:0:4}-${PV:4:2}-${PV:6:2}"
@@ -14,7 +14,7 @@ HOMEPAGE="http://www.tokitori.com/"
 SRC_URI="${MY_P}.sh"
 RESTRICT="fetch"
 
-LICENSE="as-is"
+LICENSE="all-rights-reserved"
 SLOT="0"
 KEYWORDS="-* ~amd64 ~x86"
 IUSE=""
