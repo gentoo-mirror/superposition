@@ -9,7 +9,7 @@ DESCRIPTION="survive in the wasteland long enough to figure out who you are"
 HOMEPAGE="http://bluebottlegames.com/main/node/2"
 SRC_URI="NEOScavenger.tar.gz"
 
-LICENSE="AdobeFlash-11.x"
+LICENSE="all-rights-reserved"
 SLOT="0"
 KEYWORDS="-* ~amd64 ~x86"
 RESTRICT="fetch mirror"
