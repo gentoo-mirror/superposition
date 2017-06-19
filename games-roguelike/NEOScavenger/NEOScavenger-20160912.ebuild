@@ -76,6 +76,6 @@ src_install() {
 	doins -r *
 
 	newicon img/x2_nsLogo.png "${PN}.png"
-	make_desktop_entry "${PN}" "${DESCRIPTION}" "${PN}"
+	make_desktop_entry "${dir}/${PN}", "${PN}", "${PN}", "Game"
 
 }
