@@ -15,8 +15,8 @@ KEYWORDS="amd64 x86"
 IUSE=""
 
 DEPEND="
-	>=dev-lang/tcl-8.4.19:0
-	>=dev-lang/tk-8.4.19:0
+	>=dev-lang/tcl:0/8.5
+	>=dev-lang/tk:0/8.5
 	dev-tcltk/iwidgets
 	dev-tcltk/bwidget"
 RDEPEND=${DEPEND}
