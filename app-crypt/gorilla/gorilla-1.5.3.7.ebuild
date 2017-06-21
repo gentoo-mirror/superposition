@@ -23,6 +23,7 @@ RDEPEND=${DEPEND}
 
 src_prepare() {
 	epatch "${FILESDIR}"/${PN}-script-destdir.patch
+	sed -i 's:tclsh8.5:tclksh:' gorilla-1.5.3.7/sources/gorilla.tcl || die 'Shebang fix sed failed'
 }
 
 src_configure() {
