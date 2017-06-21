@@ -22,7 +22,7 @@ DEPEND="
 RDEPEND=${DEPEND}
 
 src_prepare() {
-	sed -i 's:tclsh8.5:tclksh:' gorilla-1.5.3.7/sources/gorilla.tcl || die 'Shebang fix sed failed'
+	sed -i 's:tclsh8.5:tclksh:' sources/gorilla.tcl || die 'Shebang fix sed failed'
 }
 
 src_configure() {
