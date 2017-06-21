@@ -25,9 +25,7 @@ src_prepare() {
 	sed -i 's:tclsh8.5:tclksh:' sources/gorilla.tcl || die 'Shebang fix sed failed'
 }
 
-src_configure() {
-	./configure || die "econf failed"
-}
+src_configure() { :; }
 src_compile() { :; }
 
 src_install() {
