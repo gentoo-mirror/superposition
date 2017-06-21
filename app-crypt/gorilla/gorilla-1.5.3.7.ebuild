@@ -32,7 +32,7 @@ src_install() {
 	PREFIX="/opt/${P}"
 
 	insinto ${PREFIX}
-	doins -r gorilla.tcl isaac.tcl twofish sha1 blowfish pwsafe pics
+	doins -r sources/itcl3.4  sources/msgs  sources/pwsafe  sources/twofish sources/blowfish sources/gorilla.tcl sources/isaac.tcl sources/modules sources/pics  sources/tcllib  sources/viewhelp.tcl
 
-	dobin gorilla
+	newbin gorilla
 }
