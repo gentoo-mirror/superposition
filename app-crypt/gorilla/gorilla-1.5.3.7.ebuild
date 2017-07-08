@@ -32,11 +32,13 @@ src_install() {
 	PREFIX="/opt/${P}"
 
 	insinto ${PREFIX}
-	doins -r sources/itcl3.4  sources/msgs  sources/pwsafe  sources/twofish sources/blowfish sources/gorilla.tcl sources/isaac.tcl sources/modules sources/pics  sources/tcllib  sources/viewhelp.tcl
+	doins -r sources/itcl3.4  sources/msgs  sources/pwsafe  sources/twofish sources/blowfish sources/isaac.tcl sources/modules sources/pics  sources/tcllib  sources/viewhelp.tcl
 	newicon -s 16 ${PREFIX}/pics/gorilla-16x16.gif gorilla.gif
 	newicon -s 32 ${PREFIX}/pics/gorilla-32x32.gif gorilla.gif
 	newicon -s 48 ${PREFIX}/pics/gorilla-48x48.gif gorilla.gif
 	newicon -s scalable ${PREFIX}/pics/vector-logo/gorilla-logo.svg gorilla.svg
+	exeinto ${PREFIX}
+	doexe sources/gorilla.tcl
 	make_desktop_entry "${PREFIX}/gorilla.tcl" "Gorilla" "${PN}" "Security;Utility;"
 	domenu gorilla
 }
