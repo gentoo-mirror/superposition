@@ -1,13 +1,13 @@
-DEFINED_PHASES=compile configure install prepare
-DEPEND=>=dev-lang/tcl-8.5 >=dev-lang/tk-8.5 dev-tcltk/iwidgets dev-tcltk/bwidget
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare
+DEPEND=>=dev-lang/tcl-8.5:* >=dev-lang/tk-8.5:* dev-tcltk/iwidgets dev-tcltk/bwidget >=sys-apps/sed-4
 DESCRIPTION=Password Safe in secure way with GUI interface
 EAPI=5
 HOMEPAGE=https://github.com/zdia/gorilla/wiki
 KEYWORDS=amd64 x86
 LICENSE=GPL-2
-RDEPEND=>=dev-lang/tcl-8.5 >=dev-lang/tk-8.5 dev-tcltk/iwidgets dev-tcltk/bwidget
+RDEPEND=>=dev-lang/tcl-8.5:* >=dev-lang/tk-8.5:* dev-tcltk/iwidgets dev-tcltk/bwidget
 SLOT=0
 SRC_URI=https://github.com/zdia/gorilla/archive/v1.5.3.7.tar.gz -> gorilla-1.5.3.7.tar.gz
-_eclass_exported_funcs=src_prepare:- src_configure:- src_compile:- src_install:-
-_eclasses_=epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	9c113d6a64826c40154cad7be15d95ea	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	8fec6b1eb195836560e70b66d98fb163
-_md5_=04fdee113b7b429c58ad402c0b058982
+_eclass_exported_funcs=pkg_preinst:- pkg_postrm:- pkg_postinst:- src_prepare:- src_configure:- src_compile:- src_install:-
+_eclasses_=epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	9c113d6a64826c40154cad7be15d95ea	gnome2-utils	8a5e0bf2b8031478ecfeaec753ef4560	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	8fec6b1eb195836560e70b66d98fb163	xdg-utils	b9389dfad0ee8f8e0b2a41b79fcf7120
+_md5_=8006541ee45ada2b820b377aaf4cd87c
