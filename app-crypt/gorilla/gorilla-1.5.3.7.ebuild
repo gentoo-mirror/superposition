@@ -34,5 +34,7 @@ src_install() {
 	insinto ${PREFIX}
 	doins -r sources/itcl3.4  sources/msgs  sources/pwsafe  sources/twofish sources/blowfish sources/gorilla.tcl sources/isaac.tcl sources/modules sources/pics  sources/tcllib  sources/viewhelp.tcl
 
-	newbin gorilla
+	newbin gorilla "${PREFIX}/gorilla.tcl"
+	make_desktop_entry gorilla
+	domenu gorilla.desktop
 }
