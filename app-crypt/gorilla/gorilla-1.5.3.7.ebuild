@@ -1,9 +1,9 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=5
 
-inherit eutils
+inherit eutils gnome2-utils
 
 DESCRIPTION="Password Safe in secure way with GUI interface"
 HOMEPAGE="https://github.com/zdia/gorilla/wiki"
@@ -15,8 +15,8 @@ KEYWORDS="amd64 x86"
 IUSE=""
 
 DEPEND="
-	>=dev-lang/tcl-8.5
-	>=dev-lang/tk-8.5
+	>=dev-lang/tcl-8.5:*
+	>=dev-lang/tk-8.5:*
 	dev-tcltk/iwidgets
 	dev-tcltk/bwidget"
 RDEPEND=${DEPEND}
@@ -41,4 +41,16 @@ src_install() {
 	doexe sources/gorilla.tcl
 	make_desktop_entry "${PREFIX}/gorilla.tcl" "Gorilla" "${PN}" "Security;Utility;"
 	domenu gorilla
+}
+pkg_preinst() {
+	gnome2_icon_savelist
+}
+
+pkg_postinst() {
+	gnome2_icon_cache_update
+
+}
+
+pkg_postrm() {
+	gnome2_icon_cache_update
 }
