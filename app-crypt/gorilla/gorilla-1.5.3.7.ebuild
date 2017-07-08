@@ -22,7 +22,7 @@ DEPEND="
 RDEPEND=${DEPEND}
 
 src_prepare() {
-	sed -i 's:tclsh8.5:tclksh:' sources/gorilla.tcl || die 'Shebang fix sed failed'
+	sed -i 's:tclsh8.5:tclsh:' sources/gorilla.tcl || die 'Shebang fix sed failed'
 }
 
 src_configure() { :; }
@@ -34,7 +34,6 @@ src_install() {
 	insinto ${PREFIX}
 	doins -r sources/itcl3.4  sources/msgs  sources/pwsafe  sources/twofish sources/blowfish sources/gorilla.tcl sources/isaac.tcl sources/modules sources/pics  sources/tcllib  sources/viewhelp.tcl
 
-	newbin gorilla "${PREFIX}/gorilla.tcl"
-	make_desktop_entry gorilla
+	make_desktop_entry "${PREFIX}/gorilla.txl"
 	domenu gorilla.desktop
 }
