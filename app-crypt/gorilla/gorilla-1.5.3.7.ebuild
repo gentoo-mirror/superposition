@@ -37,6 +37,6 @@ src_install() {
 	newicon -s 32 ${PREFIX}/pics/gorilla-32x32.gif gorilla.gif
 	newicon -s 48 ${PREFIX}/pics/gorilla-48x48.gif gorilla.gif
 	newicon -s scalable ${PREFIX}/pics/vector-logo/gorilla-logo.svg gorilla.svg
-	make_desktop_entry "${PREFIX}/gorilla.txl" gorilla gorilla.svg Security;Utility;
+	make_desktop_entry ${PREFIX}/gorilla.txl "Gorilla" gorilla Security;Utility;
 	domenu gorilla.desktop
 }
