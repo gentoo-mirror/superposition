@@ -3,7 +3,7 @@
 
 EAPI=5
 
-inherit eutils
+inherit eutils gnome2
 
 DESCRIPTION="Password Safe in secure way with GUI interface"
 HOMEPAGE="https://github.com/zdia/gorilla/wiki"
