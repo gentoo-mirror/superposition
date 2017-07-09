@@ -70,10 +70,10 @@ src_install() {
 	insinto "${dir}"
 	exeinto "${dir}"
 
+	doins -r SampleModFolder data img
 	doexe "${PN}"
 	fperms +x "${dir}/${PN}"
 	dodoc _readme.txt
-	doins -r *
 
 	newicon img/x2_nsLogo.png "${PN}.png"
 	make_desktop_entry "${dir}/${PN}", "${PN}", "${PN}", "Game"
