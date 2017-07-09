@@ -9,7 +9,7 @@ DESCRIPTION="Password Safe in secure way with GUI interface"
 HOMEPAGE="https://github.com/zdia/gorilla/wiki"
 SRC_URI="https://github.com/zdia/gorilla/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
-LICENSE="GPL-2"
+LICENSE="GPL-2 BSD"
 SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE=""
