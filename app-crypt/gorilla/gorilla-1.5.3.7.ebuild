@@ -18,7 +18,8 @@ DEPEND="
 	>=dev-lang/tcl-8.5:*
 	>=dev-lang/tk-8.5:*
 	dev-tcltk/iwidgets
-	dev-tcltk/bwidget"
+	dev-tcltk/bwidget
+	dev-tcltk/tcllib"
 RDEPEND=${DEPEND}
 
 src_prepare() {
@@ -32,8 +33,8 @@ src_install() {
 	PREFIX="/opt/${P}"
 
 	insinto ${PREFIX}
-	dodoc CHANGES.txt  LICENSE.txt  README.how-to-compile-extension.txt  README.install-from-source  README.translators downloads.txt
-	doins -r sources/itcl3.4  sources/msgs  sources/pwsafe  sources/twofish sources/blowfish sources/isaac.tcl sources/modules sources/pics  sources/tcllib  sources/viewhelp.tcl help.txt
+	dodoc README sources/CHANGES.txt sources/LICENSE.txt sources/README.how-to-compile-extension.txt sources/README.install-from-source sources/README.translators sources/downloads.txt
+	doins -r sources/msgs sources/pwsafe sources/twofish sources/blowfish sources/isaac.tcl sources/modules sources/pics sources/viewhelp.tcl help.txt
 	newicon -s 16 ${PREFIX}/pics/gorilla-16x16.gif gorilla.gif
 	newicon -s 32 ${PREFIX}/pics/gorilla-32x32.gif gorilla.gif
 	newicon -s 48 ${PREFIX}/pics/gorilla-48x48.gif gorilla.gif
