@@ -76,6 +76,7 @@ src_install() {
 	dodoc _readme.txt
 
 	newicon img/x2_nsLogo.png "${PN}.png"
-	make_desktop_entry "${dir}/${PN}", "${PN}", "${PN}", "Game"
+	make_desktop_entry "${dir}/${PN}" "${PN}" "${PN}" "Game"
+	domenu ${PN}
 
 }
