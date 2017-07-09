@@ -9,7 +9,7 @@ DESCRIPTION="Password Safe in secure way with GUI interface"
 HOMEPAGE="https://github.com/zdia/gorilla/wiki"
 SRC_URI="https://github.com/zdia/gorilla/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
-LICENSE="GPL-2"
+LICENSE="GPL-2 BSD"
 SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE=""
@@ -32,8 +32,8 @@ src_install() {
 	PREFIX="/opt/${P}"
 
 	insinto ${PREFIX}
-	dodoc CHANGES.txt  LICENSE.txt  README.how-to-compile-extension.txt  README.install-from-source  README.translators downloads.txt
-	doins -r sources/itcl3.4  sources/msgs  sources/pwsafe  sources/twofish sources/blowfish sources/isaac.tcl sources/modules sources/pics  sources/tcllib  sources/viewhelp.tcl help.txt
+	dodoc README sources/CHANGES.txt sources/LICENSE.txt sources/README.how-to-compile-extension.txt sources/README.install-from-source sources/README.translators sources/downloads.txt
+	doins -r sources/msgs sources/pwsafe sources/twofish sources/blowfish sources/isaac.tcl sources/modules sources/pics sources/tcllib  sources/viewhelp.tcl sources/elp.txt
 	newicon -s 16 ${PREFIX}/pics/gorilla-16x16.gif gorilla.gif
 	newicon -s 32 ${PREFIX}/pics/gorilla-32x32.gif gorilla.gif
 	newicon -s 48 ${PREFIX}/pics/gorilla-48x48.gif gorilla.gif
