@@ -77,5 +77,6 @@ src_install() {
 
 	newicon img/x2_nsLogo.png "${PN}.png"
 	make_desktop_entry "${dir}/${PN}", "${PN}", "${PN}", "Game"
+	domenu ${PN}
 
 }
