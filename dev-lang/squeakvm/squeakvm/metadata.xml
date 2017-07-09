@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<longdescription lang="en">
+Squeak is a full-featured implementation of the Smalltalk programming language and environment based on (and largely compatible with) the original Smalltalk-80 system. Squeak has very powerful 2- and 3-D graphics, sound, video, MIDI, animation and other multimedia capabilities -- and one of the most impressive development environments ever created. It also includes a customisable framework for creating dynamic HTTP servers and interactively extensible Web sites. The entire Squeak system is open source software, distributed freely with a liberal license.
+This is the virtual machine Squeak runs on.
+</longdescription>
+<use>
+	<flag name="X">
+	Build the X11 drive plugin for display
+	</flag>
+	<flag name="mmx">
+	Enable MMX support in Mpeg3Plugin	
+	</flag>
+	<flag name="threads">
+	Enable pthread support in Mpeg3Plugin
+	</flag>
+	<flag name="iconv">
+	Enable iconv support
+	</flag>
+	<flag name="opengl">
+	Enable everything that depends on OpenGL
+	</flag>
+	<flag name="image64">
+	Build a VM for running 64-bit images
+	</flag>
+	<flag name="alsa">
+	Build the alsa driver plugin for sound
+	</flag>
+	<flag name="oss">
+	Build the oss driver plugin for sound
+	</flag>
+	<flag name="pulseaudio">
+	Build the pulse audio driver plugin for sound
+	</flag>
+	<flag name="nas">
+	Build the nas driver plugin for sound
+	</flag>
+	<flag name="v4l">
+    Build the camera plugin which uses v4l
+	</flag>
+	<flag name="fbcon">
+	Build the fbcon driver plugin for display
+	</flag>
+	<flag name="dbus">
+	Build the dbus driver plugin
+	</flag>
+
+</use>
+</pkgmetadata>
