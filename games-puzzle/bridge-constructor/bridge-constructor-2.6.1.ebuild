@@ -32,7 +32,7 @@ src_unpack() {
 src_configure() { :; }
 src_compile() { :; }
 
-src_install() {	
+src_install() {
 	insinto ${MYGAMEDIR}
 	exeinto ${MYGAMEDIR}
 	doexe  "BridgeConstructor.x86"
