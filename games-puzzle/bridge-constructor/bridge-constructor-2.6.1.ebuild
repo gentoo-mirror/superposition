@@ -18,6 +18,8 @@ RESTRICT="bindist fetch"
 MYGAMEDIR=/opt/${PN}
 DEPEND="app-arch/unzip"
 RDEPEND="${DEPEND}"
+S="${WORKDIR}"
+
 
 pkg_nofetch() {
 	einfo "Please buy & download ${SRC_URI} from:"
