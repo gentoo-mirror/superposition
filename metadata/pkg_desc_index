@@ -3,6 +3,7 @@ dev-lang/squeak 4.6.15102 5.0.15133: Squeak image file
 dev-lang/squeakvm 4.10.2.2614: Highly-portable Smalltalk-80 implementation
 games-arcade/tokitori 20130705: Help a baby chicken save all the eggs.
 games-kids/scratch 1.4.0.7: A programming environment for creating and sharing interactive stories, animations, games, music, and art.
+games-puzzle/bridge-constructor 2.6.1: Become an appraised bridge engineer and architect in Bridge Constructor
 games-roguelike/NEOScavenger 20160912: survive in the wasteland long enough to figure out who you are
 media-sound/pd 0.46_p7-r1 0.47_p1: real-time music and multimedia environment
 sys-apps/0install 1.16 2.3.5: Zeroinstall Injector allows regular users to install software themselves
