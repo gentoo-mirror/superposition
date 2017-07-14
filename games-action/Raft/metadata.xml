@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<maintainer type="person">
+<email>Phil_Miess@yahoo.com</email>
+</maintainer>
+<longdescription lang="en">
+A game about surviving on a raft
+</longdescription>
+</pkgmetadata>
