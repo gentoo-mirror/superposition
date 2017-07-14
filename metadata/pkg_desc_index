@@ -1,6 +1,7 @@
 app-crypt/gorilla 1.5.3.7: Password Safe in secure way with GUI interface
 dev-lang/squeak 4.6.15102 5.0.15133: Squeak image file
 dev-lang/squeakvm 4.10.2.2614: Highly-portable Smalltalk-80 implementation
+games-action/Raft 1.04: Survive the harsh life of being stuck on a raft in the middle of the ocean!
 games-arcade/tokitori 20130705: Help a baby chicken save all the eggs.
 games-kids/scratch 1.4.0.7: A programming environment for creating and sharing interactive stories, animations, games, music, and art.
 games-puzzle/bridge-constructor 2.6.1: Become an appraised bridge engineer and architect in Bridge Constructor
