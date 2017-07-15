@@ -27,12 +27,13 @@ python_prepare_all() {
 }
 
 python_install_all() {
+
+	domenu "${WORKDIR}/share/applications/0install.desktop"
 	distutils-r1_python_install_all
 
 	exeinto "/usr/sbin/"
 	doexe "${WORKDIR}/0distutils"
 
-	domenu share/applications/0install.desktop
 	local BASE_XDG_CONFIG="/etc/xdg/0install.net"
 	local BASE_XDG_DATA="/usr/share/0install.net"
 
