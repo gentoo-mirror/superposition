@@ -1,4 +1,4 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="5"
@@ -31,7 +31,8 @@ python_install_all() {
 
 	exeinto "/usr/sbin/"
 	doexe "${WORKDIR}/0distutils"
-	make_desktop_entry "${PN}" "0install -gui" ${PN} "System"
+
+	domenu share/applications/0install.desktop
 	local BASE_XDG_CONFIG="/etc/xdg/0install.net"
 	local BASE_XDG_DATA="/usr/share/0install.net"
 

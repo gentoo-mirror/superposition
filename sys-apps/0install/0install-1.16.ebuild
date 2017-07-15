@@ -1,4 +1,4 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="5"
@@ -10,9 +10,6 @@ inherit distutils-r1
 DESCRIPTION="Zeroinstall Injector allows regular users to install software themselves"
 HOMEPAGE="http://0install.net/"
 SRC_URI="https://sourceforge.net/projects/zero-install/files/${PN}/${PV}/${P}.tar.bz2"
-#  http://download.sourceforge.net/zero-install/files/0install/1.16/0install-1.16.tar.bz2
-# https://downloads.sourceforge.net/project/zero-install/0install/1.16/0install-1.16.tar.bz2
-# https://ayera.dl.sourceforge.net/project/zero-install/0install/1.16/0install-1.16.tar.bz2
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86"
