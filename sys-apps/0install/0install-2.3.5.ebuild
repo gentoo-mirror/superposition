@@ -5,7 +5,7 @@ EAPI="5"
 PYTHON_COMPAT=( python2_7 )
 DISTUTILS_SINGLE_IMPL=1
 PYTHON_REQ_USE="xml(+)"
-inherit distutils-r1
+inherit distutils-r1 eutils
 
 DESCRIPTION="Zeroinstall Injector allows regular users to install software themselves"
 HOMEPAGE="http://0install.net/"
@@ -17,7 +17,6 @@ KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86"
 DEPEND=""
 RDEPEND=">=dev-python/pygtk-2.0[${PYTHON_USEDEP}]
 	app-crypt/gnupg"
-
 
 python_prepare_all() {
 	# Change manpage install path (Bug 207495)
@@ -32,7 +31,7 @@ python_install_all() {
 
 	exeinto "/usr/sbin/"
 	doexe "${WORKDIR}/0distutils"
-
+	make_desktop_entry "${PN}" "0install -gui" ${PN} "System"
 	local BASE_XDG_CONFIG="/etc/xdg/0install.net"
 	local BASE_XDG_DATA="/usr/share/0install.net"
 

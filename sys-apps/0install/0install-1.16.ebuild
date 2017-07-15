@@ -21,7 +21,6 @@ DEPEND=""
 RDEPEND=">=dev-python/pygtk-2.0[${PYTHON_USEDEP}]
 	app-crypt/gnupg"
 
-
 python_prepare_all() {
 	# Change manpage install path (Bug 207495)
 	sed -i 's:man/man1:share/man/man1:' setup.py || die 'Documentation path fix sed failed.'
