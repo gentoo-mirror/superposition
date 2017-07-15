@@ -16,7 +16,8 @@ KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86"
 
 DEPEND=""
 RDEPEND=">=dev-python/pygtk-2.0[${PYTHON_USEDEP}]
-	app-crypt/gnupg"
+	app-crypt/gnupg
+	"
 
 python_prepare_all() {
 	# Change manpage install path (Bug 207495)
@@ -27,8 +28,11 @@ python_prepare_all() {
 }
 
 python_install_all() {
+	make_desktop_entry "0desktop --manage" "0install2.desktop" zeroinstall "Utility;Settings;PackageManager;GTK;"
+	validate_desktop_entries "${WORKDIR}/share/applications/0install.desktop"
 
 	domenu "${WORKDIR}/share/applications/0install.desktop"
+	
 	distutils-r1_python_install_all
 
 	exeinto "/usr/sbin/"
