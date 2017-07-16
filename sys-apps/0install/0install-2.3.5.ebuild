@@ -5,7 +5,7 @@ EAPI="5"
 PYTHON_COMPAT=( python2_7 )
 DISTUTILS_SINGLE_IMPL=1
 PYTHON_REQ_USE="xml(+)"
-inherit distutils-r1 eutils
+inherit distutils-r1
 
 DESCRIPTION="Zeroinstall Injector allows regular users to install software themselves"
 HOMEPAGE="http://0install.net/"
@@ -28,17 +28,6 @@ python_prepare_all() {
 }
 
 python_install_all() {
-	make_desktop_entry "0desktop --manage" "0install" zeroinstall "Utility;PackageManager;GTK;" \
-	"Version=1.0
-GenericName=Installer
-GenericName[es]=Instalador
-GenericName[sv]=Installerare
-Comment=Run or manage Zero Install programs
-Comment[es]=Actualiza o quita programas de tu menú Aplicaciones
-Comment[sv]=Uppdatera eller ta bort Zero Install-program i menyn Program
-Terminal=false
-"
-
 	distutils-r1_python_install_all
 
 	exeinto "/usr/sbin/"
