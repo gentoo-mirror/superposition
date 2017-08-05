@@ -5,7 +5,7 @@ EAPI=6
 
 inherit gnome2-utils fdo-mime
 
-DESCRIPTION="A programming environment for creating and sharing interactive stories, animations, games, music, and art."
+DESCRIPTION="A programming environment for creating stories, animations, games, and music."
 HOMEPAGE="http://scratch.mit.edu/"
 SRC_URI="http://download.scratch.mit.edu/${P}.src.tar.gz"
 
