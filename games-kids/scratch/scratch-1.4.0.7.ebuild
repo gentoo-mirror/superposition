@@ -43,7 +43,6 @@ fi
 
 }
 
-
 src_install() {
 	local datadir="/usr/share/${PN}"
 	local icondir="/usr/share/icons/hicolor"
@@ -61,8 +60,8 @@ src_install() {
 			insinto "${icondir}/${res}/apps"
 			doins "${res}"/scratch*.png
 			insinto "${icondir}/${res}/mimetypes"
-			if [[ ${res} != "32x32" ]]; then 
-				newins "${res}/gnome-mime-application-x-scratch-project.png" mime-application-x-scratch-project.png	
+			if [[ ${res} != "32x32" ]]; then
+				newins "${res}/gnome-mime-application-x-scratch-project.png" mime-application-x-scratch-project.png
 			fi
 		done
 	)
@@ -76,10 +75,10 @@ install_runner() {
 #!/bin/sh
 cd
 exec \
-	"/usr/bin/squeak"     \\
-    -vm-sound-${squeak_sound_plugin}                  \\
-	"/usr/$(get_libdir)/Scratch.image"    \\
-    "${@}"
+	"/usr/bin/squeak"                 \\
+-vm-sound-${squeak_sound_plugin}      \\
+"/usr/$(get_libdir)/Scratch.image"    \\
+"${@}"
 EOF
 	chmod go+rx "${tmpexe}"
 	newbin "${tmpexe}" "${PN}" || die
