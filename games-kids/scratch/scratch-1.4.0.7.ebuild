@@ -3,7 +3,7 @@
 
 EAPI=6
 
-inherit confutils gnome2-utils fdo-mime
+inherit gnome2-utils fdo-mime
 
 DESCRIPTION="A programming environment for creating and sharing interactive stories, animations, games, music, and art."
 HOMEPAGE="http://scratch.mit.edu/"
