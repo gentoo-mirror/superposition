@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<maintainer type="person">
+<email>phil_miess@yahoo.com</email>
+</maintainer>
+<longdescription lang="en">
+shipper is a power distribution tool for developers with multiple projects who do frequent releases. It automates the tedious process of shipping a software release and (if desired) templating a project web page. It can deliver releases in correct form to SourceForge, Berlios, and Savannah, and knows how to post a release announcement via freecode-submit.
+</longdescription>
+<use>
+	<flag name="lftp">Install <pkg>net-ftp/lftp</pkg> for shipping to ftp sites.</flag>
+    <flag name="email">For shipping email announcements. Either classic
+<pkg>mail-mta/sendmail</pkg> or <pkg>mail-mta/postfix</pkg> sendmail will work. All it has to be able to do
+is ship mail presented on standard input to a list of addresses
+specified as arguments.</flag>
+    <flag name="scp">Install <pkg>virtual/ssh</pkg>For shipping to websites. There are several different
+implementations of scp</flag>
+</use>
+</pkgmetadata>
