@@ -3,13 +3,13 @@ DEPEND=python_single_target_python2_7? ( >=dev-lang/python-2.7.5-r2:2.7[ssl(+)] 
 DESCRIPTION=Automated shipping of open-source project releases.
 EAPI=6
 HOMEPAGE=http://www.catb.org/~esr/shipper/
-IUSE=lftp email scp python_targets_python2_7 python_targets_python3_4 python_single_target_python2_7 python_single_target_python3_4
+IUSE=freshcode irker lftp email scp python_targets_python2_7 python_targets_python3_4 python_single_target_python2_7 python_single_target_python3_4
 KEYWORDS=~amd64 ~x86
 LICENSE=BSD-2
-RDEPEND=python_single_target_python2_7? ( >=dev-lang/python-2.7.5-r2:2.7[ssl(+)] ) python_single_target_python3_4? ( dev-lang/python:3.4[ssl(+)] ) >=dev-lang/python-exec-2:=[python_targets_python2_7(-)?,python_targets_python3_4(-)?,-python_single_target_jython2_7(-),-python_single_target_pypy(-),-python_single_target_pypy3(-),-python_single_target_python3_5(-),-python_single_target_python3_6(-),python_single_target_python2_7(+)?,python_single_target_python3_4(+)?] lftp? ( net-ftp/lftp ) email? ( || ( mail-mta/sendmail mail-mta/postfix ) ) scp? ( virtual/ssh )
+RDEPEND=python_single_target_python2_7? ( >=dev-lang/python-2.7.5-r2:2.7[ssl(+)] ) python_single_target_python3_4? ( dev-lang/python:3.4[ssl(+)] ) >=dev-lang/python-exec-2:=[python_targets_python2_7(-)?,python_targets_python3_4(-)?,-python_single_target_jython2_7(-),-python_single_target_pypy(-),-python_single_target_pypy3(-),-python_single_target_python3_5(-),-python_single_target_python3_6(-),python_single_target_python2_7(+)?,python_single_target_python3_4(+)?] lftp? ( net-ftp/lftp ) email? ( || ( mail-mta/sendmail mail-mta/postfix ) ) scp? ( virtual/ssh ) irker? ( net-irc/irker ) freshcode? ( dev-python/freecode-submit )
 REQUIRED_USE=^^ ( python_single_target_python2_7 python_single_target_python3_4 ) python_single_target_python2_7? ( python_targets_python2_7 ) python_single_target_python3_4? ( python_targets_python3_4 )
 SLOT=0
 SRC_URI=http://www.catb.org/~esr/shipper/shipper-1.12.tar.gz
 _eclass_exported_funcs=pkg_setup:python-single-r1
 _eclasses_=multilib	97f470f374f2e94ccab04a2fb21d811e	python-single-r1	317a2557b4d7319a7418225f65accf77	python-utils-r1	c9de01becf9df3f8c10aeec3dc693f5d	toolchain-funcs	185a06792159ca143528e7010368e8af
-_md5_=472d12ad9ff3384bdd01d76591461e61
+_md5_=c26914e3909eadf0701cd0ffc64b6a9f

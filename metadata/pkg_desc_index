@@ -1,6 +1,7 @@
 app-crypt/gorilla 1.5.3.7: Password Safe in secure way with GUI interface
 dev-lang/squeak 4.6.15102 5.0.15133: Squeak image file
 dev-lang/squeakvm 4.10.2.2614: Highly-portable Smalltalk-80 implementation
+dev-python/freecode-submit 2.9: Client for Freshcode and Freecode-like sites.
 dev-python/shipper 1.12: Automated shipping of open-source project releases.
 games-action/Raft 1.04: Survive the harsh life of being stuck on a raft in the middle of the ocean!
 games-arcade/tokitori 20130705: Help a baby chicken save all the eggs.

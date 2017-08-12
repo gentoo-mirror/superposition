@@ -16,8 +16,10 @@ dev-lang/squeakvm:pulseaudio - Build the pulse audio driver plugin for sound
 dev-lang/squeakvm:threads - Enable pthread support in Mpeg3Plugin
 dev-lang/squeakvm:v4l - Build the camera plugin which uses v4l
 dev-python/shipper:email - For shipping email announcements. Either classic mail-mta/sendmail or mail-mta/postfix sendmail will work. All it has to be able to do is ship mail presented on standard input to a list of addresses specified as arguments.
+dev-python/shipper:freshcode - Install dev-python/freecode-submit For shipping release notifications to freshcode.club.
+dev-python/shipper:irker - Install net-irc/irker for shipping notices to IRC channels.
 dev-python/shipper:lftp - Install net-ftp/lftp for shipping to ftp sites.
-dev-python/shipper:scp - Install virtual/sshFor shipping to websites. There are several different implementations of scp
+dev-python/shipper:scp - Install virtual/ssh for shipping to websites. There are several different implementations of scp
 games-kids/scratch:alsa - Use the alsa driver plugin for sound
 games-kids/scratch:nas - Use the nas driver plugin for sound
 games-kids/scratch:oss - Use the oss driver plugin for sound
