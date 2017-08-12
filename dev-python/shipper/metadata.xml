@@ -16,5 +16,6 @@ specified as arguments.</flag>
     <flag name="scp">Install <pkg>virtual/ssh</pkg> for shipping to websites. There are several different
 implementations of scp</flag>
 	<flag name="irker">Install <pkg>net-irc/irker</pkg> for shipping notices to IRC channels.</flag>
+	<flag name="freshcode">Install <pkg>dev-python/freecode-submit</pkg> For shipping release notifications to freshcode.club.</flag>
 </use>
 </pkgmetadata>

@@ -14,12 +14,12 @@ SRC_URI="http://www.catb.org/~esr/shipper/${PF}.tar.gz"
 LICENSE="BSD-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="irker lftp email scp"
-# todo add freecode-submit and irkerd
+IUSE="freshcode irker lftp email scp"
 DEPEND="${PYTHON_DEPS}"
 RDEPEND="${DEPEND}
 	lftp? ( net-ftp/lftp )
 	email? ( || ( mail-mta/sendmail mail-mta/postfix ) )
 	scp? ( virtual/ssh )
-	irker? ( net-irc/irker )"
+	irker? ( net-irc/irker )
+	freshcode? ( dev-python/freecode-submit )"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
