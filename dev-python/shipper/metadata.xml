@@ -13,7 +13,9 @@ shipper is a power distribution tool for developers with multiple projects who d
 <pkg>mail-mta/sendmail</pkg> or <pkg>mail-mta/postfix</pkg> sendmail will work. All it has to be able to do
 is ship mail presented on standard input to a list of addresses
 specified as arguments.</flag>
-    <flag name="scp">Install <pkg>virtual/ssh</pkg>For shipping to websites. There are several different
+    <flag name="scp">Install <pkg>virtual/ssh</pkg> for shipping to websites. There are several different
 implementations of scp</flag>
+	<flag name="irker">Install <pkg>net-irc/irker</pkg> for shipping notices to IRC channels.</flag>
+	<flag name="freshcode">Install <pkg>dev-python/freecode-submit</pkg> For shipping release notifications to freshcode.club.</flag>
 </use>
 </pkgmetadata>
