@@ -24,6 +24,5 @@ RDEPEND="${DEPEND}"
 python_prepare_all() {
         sed -i 's:PREFIX=:PREFIX?=:' Makefile || die 'Prefix fix sed failed.'
         python_fix_shebang freecode-submit 
-        distutils-r1_python_prepare_all
 }
 
