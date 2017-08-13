@@ -6,7 +6,7 @@ EAPI=6
 PYTHON_COMPAT=( python2_7 )
 PYTHON_REQ_USE="ssl(+)"
 
-inherit distutils-r1
+inherit python-single-r1
 
 DESCRIPTION="Client for Freshcode and Freecode-like sites."
 HOMEPAGE="http://www.catb.org/~esr/freecode-submit/"
