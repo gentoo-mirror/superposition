@@ -5,9 +5,8 @@ EAPI=6
 
 PYTHON_COMPAT=( python2_7 )
 PYTHON_REQ_USE="ssl(+)"
-DISTUTILS_SINGLE_IMPL=1
 
-inherit distutils-r1
+inherit python-single-r1
 
 DESCRIPTION="Client for Freshcode and Freecode-like sites."
 HOMEPAGE="http://www.catb.org/~esr/freecode-submit/"
@@ -22,7 +21,7 @@ DEPEND="${PYTHON_DEPS}"
 RDEPEND="${DEPEND}"
 
 python_prepare_all() {
-        sed -i 's:PREFIX=:PREFIX?=:' Makefile || die 'Prefix fix sed failed.'
-        python_fix_shebang freecode-submit 
+	sed -i 's:PREFIX=:PREFIX?=:' Makefile || die 'Prefix fix sed failed.'
+	python_fix_shebang freecode-submit
+	distutils-r1_python_prepare_all
 }
-
