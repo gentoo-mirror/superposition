@@ -5,6 +5,7 @@ EAPI=6
 
 PYTHON_COMPAT=( python2_7 )
 PYTHON_REQ_USE="ssl(+)"
+DISTUTILS_SINGLE_IMPL=1
 
 inherit distutils-r1
 
@@ -29,4 +30,8 @@ python_install() {
 	python_fix_shebang freecode-submit
 
 	distutils-r1_python_install
+}
+
+python_compile() {
+	true;
 }
