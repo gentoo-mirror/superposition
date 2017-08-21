@@ -33,6 +33,6 @@ python_compile() {
 python_install() {
 	python_fix_shebang freecode-submit
 
-	emake prefix="${D}" install
+	emake PREFIX="${D}" install
 	einstalldocs
 }
