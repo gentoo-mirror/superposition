@@ -26,12 +26,13 @@ python_prepare_all() {
 	distutils-r1_python_prepare_all
 }
 
+python_compile() {
+	emake shipper.1
+}
+
 python_install() {
 	python_fix_shebang freecode-submit
 
-	distutils-r1_python_install
-}
-
-python_compile() {
-	true;
+	emake DESTDIR="${D}" install
+	einstalldocs
 }
