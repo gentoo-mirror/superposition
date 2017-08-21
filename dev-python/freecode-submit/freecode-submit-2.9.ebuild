@@ -27,7 +27,7 @@ python_prepare_all() {
 }
 
 python_compile() {
-	emake shipper.1
+	emake all
 }
 
 python_install() {
