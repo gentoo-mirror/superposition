@@ -31,9 +31,7 @@ src_compile() {
 
 src_install() {
 	python_fix_shebang freecode-submit
-	dodir '${D}usr'
-	into '${D}usr'
-	dobin '${WORKDIR}/freecode-submit'
+	dobin 'freecode-submit'
 
 	python_optimize
 	einstalldocs
