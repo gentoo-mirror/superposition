@@ -21,6 +21,7 @@ DEPEND="${PYTHON_DEPS}"
 RDEPEND="${DEPEND}"
 
 src_prepare() {
+	default
 	sed -i 's:PREFIX=:PREFIX?=:' Makefile || die 'Prefix fix sed failed.'
 }
 
