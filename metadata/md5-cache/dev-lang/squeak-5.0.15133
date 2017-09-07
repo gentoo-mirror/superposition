@@ -7,5 +7,4 @@ KEYWORDS=~x86 ~amd64
 LICENSE=Apple
 SLOT=4.6
 SRC_URI=http://ftp.squeak.org/5.0/Squeak5.0-15133.zip http://ftp.squeak.org/5.0/SqueakV50.sources.zip
-_eclass_exported_funcs=pkg_postinst:- src_compile:- src_install:-
 _md5_=a340a4335988d963bd65da29fa07ab39
