@@ -25,6 +25,8 @@ RDEPEND="${DEPEND}"
 
 REQUIRED_USE="?? ( alsa oss pulseaudio nas )"
 
+S="${WORKDIR}"
+
 src_configure(){
 
 if   use alsa;       then squeak_sound_plugin="ALSA"
@@ -41,11 +43,11 @@ src_install() {
 	local icondir="/usr/share/icons/hicolor"
 	dodir "${datadir}"
 	cp -r Help locale Media Projects "${D}${datadir}"
-	dodoc "BYOB 2.0.pdf" Elements090244.pdf README-BYOB.txt license.txt release.txt BYOBManual.pdf
+	dodoc "BYOB 2.0.pdf" Elements090224.pdf README-BYOB.txt license.txt release.txt BYOBManual.pdf
 	dolib BYOB.image
 	dolib BYOB.changes
 	dolib BYOB.ini
-	newicon "Media/Costumes/Fantasy/alsonzo.gif" "${PN}.gif"
+	newicon "Media/Costumes/Fantasy/alonzo.gif" "${PN}.gif"
 
 	install_runner
 	make_desktop_entry byob BYOB byob "Education;Development" "MimeType=application/x-scratch-project"
