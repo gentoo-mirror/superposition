@@ -27,6 +27,21 @@ REQUIRED_USE="?? ( alsa oss pulseaudio nas )"
 
 S="${WORKDIR}"
 
+src_prepare() {
+mv Help/en/allscreens.html Help/en/allscreens-BYOB.html
+rm   Help/en/index.html \
+     Help/en/ScratchGettingStartedv14.pdf \
+     Help/en/ScratchReferenceGuide14.pdf \
+     Help/en/images/getting-started-thumb.gif \
+     Help/en/images/help-menu.gif \
+     Help/en/images/helpscreens-thumb.gif \
+     Help/en/images/scratch-interface-1.gif \
+     Help/en/images/scratch-logo.gif \
+     Help/en/images/support-site.gif \
+	 locale/pt.po locale/de.po locale/it.po locale/fr_CA.po locale/ko.po
+	 eapply_user
+}
+
 src_configure(){
 
 if   use alsa;       then squeak_sound_plugin="ALSA"
