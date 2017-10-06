@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<longdescription lang="en">
+BYOB (Build Your Own Blocks) is an advanced offshoot of Scratch, a visual programming language primarily for kids from the Lifelong Kindergarten Group at the MIT Media Lab. This version, developed by Jens Mönig with design input and documentation from Brian Harvey, is an attempt to extend the brilliant accessibility of Scratch to somewhat older users—in particular, non-CS-major computer science students—without becoming inaccessible to its original audience. BYOB 3 adds first class lists, sprites, and procedures to BYOB's original contribution of custom blocks and recursion. 
+</longdescription>
+<use>
+	<flag name="alsa">
+	Use the alsa driver plugin for sound
+	</flag>
+	<flag name="oss">
+	Use the oss driver plugin for sound
+	</flag>
+	<flag name="pulseaudio">
+	Use the pulse audio driver plugin for sound
+	</flag>
+	<flag name="nas">
+	Use the nas driver plugin for sound
+	</flag>
+	<flag name="v4l">
+	Use the camera plugin
+	</flag>
+</use>
+</pkgmetadata>
