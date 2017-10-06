@@ -25,6 +25,8 @@ RDEPEND="${DEPEND}"
 
 REQUIRED_USE="?? ( alsa oss pulseaudio nas )"
 
+S="${WORKDIR}"
+
 src_configure(){
 
 if   use alsa;       then squeak_sound_plugin="ALSA"
