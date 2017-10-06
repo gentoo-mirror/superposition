@@ -47,7 +47,7 @@ src_install() {
 	dolib BYOB.image
 	dolib BYOB.changes
 	dolib BYOB.ini
-	newicon "Media/Costumes/Fantasy/alsonzo.gif" "${PN}.gif"
+	newicon "Media/Costumes/Fantasy/alonzo.gif" "${PN}.gif"
 
 	install_runner
 	make_desktop_entry byob BYOB byob "Education;Development" "MimeType=application/x-scratch-project"
