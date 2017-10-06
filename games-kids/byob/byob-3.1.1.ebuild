@@ -43,7 +43,7 @@ src_install() {
 	local icondir="/usr/share/icons/hicolor"
 	dodir "${datadir}"
 	cp -r Help locale Media Projects "${D}${datadir}"
-	dodoc "BYOB 2.0.pdf" Elements090244.pdf README-BYOB.txt license.txt release.txt BYOBManual.pdf
+	dodoc "BYOB 2.0.pdf" Elements090224.pdf README-BYOB.txt license.txt release.txt BYOBManual.pdf
 	dolib BYOB.image
 	dolib BYOB.changes
 	dolib BYOB.ini
