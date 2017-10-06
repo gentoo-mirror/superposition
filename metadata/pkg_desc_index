@@ -5,6 +5,7 @@ dev-python/freecode-submit 2.9: Client for Freshcode and Freecode-like sites.
 dev-python/shipper 1.12: Automated shipping of open-source project releases.
 games-action/Raft 1.04: Survive the harsh life of being stuck on a raft in the middle of the ocean!
 games-arcade/tokitori 20130705: Help a baby chicken save all the eggs.
+games-kids/byob 3.1.1: BYOB (Build Your Own Blocks) is an advanced offshoot of Scratch
 games-kids/scratch 1.4.0.7: A programming environment for creating stories, animations, games, and music.
 games-puzzle/bridge-constructor 2.6.1: Become an appraised bridge engineer and architect in Bridge Constructor
 games-roguelike/NEOScavenger 20160912: survive in the wasteland long enough to figure out who you are
