@@ -38,6 +38,7 @@ rm   Help/en/index.html \
      Help/en/images/scratch-interface-1.gif \
      Help/en/images/scratch-logo.gif \
      Help/en/images/support-site.gif 
+	 eapply_user
 }
 
 src_configure(){
