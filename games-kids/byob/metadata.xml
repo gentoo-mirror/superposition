@@ -18,7 +18,7 @@ BYOB (Build Your Own Blocks) is an advanced offshoot of Scratch, a visual progra
 	Use the nas driver plugin for sound
 	</flag>
 	<flag name="v4l">
-    Use the camera plugin
+	Use the camera plugin
 	</flag>
 </use>
 </pkgmetadata>

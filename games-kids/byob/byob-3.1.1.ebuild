@@ -3,9 +3,9 @@
 
 EAPI=6
 
-inherit gnome2-utils fdo-mime
+inherit gnome2-utils
 
-DESCRIPTION="BYOB (Build Your Own Blocks) is an advanced offshoot of Scratch, a visual programming language primarily for kids from the Lifelong Kindergarten Group at the MIT Media Lab."
+DESCRIPTION="BYOB (Build Your Own Blocks) is an advanced offshoot of Scratch"
 HOMEPAGE="http://snap.berkeley.edu/old-byob.html"
 SRC_URI="http://snap.berkeley.edu/BYOB_3_1_1_110519_w_changes.zip
 http://snap.berkeley.edu/byoblib.tgz"
