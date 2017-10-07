@@ -29,8 +29,10 @@ REQUIRED_USE="?? ( alsa oss pulseaudio nas )"
 S="${WORKDIR}"
 
 src_prepare() {
-mv Help/en/allscreens.html Help/en/allscreens-BYOB.html
-rm   Help/en/index.html \
+	cp "$DISTDIR/BYOB-Pi.image" ${S}
+	cp "$DISTDIR/byob.png" ${S}
+	mv Help/en/allscreens.html Help/en/allscreens-BYOB.html
+	rm Help/en/index.html \
      Help/en/ScratchGettingStartedv14.pdf \
      Help/en/ScratchReferenceGuide14.pdf \
      Help/en/images/getting-started-thumb.gif \
@@ -40,7 +42,7 @@ rm   Help/en/index.html \
      Help/en/images/scratch-logo.gif \
      Help/en/images/support-site.gif \
 	 locale/pt.po locale/de.po locale/it.po locale/fr_CA.po locale/ko.po
-	 eapply_user
+	eapply_user
 }
 
 src_configure(){
@@ -61,6 +63,7 @@ src_install() {
 	cp -r Help locale Media Projects "${D}${datadir}"
 	dodoc "BYOB 2.0.pdf" Elements090224.pdf README-BYOB.txt license.txt release.txt BYOBManual.pdf
 	dolib BYOB-Pi.image
+	dolib BYOB.ini
 	doicon "byob.png"
 
 	install_runner
