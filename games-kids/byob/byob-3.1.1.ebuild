@@ -60,7 +60,7 @@ src_install() {
 	dodir "${datadir}"
 	cp -r Help locale Media Projects "${D}${datadir}"
 	dodoc "BYOB 2.0.pdf" Elements090224.pdf README-BYOB.txt license.txt release.txt BYOBManual.pdf
-	dolib BYOB.image
+	dolib BYOB-Pi.image
 	doicon "byob.png"
 
 	install_runner
