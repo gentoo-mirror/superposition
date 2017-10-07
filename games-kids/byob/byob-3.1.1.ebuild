@@ -29,7 +29,8 @@ REQUIRED_USE="?? ( alsa oss pulseaudio nas )"
 S="${WORKDIR}"
 
 src_prepare() {
-	cp "$DISTDIR/BYOB-Pi.image" ${S} 
+	cp "$DISTDIR/BYOB-Pi.image" ${S}
+	cp "$DISTDIR/byob.png" ${S}
 	mv Help/en/allscreens.html Help/en/allscreens-BYOB.html
 	rm Help/en/index.html \
      Help/en/ScratchGettingStartedv14.pdf \
