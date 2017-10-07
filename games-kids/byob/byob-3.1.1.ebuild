@@ -7,8 +7,9 @@ inherit gnome2-utils
 
 DESCRIPTION="BYOB (Build Your Own Blocks) is an advanced offshoot of Scratch"
 HOMEPAGE="http://snap.berkeley.edu/old-byob.html"
-SRC_URI="http://snap.berkeley.edu/BYOB_3_1_1_110519_w_changes.zip
-http://snap.berkeley.edu/byoblib.tgz"
+SRC_URI="https://www.dropbox.com/s/cevf5my91pjy0t1/BYOB-Pi.image
+http://snap.berkeley.edu/byoblib.tgz
+https://dl.dropbox.com/s/6dexo1gzyldapwm/BYOB.png -> byob.png"
 
 LICENSE="MIT"
 SLOT="0"
@@ -60,9 +61,7 @@ src_install() {
 	cp -r Help locale Media Projects "${D}${datadir}"
 	dodoc "BYOB 2.0.pdf" Elements090224.pdf README-BYOB.txt license.txt release.txt BYOBManual.pdf
 	dolib BYOB.image
-	dolib BYOB.changes
-	dolib BYOB.ini
-	newicon "Media/Costumes/Fantasy/alonzo.gif" "${PN}.gif"
+	doicon "byob.png"
 
 	install_runner
 	make_desktop_entry byob BYOB byob "Education;Development" "MimeType=application/x-scratch-project"
@@ -76,7 +75,7 @@ cd
 exec \
 	"/usr/bin/squeak"                 \\
 -vm-sound-${squeak_sound_plugin}      \\
-"/usr/$(get_libdir)/BYOB.image"    \\
+"/usr/$(get_libdir)/BYOB-Pi.image"    \\
 "${@}"
 EOF
 	chmod go+rx "${tmpexe}"
