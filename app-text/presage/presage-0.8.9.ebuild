@@ -19,7 +19,7 @@ RDEPEND="
 	gtk? ( x11-libs/gtk+ )
 	python? ( dev-lang/python dev-python/dbus-python )
 	sqlite? ( dev-db/sqlite )
-	app-text/unix2dos
+	app-text/dos2unix
 "
 
 DEPEND="${COMMON_DEPEND}
