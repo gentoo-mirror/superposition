@@ -30,7 +30,7 @@ DEPEND="${COMMON_DEPEND}
 "
 
 src_prepare() {
-	epatch "${FILESDIR}/${PN}-0.8.8-automagic.patch"
+	epatch "${FILESDIR}/${PN}-0.8.9-automagic.patch"
 	eautoreconf
 }
 
