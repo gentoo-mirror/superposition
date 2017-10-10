@@ -113,8 +113,8 @@
  dnl ======================
 +
  have_dbus_python=no
- AC_MSG_CHECKING(for python dbus module)
- $PYTHON -c "import dbus" 2&>/dev/null
+if test "$PYTHON" != :
+then
 @@ -275,7 +299,7 @@
     fi
     AC_MSG_RESULT($have_dbus_python)
