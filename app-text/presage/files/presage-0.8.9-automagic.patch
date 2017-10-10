@@ -116,8 +116,8 @@
  AC_MSG_CHECKING(for python dbus module)
  $PYTHON -c "import dbus" 2&>/dev/null
 @@ -275,7 +299,7 @@
-   fi
-   AC_MSG_RESULT($have_dbus_python)
+    fi
+    AC_MSG_RESULT($have_dbus_python)
 fi
 -AM_CONDITIONAL([HAVE_DBUS_PYTHON], [test "x$have_dbus_python" = "xyes"])
 +AM_CONDITIONAL([HAVE_DBUS_PYTHON], [test "x$have_dbus_python" = "xyes" -a "x$enable_python" = "xyes"])
