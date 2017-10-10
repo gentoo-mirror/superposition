@@ -3,7 +3,7 @@
 @@ -23,7 +23,7 @@
  
  
- AC_INIT([presage],[0.8.8],[matteo.vescovi@yahoo.co.uk])
+ AC_INIT([presage],[0.8.9],[matteo.vescovi@yahoo.co.uk])
 -AM_INIT_AUTOMAKE([-Wall -Werror])
 +AM_INIT_AUTOMAKE([-Wall])
  
@@ -98,12 +98,12 @@
  AM_PATH_PYTHON([2.0],
                 [],
                 [AC_MSG_WARN([Python not found. Python is required to build presage python binding. Python can be obtained from http://www.python.org])])
-@@ -238,7 +264,7 @@
+@@ -239,7 +264,7 @@
                       [AC_MSG_WARN([Python.h header file not found. Python development files are required to build presage python binding. Python can be obtained from http://www.python.org])],
                       [])
  fi
--AM_CONDITIONAL([HAVE_PYTHON], [test "$PYTHON" -a "x$have_python_header" = "xtrue"])
-+AM_CONDITIONAL([HAVE_PYTHON], [test "$PYTHON" -a "x$have_python_header" = "xtrue" -a "x$enable_python" = "xyes"])
+-AM_CONDITIONAL([HAVE_PYTHON], [test "$PYTHON" != : -a "x$have_python_header" = "xtrue"])
++AM_CONDITIONAL([HAVE_PYTHON], [test "$PYTHON" != : -a "x$have_python_header" = "xtrue" -a "x$enable_python" = "xyes"])
  
  
  AC_ARG_ENABLE([python-binding],
@@ -115,10 +115,11 @@
  have_dbus_python=no
  AC_MSG_CHECKING(for python dbus module)
  $PYTHON -c "import dbus" 2&>/dev/null
-@@ -272,7 +299,7 @@
- 	have_dbus_python=no
- fi
- AC_MSG_RESULT($have_dbus_python)
+@@ -275,7 +299,7 @@
+   	have_dbus_python=no
+   fi
+   AC_MSG_RESULT($have_dbus_python)
+fi
 -AM_CONDITIONAL([HAVE_DBUS_PYTHON], [test "x$have_dbus_python" = "xyes"])
 +AM_CONDITIONAL([HAVE_DBUS_PYTHON], [test "x$have_dbus_python" = "xyes" -a "x$enable_python" = "xyes"])
  
