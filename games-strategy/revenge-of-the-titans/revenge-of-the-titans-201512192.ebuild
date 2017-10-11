@@ -16,7 +16,7 @@ DEPEND=""
 RDEPEND=">=virtual/jre-1.6
 	virtual/opengl"
 
-RESTRICT="download mirror strip"
+RESTRICT="bindist fetch mirror strip"
 
 pkg_nofetch() {
 	einfo "Please download ${SRC_URI}"
@@ -27,7 +27,7 @@ pkg_nofetch() {
 src_install() {
 	local dir="/opt/${P}"
 	insinto "${dir}"
-	
+
 	doins *.jar || die "doins jar"
 
 	exeinto "${dir}"
