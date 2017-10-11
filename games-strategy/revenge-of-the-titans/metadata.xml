@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<maintainer type="person">
+<email>phil_miess@yahoo.com</email>
+<name>Philip Miess</name>
+</maintainer>
+<longdescription lang="en">
+Defeat the returning Titan horde in a series of epic ground battles.
+</longdescription>
+</pkgmetadata>
