@@ -1,0 +1,11 @@
+DEFINED_PHASES=install
+DESCRIPTION=Defeat the returning Titan horde in a series of epic ground battles.
+EAPI=6
+HOMEPAGE=http://www.puppygames.net/revenge-of-the-titans
+KEYWORDS=~amd64 ~x86
+LICENSE=all-rights-reserved
+RDEPEND=>=virtual/jre-1.6 virtual/opengl
+RESTRICT=bindist fetch mirror strip
+SLOT=0
+SRC_URI=RevengeOfTheTitans-HIB-201512192.tar.gz
+_md5_=bca8722eceffb9076fb4f291393a5459
