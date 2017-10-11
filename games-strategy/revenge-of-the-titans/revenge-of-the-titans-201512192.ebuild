@@ -17,6 +17,7 @@ RDEPEND=">=virtual/jre-1.6
 	virtual/opengl"
 
 RESTRICT="bindist fetch mirror strip"
+S="${WORKDIR}/revenge"
 
 pkg_nofetch() {
 	einfo "Please download ${SRC_URI}"
