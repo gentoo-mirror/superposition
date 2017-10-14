@@ -40,7 +40,7 @@ java_prepare() {
 }
 
 src_install() {
-	java-pkg_register-dependency gson jinput lwjgl
+	java-pkg_register-dependency gson,jinput,lwjgl
 	local dir="/opt/${P}"
 
 	java-pkg_jarinto "${dir}"
