@@ -18,8 +18,8 @@ DEPEND=""
 RDEPEND=">=virtual/jre-1.7
 	virtual/opengl
 	media-libs/openal
-	dev-java/gson
-	dev-java/lwjgl"
+	dev-java/gson:2.2.2
+	dev-java/lwjgl:2.9"
 
 RESTRICT="bindist fetch mirror strip"
 S="${WORKDIR}/revenge"
