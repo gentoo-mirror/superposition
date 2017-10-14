@@ -3,7 +3,7 @@
 
 EAPI=6
 
-include eutils java-pkg-2
+inherit eutils java-pkg-2
 
 DESCRIPTION="Defeat the returning Titan horde in a series of epic ground battles."
 HOMEPAGE="http://www.puppygames.net/revenge-of-the-titans"
