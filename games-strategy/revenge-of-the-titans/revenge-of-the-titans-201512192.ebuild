@@ -17,7 +17,9 @@ IUSE=""
 DEPEND=""
 RDEPEND=">=virtual/jre-1.7
 	virtual/opengl
-	media-libs/openal"
+	media-libs/openal
+	dev-java/gson
+	dev-java/lwjgl"
 
 RESTRICT="bindist fetch mirror strip"
 S="${WORKDIR}/revenge"
@@ -40,21 +42,21 @@ java_prepare() {
 }
 
 src_install() {
-	java-pkg_register-dependency gson,jinput,lwjgl
+	java-pkg_register-dependency gson,lwjgl
 	local dir="/opt/${P}"
 
 	java-pkg_jarinto "${dir}"
 	java-pkg_dojar *.jar
 
 	java-pkg_sointo "${dir}"
-	java-pkg_dosoi libgdx.so libgdx64.so
+	java-pkg_doso libgdx.so libgdx64.so
 
 	exeinto "${dir}"
 	doexe revenge.sh || die "doexe"
 
 	lwjgl=java-pkg_getjar dev-java/lwjgl lwjgl.jar
 	java-pkg_dolauncher ${PN} \
-		--main net.puppygames.applet.Launcher
+		--main net.puppygames.applet.Launcher \
 		--java_args "-Dorg.lwjgl.librarypath="${lwjgl}" -Dorg.lwjgl.util.NoChecks=false  -Djava.net.preferIPv4Stack=true -Dnet.puppygames.applet.Launcher.resources=resources-hib.dat " \
 		--pwd ${dir}
 
