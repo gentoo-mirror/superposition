@@ -35,6 +35,7 @@ java_prepare() {
 		gson.jar
 		jinput.jar
 		lwjgl.jar
+		lwjgl_util.jar
 		7za_amd64
 		7za_i386
 		jvm.7z
@@ -54,7 +55,7 @@ src_install() {
 	exeinto "${dir}"
 	doexe revenge.sh || die "doexe"
 
-	lwjgl=java-pkg_getjar dev-java/lwjgl lwjgl.jar
+	local lwjgl=java-pkg_getjar dev-java/lwjgl lwjgl.jar
 	java-pkg_dolauncher ${PN} \
 		--main net.puppygames.applet.Launcher \
 		--java_args "-Dorg.lwjgl.librarypath="${lwjgl}" -Dorg.lwjgl.util.NoChecks=false  -Djava.net.preferIPv4Stack=true -Dnet.puppygames.applet.Launcher.resources=resources-hib.dat " \
