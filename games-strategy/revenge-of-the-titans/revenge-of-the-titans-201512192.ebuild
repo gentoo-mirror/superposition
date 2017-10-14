@@ -57,7 +57,7 @@ src_install() {
 
 	java-pkg_dolauncher ${PN} \
 		--main net.puppygames.applet.Launcher \
-		--java_args "-Dorg.lwjgl.librarypath=$(java-pkg_getjar dev-java/lwjgl lwjgl.jar) -Dorg.lwjgl.util.NoChecks=false  -Djava.net.preferIPv4Stack=true -Dnet.puppygames.applet.Launcher.resources=resources-hib.dat " \
+		--java_args "-Dorg.lwjgl.librarypath=/usr/share/lwjgl-2.9/lib/lwjgl.jar -Dorg.lwjgl.util.NoChecks=false  -Djava.net.preferIPv4Stack=true -Dnet.puppygames.applet.Launcher.resources=resources-hib.dat " \
 		--pwd ${dir}
 
 	doicon revenge.png
