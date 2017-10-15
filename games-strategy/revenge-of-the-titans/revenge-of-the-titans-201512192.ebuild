@@ -30,7 +30,7 @@ pkg_nofetch() {
 	einfo "(http://www.humblebundle.com) and place it in ${DISTDIR}"
 }
 
-java_prepare() {
+src_prepare() {
 	JAVA_RM_FILES=(
 		gson.jar
 		jinput.jar
@@ -40,10 +40,11 @@ java_prepare() {
 		7za_i386
 		jvm.7z
 	)
+ eapply_user
 }
 
 src_install() {
-	java-pkg_register-dependency gson,lwjgl
+	java-pkg_register-dependency dev-java/gson,dev-java/lwjgl
 	local dir="/opt/${P}"
 
 	java-pkg_jarinto "${dir}"
