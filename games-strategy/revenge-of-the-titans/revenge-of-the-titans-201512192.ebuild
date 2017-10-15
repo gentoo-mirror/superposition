@@ -40,7 +40,7 @@ src_prepare() {
 		7za_i386
 		jvm.7z
 	)
-
+ eapply_user
 }
 
 src_install() {
