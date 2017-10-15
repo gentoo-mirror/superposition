@@ -14,12 +14,12 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-DEPEND=""
-RDEPEND=">=virtual/jre-1.7
+DEPEND=">=virtual/jre-1.7
 	virtual/opengl
 	media-libs/openal
 	dev-java/gson:2.2.2
 	dev-java/lwjgl:2.9"
+RDEPEND="${DEPEND}"
 
 RESTRICT="bindist fetch mirror strip"
 S="${WORKDIR}/revenge"
