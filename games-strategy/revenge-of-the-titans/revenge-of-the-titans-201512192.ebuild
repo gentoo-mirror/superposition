@@ -41,7 +41,9 @@ JAVA_RM_FILES=(
 	jvm.7z
 )
 src_install() {
-	java-pkg_register-dependency dev-java/gson,dev-java/lwjgl
+	java-pkg_register-dependency gson gson.jar
+	java-pkg_register-dependency lwjgl lwjgl.jar
+	java-pkg_register-dependency lwjgl lwjgl_util.jar
 	local dir="/opt/${P}"
 
 	java-pkg_jarinto "${dir}"
