@@ -16,7 +16,9 @@ IUSE=""
 
 DEPEND=">=virtual/jre-1.7:*
 	virtual/opengl
-	media-libs/openal"
+	media-libs/openal
+	dev-java/gson
+	dev-java/lwjgl"
 RDEPEND="${DEPEND}"
 
 RESTRICT="bindist fetch mirror strip"
@@ -29,6 +31,13 @@ pkg_nofetch() {
 }
 
 JAVA_RM_FILES=(
+	gson.jar
+	lwjgl.jar
+	lwjgl_util.jar
+	libjinput-linux.so
+	libjinput-linux64.so
+	liblwjgl.so
+	liblwjgl64.so
 	7za_amd64
 	7za_i386
 	jvm.7z
