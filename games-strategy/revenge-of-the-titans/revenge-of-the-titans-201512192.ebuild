@@ -44,6 +44,7 @@ JAVA_RM_FILES=(
 )
 src_prepare() {
 	epatch "${FILESDIR}/${PV}-launcher.patch"
+	default
 }
 
 src_install() {
