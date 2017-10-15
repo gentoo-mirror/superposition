@@ -49,11 +49,7 @@ src_install() {
 	exeinto "${dir}"
 	doexe revenge.sh || die "doexe"
 
-	java-pkg_dolauncher ${PN} \
-		--main net.puppygames.applet.Launcher \
-		--java_args "-Dorg.lwjgl.librarypath=${dir}/lwjgl.jar -Dorg.lwjgl.util.NoChecks=false  -Djava.net.preferIPv4Stack=true -Dnet.puppygames.applet.Launcher.resources=resources-hib.dat " \
-		--pwd ${dir}
-
+	make_wrapper ${PN} ./revenge.sh "${dir}" "${dir}"
 	doicon revenge.png
 	make_desktop_entry ${PN} "Revenge of the Titans" revenge Game
 }
