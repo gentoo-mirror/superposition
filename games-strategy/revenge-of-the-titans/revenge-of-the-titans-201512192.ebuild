@@ -33,6 +33,9 @@ JAVA_RM_FILES=(
 	7za_i386
 	jvm.7z
 )
+src_prepare() {
+	epatch "${FILESDIR}/${PV}-launcher.patch"
+}
 
 src_install() {
 	local dir="/opt/${P}"
