@@ -16,7 +16,9 @@ IUSE=""
 
 DEPEND=">=virtual/jre-1.7:*
 	virtual/opengl
-	media-libs/openal"
+	media-libs/openal
+	dev-java/gson
+	dev-java/lwjgl"
 RDEPEND="${DEPEND}"
 
 RESTRICT="bindist fetch mirror strip"
@@ -29,10 +31,20 @@ pkg_nofetch() {
 }
 
 JAVA_RM_FILES=(
+	gson.jar
+	lwjgl.jar
+	lwjgl_util.jar
+	libjinput-linux.so
+	libjinput-linux64.so
+	liblwjgl.so
+	liblwjgl64.so
 	7za_amd64
 	7za_i386
 	jvm.7z
 )
+src_prepare() {
+	epatch "${FILESDIR}/${PV}-launcher.patch"
+}
 
 src_install() {
 	local dir="/opt/${P}"
@@ -46,11 +58,7 @@ src_install() {
 	exeinto "${dir}"
 	doexe revenge.sh || die "doexe"
 
-	java-pkg_dolauncher ${PN} \
-		--main net.puppygames.applet.Launcher \
-		--java_args "-Dorg.lwjgl.librarypath=${dir}/lwjgl.jar -Dorg.lwjgl.util.NoChecks=false  -Djava.net.preferIPv4Stack=true -Dnet.puppygames.applet.Launcher.resources=resources-hib.dat " \
-		--pwd ${dir}
-
+	make_wrapper ${PN} ./revenge.sh "${dir}" "${dir}"
 	doicon revenge.png
 	make_desktop_entry ${PN} "Revenge of the Titans" revenge Game
 }
