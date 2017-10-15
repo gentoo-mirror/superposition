@@ -16,9 +16,7 @@ IUSE=""
 
 DEPEND=">=virtual/jre-1.7:*
 	virtual/opengl
-	media-libs/openal
-	dev-java/gson:2.2.2
-	dev-java/lwjgl:2.9"
+	media-libs/openal"
 RDEPEND="${DEPEND}"
 
 RESTRICT="bindist fetch mirror strip"
@@ -31,21 +29,10 @@ pkg_nofetch() {
 }
 
 JAVA_RM_FILES=(
-	gson.jar
-	jinput.jar
-	lwjgl.jar
-	lwjgl_util.jar
 	7za_amd64
 	7za_i386
 	jvm.7z
 )
-
-src_compile() {
-
-java-pkg_jar-from gson
-java-pkg_jar-from lwjgl
-
-}
 
 src_install() {
 	local dir="/opt/${P}"
@@ -61,7 +48,7 @@ src_install() {
 
 	java-pkg_dolauncher ${PN} \
 		--main net.puppygames.applet.Launcher \
-		--java_args "-Dorg.lwjgl.librarypath=/usr/share/lwjgl-2.9/lib/lwjgl.jar -Dorg.lwjgl.util.NoChecks=false  -Djava.net.preferIPv4Stack=true -Dnet.puppygames.applet.Launcher.resources=resources-hib.dat " \
+		--java_args "-Dorg.lwjgl.librarypath=${dir}/lwjgl.jar -Dorg.lwjgl.util.NoChecks=false  -Djava.net.preferIPv4Stack=true -Dnet.puppygames.applet.Launcher.resources=resources-hib.dat " \
 		--pwd ${dir}
 
 	doicon revenge.png
