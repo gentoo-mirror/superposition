@@ -14,7 +14,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-DEPEND=">=virtual/jre-1.7
+DEPEND=">=virtual/jre-1.7:*
 	virtual/opengl
 	media-libs/openal
 	dev-java/gson:2.2.2
@@ -30,7 +30,6 @@ pkg_nofetch() {
 	einfo "(http://www.humblebundle.com) and place it in ${DISTDIR}"
 }
 
-
 JAVA_RM_FILES=(
 	gson.jar
 	jinput.jar
@@ -42,7 +41,6 @@ JAVA_RM_FILES=(
 )
 
 src_compile() {
-
 
 java-pkg_jar-from gson
 java-pkg_jar-from lwjgl
