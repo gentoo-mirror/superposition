@@ -1,5 +1,5 @@
 --- revenge.sh	2017-10-15 12:45:29.557384954 -0400
-+++ revenge.sh	2017-10-15 12:53:15.007346026 -0400
++++ revenge.patched.sh	2017-10-15 12:53:15.007346026 -0400
 @@ -7,46 +7,16 @@
  SCRIPT="`basename \"$0\"`"
  GAMEDIR="${HOME}/.revenge_of_the_titans"
