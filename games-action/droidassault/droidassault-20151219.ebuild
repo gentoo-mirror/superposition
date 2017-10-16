@@ -17,8 +17,8 @@ IUSE=""
 DEPEND=">=virtual/jre-1.7:*
 	virtual/opengl
 	media-libs/openal
-	dev-java/gson
-	dev-java/lwjgl:2.2.2"
+	dev-java/gson:2.2.2
+	dev-java/lwjgl:2.9"
 RDEPEND="${DEPEND}"
 
 RESTRICT="bindist fetch mirror strip"
