@@ -59,7 +59,7 @@ src_install() {
 	exeinto "${dir}"
 	doexe ultratron.sh || die "doexe"
 
-	make_wrapper ${PN} ./ulttraron.sh "${dir}" "${dir}"
-	doicon ultron.png
+	make_wrapper ${PN} ./ultratron.sh "${dir}" "${dir}"
+	doicon ultratron.png
 	make_desktop_entry ${PN} "Ultratron" ultratron Game
 }
