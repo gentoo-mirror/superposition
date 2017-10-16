@@ -5,7 +5,7 @@ EAPI=6
 
 inherit eutils java-pkg-2
 
-DESCRIPTION="single-handedly turn back the evil invading alien army" 
+DESCRIPTION="single-handedly turn back the evil invading alien army"
 HOMEPAGE="http://www.puppygames.net/titan-attacks"
 SRC_URI="TitanAttacks-HIB-20151219.tar.gz"
 
@@ -17,7 +17,7 @@ IUSE=""
 DEPEND=">=virtual/jre-1.7:*
 	virtual/opengl
 	media-libs/openal
-	dev-java/gson
+	dev-java/gson:2.2.2
 	dev-java/lwjgl"
 RDEPEND="${DEPEND}"
 
