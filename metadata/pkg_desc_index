@@ -5,6 +5,7 @@ dev-lang/squeakvm 4.10.2.2614: Highly-portable Smalltalk-80 implementation
 dev-python/freecode-submit 2.9: Client for Freshcode and Freecode-like sites.
 dev-python/shipper 1.12: Automated shipping of open-source project releases.
 games-action/Raft 1.04: Survive the harsh life of being stuck on a raft in the middle of the ocean!
+games-action/droidassault 20151219: Blaster battles with hordes of rampaging killer robots!
 games-arcade/titanattacks 20151219: single-handedly turn back the evil invading alien army
 games-arcade/tokitori 20130705: Help a baby chicken save all the eggs.
 games-kids/byob 3.1.1: BYOB (Build Your Own Blocks) is an advanced offshoot of Scratch
