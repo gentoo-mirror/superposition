@@ -1,5 +1,5 @@
---- ultron.sh	2015-12-18 19:14:42.000000000 -0500
-+++ ultron.patched.sh	2017-10-15 21:11:37.372845150 -0400
+--- ultratron.sh	2015-12-18 19:14:42.000000000 -0500
++++ ultratron.patched.sh	2017-10-15 21:11:37.372845150 -0400
 @@ -7,47 +7,15 @@
  SCRIPT="`basename \"$0\"`"
  GAMEDIR="${HOME}/.ultratron"
