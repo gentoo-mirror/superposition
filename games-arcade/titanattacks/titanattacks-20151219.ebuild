@@ -22,7 +22,7 @@ DEPEND=">=virtual/jre-1.7:*
 RDEPEND="${DEPEND}"
 
 RESTRICT="bindist fetch mirror strip"
-S="${WORKDIR}/revenge"
+S="${WORKDIR}/titanattacks"
 
 pkg_nofetch() {
 	einfo "Please download ${SRC_URI}"
