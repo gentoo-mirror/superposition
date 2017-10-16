@@ -43,7 +43,7 @@
 -
  # XMODIFIERS is cleared here to prevent SCIM screwing up keyboard input
 -_JAVA_OPTIONS= XMODIFIERS= "${JVM}" \
-+_JAVA_OPTIONS= XMODIFIERS= "ijava" \
++_JAVA_OPTIONS= XMODIFIERS= "java" \
      -server \
 -    -Xbootclasspath/p:${BOOTCLASSPATH} \
      -Djava.library.path="${INSTDIR}" \
