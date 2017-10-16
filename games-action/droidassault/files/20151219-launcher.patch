@@ -6,7 +6,7 @@
  LOGFILE="${GAMEDIR}/${SCRIPT}.log"
 -INSTDIR="`dirname \"$0\"`" ; cd "${INSTDIR}" ; INSTDIR="`pwd`"
 -
-+INSTDIR="/opt/droidassalt-20151219"
++INSTDIR="/opt/droidassault-20151219"
 +cd "${INSTDIR}"
  [[ ! -d "${GAMEDIR}" ]] && mkdir -m 0755 "${GAMEDIR}"
  
