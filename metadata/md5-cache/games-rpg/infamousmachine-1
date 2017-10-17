@@ -1,0 +1,13 @@
+DEFINED_PHASES=install prepare unpack
+DEPEND=>=virtual/jre-1.7:* virtual/opengl media-libs/openal app-arch/p7zip
+DESCRIPTION=A adventure about Kelvin, a crazy scientist, and a time machine.
+EAPI=6
+HOMEPAGE=http://www.infamousmachine.com
+KEYWORDS=~amd64 ~x86
+LICENSE=all-rights-reserved
+RDEPEND=>=virtual/jre-1.7:* virtual/opengl media-libs/openal app-arch/p7zip
+RESTRICT=bindist fetch mirror strip
+SLOT=0
+SRC_URI=infamousmachine_unix_1_0.sh.zip
+_eclasses_=epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	227b041a120d309fdefbebb3b8c1dfa9	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	185a06792159ca143528e7010368e8af
+_md5_=7a9e9d5d9bc95a7789e4d12a1e0fcd8a
