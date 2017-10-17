@@ -38,6 +38,7 @@ src_unpack() {
 src_prepare() {
 	rm infamousmachine_unix_1_0.sh
 	rmdir '.install4j\'
+	 eapply_user
 }
 
 src_install() {
