@@ -38,7 +38,7 @@ src_unpack() {
 src_prepare() {
 	rm infamousmachine_unix_1_0.sh
 	rmdir '.install4j\'
-	 eapply_user
+	eapply_user
 }
 
 src_install() {
@@ -46,7 +46,7 @@ src_install() {
 
 	insinto "${dir}"
 	doins InfamousMachine.vmoptions
-	doins InfamousMachine.jar
+	doins infamous_machine.jar
 	doins .install4j
 
 	exeinto "${dir}"
