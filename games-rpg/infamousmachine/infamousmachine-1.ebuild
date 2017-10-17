@@ -47,7 +47,7 @@ src_install() {
 	insinto "${dir}"
 	doins InfamousMachine.vmoptions
 	doins infamous_machine.jar
-	doins .install4j
+	cp .install4j "${dir}/.install4j"
 
 	exeinto "${dir}"
 	doexe InfamousMachine
