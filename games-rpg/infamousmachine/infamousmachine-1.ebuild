@@ -32,7 +32,7 @@ pkg_nofetch() {
 src_unpack() {
 	unpack ${A}
 	cd "${S}"
-	7zip x infamousmachine_unix_1_0.sh
+	7z x infamousmachine_unix_1_0.sh
 }
 
 src_prepare() {
