@@ -31,15 +31,18 @@ DEPEND="${COMMON_DEPEND}
 
 src_prepare() {
 	epatch "${FILESDIR}/${PN}-0.8.9-automagic.patch"
+	rmdir -r "presage-0.8.9/apps/gtk/gprompter"
 	eautoreconf
 }
 
 src_configure() {
+
+    #   $(use_enable gtk gprompter)
+
 	local myeconfargs=(
 		$(use_enable doc documentation)
-		$(use_enable gtk gpresagemate)
-	#	$(use_enable gtk gprompter)
 		$(use_enable examples curses)
+        $(use_enable gtk gpresagemate)
 		$(use_enable python)
 		$(use_enable python python-binding)
 		$(use_enable sqlite)
