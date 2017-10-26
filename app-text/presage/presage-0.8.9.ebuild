@@ -38,7 +38,7 @@ src_configure() {
 	local myeconfargs=(
 		$(use_enable doc documentation)
 		$(use_enable gtk gpresagemate)
-		$(use_enable gtk gprompter)
+	#	$(use_enable gtk gprompter)
 		$(use_enable examples curses)
 		$(use_enable python)
 		$(use_enable python python-binding)
