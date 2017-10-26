@@ -31,7 +31,6 @@ DEPEND="${COMMON_DEPEND}
 
 src_prepare() {
 	epatch "${FILESDIR}/${PN}-0.8.9-automagic.patch"
-	rm -r "apps/gtk/gprompter"
 	eautoreconf
 }
 
@@ -43,6 +42,7 @@ src_configure() {
 		$(use_enable doc documentation)
 		$(use_enable examples curses)
         $(use_enable gtk gpresagemate)
+		--without-gprompter
 		$(use_enable python)
 		$(use_enable python python-binding)
 		$(use_enable sqlite)
