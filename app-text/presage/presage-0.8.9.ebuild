@@ -14,20 +14,22 @@ SRC_URI="mirror://sourceforge/${PN}/${PV}/${P}.tar.gz"
 LICENSE="GPL-2+"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~x86"
-IUSE="doc examples gtk python sqlite test"
-REQUIRED_USE="python? ( ${PYTHON_REQUIRED_USE} )"
+IUSE="doc examples gtk sqlite test"
+REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 RDEPEND="
 	examples? ( sys-libs/ncurses )
 	gtk? ( x11-libs/gtk+ )
-	python? ( ${PYTHON_DEPS}  dev-python/dbus-python[${PYTHON_USEDEP}] )
+	${PYTHON_DEPS}
+	dev-python/dbus-python[${PYTHON_USEDEP}] 
 	sqlite? ( dev-db/sqlite )
 	app-text/dos2unix
 "
 
 DEPEND="${COMMON_DEPEND}
 	doc? ( app-doc/doxygen )
-	python? ( ${PYTHON_DEPS} dev-lang/swig:1 )
+	${PYTHON_DEPS}
+	dev-lang/swig:1
 	test? ( dev-util/cppunit )
 	sys-apps/help2man
 "
@@ -45,11 +47,11 @@ src_configure() {
 		$(use_enable doc documentation)
 		$(use_enable examples curses)
         $(use_enable gtk gpresagemate)
-		$(use_enable python)
-		$(use_enable python python-binding)
+		#$(use_enable python)
+		#$(use_enable python python-binding)
 		$(use_enable sqlite)
 		$(use_enable test)
 	)
-	econf ${myeconfargs} --disable-gprompter
+	econf ${myeconfargs} --enable-python --enable-python-binding --disable-gprompter
 
 }
