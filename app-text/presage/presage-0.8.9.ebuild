@@ -42,7 +42,7 @@ src_configure() {
 		$(use_enable doc documentation)
 		$(use_enable examples curses)
         $(use_enable gtk gpresagemate)
-		--disable-gprompter
+		--without-gprompter
 		$(use_enable python)
 		$(use_enable python python-binding)
 		$(use_enable sqlite)
