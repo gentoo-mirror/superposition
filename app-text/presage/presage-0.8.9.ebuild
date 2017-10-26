@@ -12,7 +12,7 @@ SRC_URI="mirror://sourceforge/${PN}/${PV}/${P}.tar.gz"
 LICENSE="GPL-2+"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~x86"
-IUSE="doc examples gtk python sqlite test -gprompter"
+IUSE="doc examples gtk python sqlite test"
 
 RDEPEND="
 	examples? ( sys-libs/ncurses )
