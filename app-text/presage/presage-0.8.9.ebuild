@@ -31,7 +31,7 @@ DEPEND="${COMMON_DEPEND}
 
 src_prepare() {
 	epatch "${FILESDIR}/${PN}-0.8.9-automagic.patch"
-	rm -r "presage-0.8.9/apps/gtk/gprompter"
+	rm -r "apps/gtk/gprompter"
 	eautoreconf
 }
 
