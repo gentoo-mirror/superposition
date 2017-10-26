@@ -12,7 +12,7 @@ SRC_URI="mirror://sourceforge/${PN}/${PV}/${P}.tar.gz"
 LICENSE="GPL-2+"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~x86"
-IUSE="doc examples gtk python sqlite test"
+IUSE="doc examples gtk python sqlite test -gprompter"
 
 RDEPEND="
 	examples? ( sys-libs/ncurses )
@@ -42,11 +42,11 @@ src_configure() {
 		$(use_enable doc documentation)
 		$(use_enable examples curses)
         $(use_enable gtk gpresagemate)
-		--disable-gprompter
 		$(use_enable python)
 		$(use_enable python python-binding)
 		$(use_enable sqlite)
 		$(use_enable test)
 	)
-	econf ${myeconfargs}
+	econf ${myeconfargs} --disable-gprompter
+
 }
