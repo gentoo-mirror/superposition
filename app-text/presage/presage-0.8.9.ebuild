@@ -29,7 +29,7 @@ RDEPEND="
 DEPEND="${COMMON_DEPEND}
 	doc? ( app-doc/doxygen )
 	${PYTHON_DEPS}
-	dev-lang/swig:1
+	dev-lang/swig
 	test? ( dev-util/cppunit )
 	sys-apps/help2man
 "
