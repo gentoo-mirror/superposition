@@ -1,14 +1,5 @@
---- configure.ac	2017-10-24 16:21:02.605268927 -0400
-+++ configure.patched.ac	2017-10-24 16:29:24.098226985 -0400
-@@ -23,7 +23,7 @@
- 
- 
- AC_INIT([presage],[0.8.9],[matteo.vescovi@yahoo.co.uk])
--AM_INIT_AUTOMAKE([-Wall -Werror])
-+AM_INIT_AUTOMAKE([-Wall])
- 
- AC_CONFIG_SRCDIR([src/lib/presage.cpp])
- AC_CONFIG_HEADERS([config.h:config.hin])
+--- configure.9.1.ac	2017-10-26 20:27:20.114580931 -0400
++++ configure.patched.ac	2017-10-26 20:30:49.191563445 -0400
 @@ -106,6 +106,13 @@
  dnl ==================
  dnl Checks for ncurses
