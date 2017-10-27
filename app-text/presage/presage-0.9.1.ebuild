@@ -45,13 +45,13 @@ src_configure() {
 		$(use_enable doc documentation)
 		$(use_enable examples curses)
         $(use_enable gtk gpresagemate)
-		$(use_enable gtk gprompter)
+		#$(use_enable gtk gprompter)
 
 		#$(use_enable python)
 		#$(use_enable python python-binding)
 		$(use_enable sqlite)
 		$(use_enable test)
 	)
-	econf ${myeconfargs} --enable-python --enable-python-binding 
+	econf ${myeconfargs} --enable-python --enable-python-binding --disable-gprompter 
 
 }
