@@ -35,7 +35,7 @@ DEPEND="${COMMON_DEPEND}
 "
 
 src_prepare() {
-	epatch "${FILESDIR}/${PN}-0.8.9-automagic.patch"
+	epatch "${FILESDIR}/${PN}-0.9.1-automagic.patch"
 	eautoreconf
 }
 
@@ -45,13 +45,13 @@ src_configure() {
 		$(use_enable doc documentation)
 		$(use_enable examples curses)
         $(use_enable gtk gpresagemate)
-		$(use_enable gtk gprompter)
+		#$(use_enable gtk gprompter)
 
 		#$(use_enable python)
 		#$(use_enable python python-binding)
 		$(use_enable sqlite)
 		$(use_enable test)
 	)
-	econf ${myeconfargs} --enable-python --enable-python-binding 
+	econf ${myeconfargs} --enable-python --enable-python-binding --disable-gprompter 
 
 }
