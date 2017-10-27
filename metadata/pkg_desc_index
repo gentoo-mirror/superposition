@@ -1,5 +1,5 @@
 app-crypt/gorilla 1.5.3.7: Password Safe in secure way with GUI interface
-app-text/presage 0.8.9: The intelligent predictive text entry system
+app-text/presage 0.9.1: The intelligent predictive text entry system
 dev-lang/squeak 4.6.15102 5.0.15133: Squeak image file
 dev-lang/squeakvm 4.10.2.2614: Highly-portable Smalltalk-80 implementation
 dev-python/freecode-submit 2.9: Client for Freshcode and Freecode-like sites.
