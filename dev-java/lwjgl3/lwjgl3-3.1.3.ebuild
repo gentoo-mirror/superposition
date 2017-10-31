@@ -22,11 +22,3 @@ JAVA_PKG_STRICT=true
 JAVA_ANT_REWRITE_CLASSPATH="true"
 EANT_ANT_TASKS="compile-templates,generate,compile,compile-native"
 
-
-java_prepare() {
-     # This does not discriminate,
-     # it will remove ALL .class and .jar files
-     java-pkg_clean
-}
-
-
