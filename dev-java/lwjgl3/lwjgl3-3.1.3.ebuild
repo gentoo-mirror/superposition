@@ -20,5 +20,5 @@ RDEPEND=">=virtual/jre-1.8"
 
 JAVA_PKG_STRICT=true
 JAVA_ANT_REWRITE_CLASSPATH="true"
-EANT_ANT_TASKS="compile-templates,generate,compile,compile-native"
+EANT_BUILD_TARGET="compile-native"
 
