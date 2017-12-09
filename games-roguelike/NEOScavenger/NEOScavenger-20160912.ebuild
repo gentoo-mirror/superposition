@@ -34,6 +34,7 @@ RDEPEND="${DEPEND}
 		x11-libs/libXt[abi_x86_32]
 		x11-libs/pango[abi_x86_32]
 		net-misc/curl[abi_x86_32]
+		x11-themes/gtk-engines-adwaita[abi_x86_32]
 
 	)
 	!multilib? (
@@ -53,6 +54,7 @@ RDEPEND="${DEPEND}
 		x11-libs/libXt
 		x11-libs/pango
 		net-misc/curl
+		x11-themes/gtk-engines-adwaita
 
 	)"
 
