@@ -2,31 +2,3 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
-dev-lang/squeakvm:X - Build the X11 drive plugin for display
-dev-lang/squeakvm:alsa - Build the alsa driver plugin for sound
-dev-lang/squeakvm:dbus - Build the dbus driver plugin
-dev-lang/squeakvm:fbcon - Build the fbcon driver plugin for display
-dev-lang/squeakvm:iconv - Enable iconv support
-dev-lang/squeakvm:image64 - Build a VM for running 64-bit images
-dev-lang/squeakvm:mmx - Enable MMX support in Mpeg3Plugin
-dev-lang/squeakvm:nas - Build the nas driver plugin for sound
-dev-lang/squeakvm:opengl - Enable everything that depends on OpenGL
-dev-lang/squeakvm:oss - Build the oss driver plugin for sound
-dev-lang/squeakvm:pulseaudio - Build the pulse audio driver plugin for sound
-dev-lang/squeakvm:threads - Enable pthread support in Mpeg3Plugin
-dev-lang/squeakvm:v4l - Build the camera plugin which uses v4l
-dev-python/shipper:email - For shipping email announcements. Either classic mail-mta/sendmail or mail-mta/postfix sendmail will work. All it has to be able to do is ship mail presented on standard input to a list of addresses specified as arguments.
-dev-python/shipper:freshcode - Install dev-python/freecode-submit For shipping release notifications to freshcode.club.
-dev-python/shipper:irker - Install net-irc/irker for shipping notices to IRC channels.
-dev-python/shipper:lftp - Install net-ftp/lftp for shipping to ftp sites.
-dev-python/shipper:scp - Install virtual/ssh for shipping to websites. There are several different implementations of scp
-games-kids/byob:alsa - Use the alsa driver plugin for sound
-games-kids/byob:nas - Use the nas driver plugin for sound
-games-kids/byob:oss - Use the oss driver plugin for sound
-games-kids/byob:pulseaudio - Use the pulse audio driver plugin for sound
-games-kids/byob:v4l - Use the camera plugin
-games-kids/scratch:alsa - Use the alsa driver plugin for sound
-games-kids/scratch:nas - Use the nas driver plugin for sound
-games-kids/scratch:oss - Use the oss driver plugin for sound
-games-kids/scratch:pulseaudio - Use the pulse audio driver plugin for sound
-games-kids/scratch:v4l - Use the camera plugin
