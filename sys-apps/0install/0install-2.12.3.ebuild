@@ -5,7 +5,7 @@ EAPI=6
 
 DESCRIPTION="Zeroinstall Injector allows regular users to install software themselves"
 HOMEPAGE="http://0install.net/"
-SRC_URI="https://downloads.sf.net/projects/zero-install/${PN}/${PV}/${P}.tar.bz2"
+SRC_URI="https://sourceforge.net/projects/zero-install/files/${PN}/${PV}/${P}.tar.bz2"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
