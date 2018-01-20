@@ -9,7 +9,7 @@ SRC_URI="https://sourceforge.net/projects/zero-install/files/${PN}/${PV}/${P}.ta
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="gtk +ocamlopt"
+IUSE="gtk +ocamlopt test"
 
 DEPEND=">=dev-lang/ocaml-4.02.3[ocamlopt?]
 		dev-ml/cppo[ocamlopt?]
@@ -26,7 +26,10 @@ DEPEND=">=dev-lang/ocaml-4.02.3[ocamlopt?]
 RDEPEND="${DEPEND}
 	app-crypt/gnupg"
 
-pkg_setup() {
-	echo "${S}"
-	rmdir "${S}/build"
+src_compile() {
+	emake -j1 all
+}
+
+src_test() {
+	emake -j1 test
 }
