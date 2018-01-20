@@ -27,5 +27,6 @@ RDEPEND="${DEPEND}
 	app-crypt/gnupg"
 
 pkg_setup() {
+	echo "${S}"
 	rmdir "${S}/build"
 }
