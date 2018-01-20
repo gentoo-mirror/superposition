@@ -25,3 +25,7 @@ DEPEND=">=dev-lang/ocaml-4.02.3[ocamlopt?]
 		#dbus? ( obus[ocamlopt?] )"
 RDEPEND="${DEPEND}
 	app-crypt/gnupg"
+
+pkg_setup() {
+	rmdir "${S}/build"
+}
