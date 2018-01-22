@@ -1,4 +1,4 @@
-DEFINED_PHASES=compile test
+DEFINED_PHASES=compile install test
 DEPEND=>=dev-lang/ocaml-4.02.3[ocamlopt?] dev-ml/cppo[ocamlopt?] dev-ml/lwt_react[ocamlopt?] dev-ml/ocamlbuild[ocamlopt?] >=dev-ml/ocurl-0.7.9 dev-ml/ounit[ocamlopt?] >=dev-ml/ocaml-sha-1.9 dev-ml/xmlm dev-ml/yojson gtk? ( dev-ml/lablgtk[ocamlopt?] dev-ml/lwt_glib[ocamlopt?] )
 DESCRIPTION=Zeroinstall Injector allows regular users to install software themselves
 EAPI=6
@@ -6,7 +6,7 @@ HOMEPAGE=http://0install.net/
 IUSE=gtk +ocamlopt test
 KEYWORDS=~amd64
 LICENSE=GPL-2
-RDEPEND=>=dev-lang/ocaml-4.02.3[ocamlopt?] dev-ml/cppo[ocamlopt?] dev-ml/lwt_react[ocamlopt?] dev-ml/ocamlbuild[ocamlopt?] >=dev-ml/ocurl-0.7.9 dev-ml/ounit[ocamlopt?] >=dev-ml/ocaml-sha-1.9 dev-ml/xmlm dev-ml/yojson gtk? ( dev-ml/lablgtk[ocamlopt?] dev-ml/lwt_glib[ocamlopt?] ) app-crypt/gnupg
+RDEPEND=>=dev-lang/ocaml-4.02.3[ocamlopt?] dev-ml/cppo[ocamlopt?] dev-ml/lwt_react[ocamlopt?] dev-ml/ocamlbuild[ocamlopt?] >=dev-ml/ocurl-0.7.9 dev-ml/ounit[ocamlopt?] >=dev-ml/ocaml-sha-1.9 dev-ml/xmlm dev-ml/yojson gtk? ( dev-ml/lablgtk[ocamlopt?] dev-ml/lwt_glib[ocamlopt?] ) app-crypt/gnupg app-arch/xz-utils
 SLOT=0
 SRC_URI=https://sourceforge.net/projects/zero-install/files/0install/2.12.3/0install-2.12.3.tar.bz2
-_md5_=9c629b8097cd4b88c9fc2ee725fcbea2
+_md5_=cc1e3d690ba925cd127e39bfd5283de0
