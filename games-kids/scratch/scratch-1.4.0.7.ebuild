@@ -3,7 +3,7 @@
 
 EAPI=6
 
-inherit gnome2-utils fdo-mime
+inherit gnome2-utils
 
 DESCRIPTION="A programming environment for creating stories, animations, games, and music."
 HOMEPAGE="http://scratch.mit.edu/"
@@ -90,11 +90,9 @@ pkg_preinst() {
 
 pkg_postinst() {
 	gnome2_icon_cache_update
-	fdo-mime_desktop_database_update
 
 }
 
 pkg_postrm() {
 	gnome2_icon_cache_update
-	fdo-mime_desktop_database_update
 }
