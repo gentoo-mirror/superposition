@@ -40,8 +40,8 @@ src_test() {
 
 src_install() {
 	
+	emake DESTDIR="${D}" install_system
 	rm -rf "${D}/share/0install.net/"
-	emake DISTDIR="${D}" install
 	einstalldocs
 }
 
