@@ -24,7 +24,8 @@ DEPEND=">=dev-lang/ocaml-4.02.3[ocamlopt?]
 			   dev-ml/lwt_glib[ocamlopt?] )"
 		#dbus? ( obus[ocamlopt?] )"
 RDEPEND="${DEPEND}
-	app-crypt/gnupg"
+	app-crypt/gnupg
+	app-arch/xz-utils"
 
 src_compile() {
 	emake -j1 all
@@ -33,3 +34,14 @@ src_compile() {
 src_test() {
 	emake -j1 test
 }
+
+#/usr/local/share/0install.net/unxz
+#/usr/local/share/0install.net/unlzma
+
+src_install() {
+	
+	rm -rf "${D}/share/0install.net/"
+	emake DISTDIR="${D}" install
+	einstalldocs
+}
+
