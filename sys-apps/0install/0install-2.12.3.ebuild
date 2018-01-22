@@ -3,6 +3,8 @@
 
 EAPI=6
 
+inherit gnome2-utils
+
 DESCRIPTION="Zeroinstall Injector allows regular users to install software themselves"
 HOMEPAGE="http://0install.net/"
 SRC_URI="https://sourceforge.net/projects/zero-install/files/${PN}/${PV}/${P}.tar.bz2"
@@ -35,13 +37,20 @@ src_test() {
 	emake -j1 test
 }
 
-#/usr/local/share/0install.net/unxz
-#/usr/local/share/0install.net/unlzma
-
 src_install() {
 	
 	emake DESTDIR="${D}" install_system
-	rm -rf "${D}/share/0install.net/"
+	rm -rf "${D}/usr/share/0install.net"
 	einstalldocs
+}
+
+pkg_postinst()
+{
+	 gnome2_icon_cache_update()
+}
+
+pkg_postrm()
+{
+	gnome2_icon_cache_update()
 }
 
