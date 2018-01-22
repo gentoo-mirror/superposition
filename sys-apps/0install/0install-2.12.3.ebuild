@@ -35,13 +35,10 @@ src_test() {
 	emake -j1 test
 }
 
-#/usr/local/share/0install.net/unxz
-#/usr/local/share/0install.net/unlzma
-
 src_install() {
 	
 	emake DESTDIR="${D}" install_system
-	rm -rf "${D}/share/0install.net/"
+	rm -rf "${D}/usr/share/0install.net"
 	einstalldocs
 }
 
