@@ -1,4 +1,4 @@
-DEFINED_PHASES=install prepare unpack
+DEFINED_PHASES=install nofetch prepare unpack
 DEPEND=>=virtual/jre-1.7:* virtual/opengl media-libs/openal app-arch/p7zip
 DESCRIPTION=A adventure about Kelvin, a crazy scientist, and a time machine.
 EAPI=6

@@ -1,4 +1,4 @@
-DEFINED_PHASES=install
+DEFINED_PHASES=install nofetch
 DESCRIPTION=survive in the wasteland long enough to figure out who you are
 EAPI=6
 HOMEPAGE=http://bluebottlegames.com/main/node/2

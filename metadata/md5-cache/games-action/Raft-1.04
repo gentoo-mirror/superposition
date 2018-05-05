@@ -1,4 +1,4 @@
-DEFINED_PHASES=compile configure install unpack
+DEFINED_PHASES=compile configure install nofetch unpack
 DEPEND=app-arch/unzip
 DESCRIPTION=Survive the harsh life of being stuck on a raft in the middle of the ocean!
 EAPI=6

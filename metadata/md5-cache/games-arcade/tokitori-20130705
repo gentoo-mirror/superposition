@@ -1,4 +1,4 @@
-DEFINED_PHASES=install unpack
+DEFINED_PHASES=install nofetch unpack
 DESCRIPTION=Help a baby chicken save all the eggs.
 EAPI=5
 HOMEPAGE=http://www.tokitori.com/
