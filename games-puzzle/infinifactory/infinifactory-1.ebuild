@@ -1,4 +1,4 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -57,11 +57,11 @@ src_install() {
 
 	insinto ${MYGAMEDIR}
 	exeinto ${MYGAMEDIR}
-	newexe  "${PN}.${arch}" "${PN}"
-	doins -r  infinifactory_Data
-	dodoc CREDITS.txt  LICENSE.txt
+	newexe  "linux/${PN}.${arch}" "${PN}"
+	doins -r  "linux/infinifactory_Data"
+	dodoc linux/CREDITS.txt  linux/LICENSE.txt
 
-	newicon -s 128 infinifactory_Data/Resources/UnityPlayer.png ${PN}.png
+	newicon -s 128 linux/infinifactory_Data/Resources/UnityPlayer.png ${PN}.png
 	make_wrapper ${PN} "./${PN}" "${MYGAMEDIR}"
 	make_desktop_entry "${PN}" "Infinifacory" "${PN}" "Game"
 
