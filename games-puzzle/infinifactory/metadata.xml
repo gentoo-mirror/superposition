@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<maintainer type="person">
+<email>phil_miess@yahoo.com</email>
+</maintainer>
+<longdescription lang="en">
+Infinifactory is a sandbox puzzle game by Zachtronics, the creators of SpaceChem and Infiniminer. Build factories that assemble products for your alien overlords, and try not to die in the process.
+
+    LIKE SPACECHEM… IN 3D! - Design and run factories in a first-person, fully 3D environment.
+    HISTOGRAMS ARE BACK! - Optimize your solutions, and then optimize them more when you see how much better your friends did.
+    VISIT EXOTIC ALIEN LOCALES! - Explore a story-driven campaign with 50+ puzzles, audio logs, and more.
+    BLOCKS THAT MOVE! - Go beyond the campaign and push the limits of Infinifactory’s next-generation block engine in the sandbox.
+</longdescription>
+</pkgmetadata>
