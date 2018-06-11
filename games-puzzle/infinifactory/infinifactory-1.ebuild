@@ -62,8 +62,7 @@ src_install() {
 	dodoc linux/CREDITS.txt  linux/LICENSE.txt
 
 	newicon -s 128 linux/infinifactory_Data/Resources/UnityPlayer.png ${PN}.png
-	make_wrapper ${PN} "./${PN}" "${MYGAMEDIR}"
-	make_desktop_entry "${PN}" "Infinifactory" "${PN}" "Game"
+	make_desktop_entry "${MYGAMEDIR}/${PN}" "Infinifactory" "${PN}" "Game"
 
 	domenu ${PN}
 
