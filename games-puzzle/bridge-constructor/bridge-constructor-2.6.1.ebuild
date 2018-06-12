@@ -17,7 +17,24 @@ RESTRICT="bindist fetch"
 
 MYGAMEDIR=/opt/${PN}
 DEPEND="app-arch/unzip"
-RDEPEND="${DEPEND}"
+RDEPEND="${DEPEND}
+	dev-libs/expat
+	media-libs/glu
+	media-libs/mesa
+	sys-libs/zlib
+	x11-libs/libX11
+	x11-libs/libXau
+	x11-libs/libXcursor
+	x11-libs/libXdamage
+	x11-libs/libXdmcp
+	x11-libs/libXext
+	x11-libs/libXfixes
+	x11-libs/libXrender
+	x11-libs/libXxf86vm
+	x11-libs/libdrm
+	x11-libs/libxcb
+	x11-libs/libxshmfence
+"
 S="${WORKDIR}"
 
 
