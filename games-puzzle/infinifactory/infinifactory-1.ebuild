@@ -3,7 +3,7 @@
 
 EAPI=6
 
-inherit unpacker eutils
+inherit unpacker eutils gnome2-utils
 
 DESCRIPTION="Build factories that assemble products for your alien overlords, and don't die."
 HOMEPAGE="http://www.zachtronics.com/infinifactory/"
@@ -67,3 +67,17 @@ src_install() {
 	domenu ${PN}
 
 }
+
+pkg_preinst() {
+    gnome2_icon_savelist
+}
+
+pkg_postinst() {
+    gnome2_icon_cache_update
+
+}
+
+pkg_postrm() {
+    gnome2_icon_cache_update
+}
+
