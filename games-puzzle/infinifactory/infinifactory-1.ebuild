@@ -3,7 +3,7 @@
 
 EAPI=6
 
-inherit unpacker eutils
+inherit unpacker eutils gnome2-utils
 
 DESCRIPTION="Build factories that assemble products for your alien overlords, and don't die."
 HOMEPAGE="http://www.zachtronics.com/infinifactory/"
@@ -62,9 +62,24 @@ src_install() {
 	dodoc linux/CREDITS.txt  linux/LICENSE.txt
 
 	newicon -s 128 linux/infinifactory_Data/Resources/UnityPlayer.png ${PN}.png
-	make_wrapper ${PN} "./${PN}" "${MYGAMEDIR}"
+	make_wrapper ${PN} "./${PN}" "${HOME}"
 	make_desktop_entry "${PN}" "Infinifactory" "${PN}" "Game"
+	
 
 	domenu ${PN}
 
 }
+
+pkg_preinst() {
+    gnome2_icon_savelist
+}
+
+pkg_postinst() {
+    gnome2_icon_cache_update
+
+}
+
+pkg_postrm() {
+    gnome2_icon_cache_update
+}
+
