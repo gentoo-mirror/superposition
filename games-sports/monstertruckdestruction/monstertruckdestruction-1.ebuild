@@ -56,7 +56,7 @@ src_install() {
 
 	insinto ${MYGAMEDIR}
 	exeinto ${MYGAMEDIR}
-	newexe  "Linux/MTD.${arch}" "${PN}"
+	newexe  "Linux/MTD.${arch}" "MTD"
 	doins -r  "Linux/MTD_Data"
 
 	newicon -s 128 Linux/MTD_Data/Resources/UnityPlayer.png ${PN}.png
