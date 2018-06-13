@@ -1,19 +1,18 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
 
-inherit unpacker eutils
+inherit unpacker eutils gnome2-utils
 
-DESCRIPTION="Become an appraised bridge engineer and architect in Bridge Constructor"
-HOMEPAGE="http://www.headupgames.com/conpresso/_rubric/index.php?rubric=EN+Games+Bridge-Constructor"
-SRC_URI="bridgeconstructor_linux_1390863101.zip"
+DESCRIPTION="Monster Truck Destruction is the best monster truck game! Great physics, real-time destruction and over 60 licensed trucks such as BIGFOOT and USA-1 to race in 28 dirt and snow covered tracks."
+HOMEPAGE="https://www.oddgames.com.au/games/monstertruckdestruction"
+SRC_URI="monstertruckdestruction_linux.zip"
 
 LICENSE="all-rights-reserved"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
-IUSE=""
-RESTRICT="bindist fetch"
+KEYWORDS="~amd64"
+IUSE="bindist fetch"
 
 MYGAMEDIR=/opt/${PN}
 DEPEND="app-arch/unzip"
@@ -35,7 +34,6 @@ RDEPEND="${DEPEND}
 	x11-libs/libxcb
 	x11-libs/libxshmfence
 "
-S="${WORKDIR}"
 
 
 pkg_nofetch() {
@@ -52,16 +50,20 @@ src_configure() { :; }
 src_compile() { :; }
 
 src_install() {
+	arch=x86_64
+
 	insinto ${MYGAMEDIR}
 	exeinto ${MYGAMEDIR}
-	doexe  "BridgeConstructor.x86"
-	doins -r  BridgeConstructor_Data
+	newexe  "Linux/MTD.${arch}" "${PN}"
+	doins -r  "Linux/MTD_Data"
 
-	newicon -s 128 BridgeConstructor_Data/ScreenSelector.png ${PN}.png
-	make_wrapper ${PN} "./BridgeConstructor.x86" "${MYGAMEDIR}"
-	make_desktop_entry "${PN}" "Bridge Constructor" "${PN}" "Game"
+	newicon -s 128 Linux/MTD_Data/Resources/UnityPlayer.png ${PN}.png
+	make_wrapper ${PN} "${MYGAMEDIR}/${PN}" "${HOME}"
+	make_desktop_entry "${PN}" "MTD" "${PN}" "Game"
+	
 
 	domenu ${PN}
+
 }
 
 pkg_preinst() {
