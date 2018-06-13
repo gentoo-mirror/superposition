@@ -5,14 +5,15 @@ EAPI=6
 
 inherit unpacker eutils gnome2-utils
 
-DESCRIPTION="Monster Truck Destruction is the best monster truck game! Great physics, real-time destruction and over 60 licensed trucks such as BIGFOOT and USA-1 to race in 28 dirt and snow covered tracks."
+DESCRIPTION="Great physics, real-time destruction and over 60 licensed trucks."
 HOMEPAGE="https://www.oddgames.com.au/games/monstertruckdestruction"
 SRC_URI="monstertruckdestruction_linux.zip"
 
 LICENSE="all-rights-reserved"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="bindist fetch"
+IUSE=""
+RESTRICT="bindist fetch"
 
 MYGAMEDIR=/opt/${PN}
 DEPEND="app-arch/unzip"
@@ -35,6 +36,7 @@ RDEPEND="${DEPEND}
 	x11-libs/libxshmfence
 "
 
+S="${WORKDIR}"
 
 pkg_nofetch() {
 	einfo "Please buy & download ${SRC_URI} from:"
@@ -60,22 +62,19 @@ src_install() {
 	newicon -s 128 Linux/MTD_Data/Resources/UnityPlayer.png ${PN}.png
 	make_wrapper ${PN} "${MYGAMEDIR}/${PN}" "${HOME}"
 	make_desktop_entry "${PN}" "MTD" "${PN}" "Game"
-	
 
 	domenu ${PN}
-
 }
 
 pkg_preinst() {
-    gnome2_icon_savelist
+	gnome2_icon_savelist
 }
 
 pkg_postinst() {
-    gnome2_icon_cache_update
+	gnome2_icon_cache_update
 
 }
 
 pkg_postrm() {
-    gnome2_icon_cache_update
+	gnome2_icon_cache_update
 }
-
