@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<maintainer type="person">
+<email>phil_miess@yahoo.com</email>
+</maintainer>
+<longdescription lang="en">
+MouseCraft is an A to B puzzle game where players help mice in their relentless quest for cheese by stacking the world's most famous blocks: Tetrominos. Starring: Mad Cat Scientist, Three Blind Mice and tons of irresistibly delicious Cheese.
+
+    Experience a remix of two classic gameplay mechanics: Pile up Tetromino bricks to create a safe path for as many mice as possible.
+    Discover an epic tale of a crazy cat scientist who is striving to unlock the potential of a mysterious, mice-powered machine.
+    Defeat obstacles, overcome gaps and gather collectibles by using different types of blocks, be them explosive, crumbling or even jelly ones.
+</longdescription>
+</pkgmetadata>
