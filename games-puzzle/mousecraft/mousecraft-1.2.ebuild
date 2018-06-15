@@ -60,7 +60,7 @@ src_install() {
 	doins -r  "MouseCraft_Data"
 
 	newicon -s 128 MouseCraft_Data/Resources/UnityPlayer.png ${PN}.png
-	make_wrapper ${PN} "${MYGAMEDIR}/${PN}" "${PN}"
+	make_wrapper ${PN} "${MYGAMEDIR}/MouseCraft" "${PN}"
 	make_desktop_entry "${PN}" "MouseCraft" "${PN}" "Game"
 
 	domenu ${PN}
