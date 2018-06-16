@@ -65,7 +65,7 @@ src_install() {
 	dodoc TidalisLicense.txt TidalisManual.pdf sysrequirements.txt
 
 	newicon -s 128 ${PN}Linux_Data/Resources/UnityPlayer.png ${PN}.png
-	make_wrapper ${PN} "${MYGAMEDIR}/${PN}Linux"
+	make_wrapper ${PN} "${MYGAMEDIR}/${PN}Linux" "${MYGAMEDIR}"
 	make_desktop_entry "${PN}" "${PN}" "${PN}" "Game"
 
 	domenu ${PN}
