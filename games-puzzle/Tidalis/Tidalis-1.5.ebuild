@@ -59,7 +59,7 @@ src_install() {
 	exeinto ${MYGAMEDIR}
 	newexe  "${PN}Linux.${arch}" "${PN}Linux"
 	doins -r  "${PN}Linux_Data"
-	dodoc TidalisLicense.txt TidalisManual.pdf systemrequirments.txt
+	dodoc TidalisLicense.txt TidalisManual.pdf sysrequirements.txt
 
 	newicon -s 128 ${PN}Linux_Data/Resources/UnityPlayer.png ${PN}.png
 	make_wrapper ${PN} "${MYGAMEDIR}/${PN}Linux" "${HOME}"
