@@ -59,6 +59,7 @@ src_install() {
 	exeinto ${MYGAMEDIR}
 	newexe  "${PN}Linux.${arch}" "${PN}Linux"
 	rm -rf "${S}/${PN}Linux_Data/Mono/x86"
+	rm -rf "${S}/${PN}Linux_Data/Plugins/x86"
 	doins -r  "${PN}Linux_Data"
 	doins -r RuntimeData
 	dodoc TidalisLicense.txt TidalisManual.pdf sysrequirements.txt
