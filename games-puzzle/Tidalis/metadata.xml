@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<maintainer type="person">
+<email>phil_miess@yahoo.com</email>
+</maintainer>
+<longdescription lang="en">
+Tidalis is a block-based puzzle game with casual appeal, hardcore depth, and an addictive new "streams" mechanic. The game is brimming over with riffs and variants on that core mechanic with 20 game modes, dozens of special blocks and items, and 115 levels in the adventure mode alone.
+</longdescription>
+</pkgmetadata>
