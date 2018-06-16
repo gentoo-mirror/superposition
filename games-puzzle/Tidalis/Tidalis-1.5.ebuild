@@ -62,7 +62,8 @@ src_install() {
 	rm -rf "${S}/${PN}Linux_Data/Plugins/x86"
 	doins -r  "${PN}Linux_Data"
 	doins -r RuntimeData
-	dodoc TidalisLicense.txt TidalisManual.pdf sysrequirements.txt
+	doins sysrequirements.txt
+	dodoc TidalisLicense.txt TidalisManual.pdf
 
 	newicon -s 128 ${PN}Linux_Data/Resources/UnityPlayer.png ${PN}.png
 	make_wrapper ${PN} "${MYGAMEDIR}/${PN}Linux" "${MYGAMEDIR}"
