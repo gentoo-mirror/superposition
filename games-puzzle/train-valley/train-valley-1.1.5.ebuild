@@ -61,7 +61,7 @@ src_install() {
 	doins -r  "linux-universal/${PN}_Data"
 
 	newicon -s 128 linux-universal/${PN}_Data/Resources/UnityPlayer.png ${PN}.png
-	make_wrapper ${PN} "${PN}" "${MYGAMEDIR}"
+	make_wrapper ${PN} "${MYGAMEDIR}/${PN}" "${MYGAMEDIR}"
 	make_desktop_entry "${PN}" "Train Valley" "${PN}" "Game"
 
 	domenu ${PN}
