@@ -57,10 +57,10 @@ src_install() {
 
 	insinto ${MYGAMEDIR}
 	exeinto ${MYGAMEDIR}
-	newexe  "linux-universel/${PN}.${arch}" "${PN}"
-	doins -r  "linux-universel/${PN}_Data"
+	newexe  "linux-universal/${PN}.${arch}" "${PN}"
+	doins -r  "linux-universal/${PN}_Data"
 
-	newicon -s 128 linux-universel/${PN}_Data/Resources/UnityPlayer.png ${PN}.png
+	newicon -s 128 linux-universal/${PN}_Data/Resources/UnityPlayer.png ${PN}.png
 	make_wrapper ${PN} "${PN}" "${MYGAMEDIR}"
 	make_desktop_entry "${PN}" "Train Valley" "${PN}" "Game"
 
