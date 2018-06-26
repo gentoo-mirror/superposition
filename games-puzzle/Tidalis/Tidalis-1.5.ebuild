@@ -61,6 +61,8 @@ src_install() {
 	rm -rf "${S}/${PN}Linux_Data/Mono/x86"
 	rm -rf "${S}/${PN}Linux_Data/Plugins/x86"
 	doins -r  "${PN}Linux_Data"
+	chmod 777 RuntimeData/settings.*
+	chmod -R 777 RuntimeData/Save
 	doins -r RuntimeData
 	doins sysrequirements.txt
 	dodoc TidalisLicense.txt TidalisManual.pdf
