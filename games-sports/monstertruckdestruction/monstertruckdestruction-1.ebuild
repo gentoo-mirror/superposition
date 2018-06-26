@@ -60,7 +60,7 @@ src_install() {
 	doins -r  "Linux/MTD_Data"
 
 	newicon -s 128 Linux/MTD_Data/Resources/UnityPlayer.png ${PN}.png
-	make_wrapper ${PN} "${MYGAMEDIR}/MTD" "${HOME}"
+	make_wrapper ${PN} "${MYGAMEDIR}/MTD" "${MYGAMEDIR}"
 	make_desktop_entry "${PN}" "MTD" "${PN}" "Game"
 
 	domenu ${PN}
