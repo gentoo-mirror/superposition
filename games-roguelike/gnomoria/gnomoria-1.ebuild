@@ -52,18 +52,7 @@ src_install() {
 	dodoc Linux.README
 
 	doexe  "Gnomoria.bin.${arch}"
-
-	doins -r  "Content"
-	einfo "installed Content"
-	doins FNA.dll
-	einfo "installed FNA.dll"
-	doins FNA.dll.config
-	einfo "installed FNA.dll.config"
-	doins -r "Mod Files"
-	einfo "installed Mod Files"
-	doins gnomorialib.dll
-	einfo "gnomorialib.dll"
-
+	doins -r  "Content" FNA.dll   FNA.dll.config  "Mod Files"   gnomorialib.dll
 	if use system-libs ; then
 		if use amd64 ; then
 			mv lib64 lib64.orig
@@ -79,14 +68,11 @@ src_install() {
 			doins lib
 		fi
 	else
-		doins Mono.Posix.dll System.Core.dll System.Drawing.dll System.Xml.dll mscorlib.dll Mono.Security.dll System.Configuration.dll System.Data.dll System.Security.dll System.dll
-		einfo "copied single files"
-		doins -r mono
-		einfo "copied mono folder"
+		doins -r  Mono.Posix.dll System.Core.dll System.Drawing.dll System.Xml.dll mscorlib.dll Mono.Security.dll System.Configuration.dll System.Data.dll System.Security.dll System.dll mono
 		if use amd64 ; then
-			doins lib64
+			doins -r lib64
 		else
-			doins lib
+			doins -r lib
 		fi
 	fi
 
