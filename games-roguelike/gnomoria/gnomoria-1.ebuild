@@ -49,6 +49,8 @@ src_install() {
 
 	insinto ${MYGAMEDIR}
 	exeinto ${MYGAMEDIR}
+	dodoc Linux.README
+
 	doexe  "Gnomoria.bin.${arch}"
 	doins -r  "Content" FNA.dll   FNA.dll.config  "Mod Files"   gnomorialib.dll
 	if use system-libs ; then
@@ -68,9 +70,9 @@ src_install() {
 	else
 		doins -r  Mono.Posix.dll System.Core.dll System.Drawing.dll System.Xml.dll mscorlib.dll Mono.Security.dll System.Configuration.dll System.Data.dll System.Security.dll System.dll mono
 		if use amd64 ; then
-			doins lib64
+			doins -r lib64
 		else
-			doins lib
+			doins -r lib
 		fi
 	fi
 
