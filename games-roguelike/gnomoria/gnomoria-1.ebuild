@@ -52,7 +52,7 @@ src_install() {
 	dodoc Linux.README
 
 	doexe  "Gnomoria.bin.${arch}"
-	doins -r  "Content" FNA.dll   FNA.dll.config  "Mod Files"   gnomorialib.dll
+	doins -r  "Content" FNA.dll   FNA.dll.config  "Mod Files"   gnomorialib.dll Gnomoria.exe
 	if use system-libs ; then
 		if use amd64 ; then
 			mv lib64 lib64.orig
