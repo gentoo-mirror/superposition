@@ -52,18 +52,18 @@ src_configure() { :; }
 src_compile() { :; }
 
 src_install() {
-		local arch=x86_64
+		
 
 		insinto ${MYGAMEDIR}
 		exeinto ${MYGAMEDIR}
-		newexe  "Armikrog.${arch}" "Armikrog"
+		doexe  "Armikrog.x86_64"
 		doins -r  "Armikrog_Data"
 
 		newicon -s 128 Armikrog_Data/Resources/UnityPlayer.png ${PN}.png
-		make_wrapper ${PN} "${MYGAMEDIR}/Armikrog" "${PN}"
+		make_wrapper ${PN} "${MYGAMEDIR}/Armikrog.x86_64" "${PN}"
 		make_desktop_entry "${PN}" "Armikrog" "${PN}" "Game"
 
-	 	domenu ${PN}
+	 	#domenu ${PN}
 
 }
 
