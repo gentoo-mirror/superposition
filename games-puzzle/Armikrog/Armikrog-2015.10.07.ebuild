@@ -63,7 +63,7 @@ src_install() {
 		make_wrapper ${PN} "${MYGAMEDIR}/Armikrog.x86_64" "${PN}"
 		make_desktop_entry "${PN}" "Armikrog" "${PN}" "Game"
 
-	 	domenu ${PN}
+	 	#domenu ${PN}
 
 }
 
