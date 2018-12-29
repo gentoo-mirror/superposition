@@ -57,7 +57,7 @@ src_install() {
 		insinto ${MYGAMEDIR}
 		exeinto ${MYGAMEDIR}
 		newexe  "Armikrog.${arch}" "Armikrog"
-		doins -r  "Armigrog_Data"
+		doins -r  "Armikrog_Data"
 
 		newicon -s 128 MouseCraft_Data/Resources/UnityPlayer.png ${PN}.png
 		make_wrapper ${PN} "${MYGAMEDIR}/Armikrog" "${PN}"
