@@ -3,7 +3,7 @@
 
 EAPI=6
 
-inherit unpacker eutils gnome2-utils
+inherit unpacker desktop gnome2-utils
 
 DESCRIPTION="Armikrog is a unique stop motion clay animated point and click adventure game"
 HOMEPAGE="http://armikrog.com/"
@@ -52,7 +52,6 @@ src_configure() { :; }
 src_compile() { :; }
 
 src_install() {
-		
 
 		insinto ${MYGAMEDIR}
 		exeinto ${MYGAMEDIR}
@@ -60,10 +59,7 @@ src_install() {
 		doins -r  "Armikrog_Data"
 
 		newicon -s 128 Armikrog_Data/Resources/UnityPlayer.png ${PN}.png
-		make_wrapper ${PN} "${MYGAMEDIR}/Armikrog.x86_64" "${PN}"
-		make_desktop_entry "${PN}" "Armikrog" "${PN}" "Game"
-
-	 	#domenu ${PN}
+		make_desktop_entry "${MYGAMEDIR}/${PN}.x86_64" "Armikrog" "${PN}" "Game"
 
 }
 
