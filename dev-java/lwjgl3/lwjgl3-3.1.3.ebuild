@@ -15,7 +15,11 @@ SLOT="3.1"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-DEPEND=">=virtual/jdk-1.8"
+DEPEND=">=virtual/jdk-1.8
+		dev-java/kotlin
+		dev-java/testng
+		dev-java/jcommander
+		dev-java/snakeyaml"
 RDEPEND=">=virtual/jre-1.8"
 
 JAVA_PKG_STRICT=true
