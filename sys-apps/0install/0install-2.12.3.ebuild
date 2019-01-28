@@ -14,7 +14,7 @@ KEYWORDS="~amd64"
 IUSE="gtk +ocamlopt test +dbus"
 
 COMMEN_DEPEND="<dev-lang/ocaml-4.07[ocamlopt?]
-		<dev-ml/lwt-4.0.0[ocamlopt?]
+		<dev-ml/lwt-4.0.0
 		dev-ml/lwt_react[ocamlopt?]
 		>=dev-ml/ocurl-0.7.9
 		>=dev-ml/ocaml-sha-1.9
