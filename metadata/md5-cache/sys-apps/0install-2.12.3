@@ -1,13 +1,14 @@
 DEFINED_PHASES=compile install postinst postrm test
-DEPEND=>=dev-lang/ocaml-4.02.3[ocamlopt?] dev-ml/cppo[ocamlopt?] dev-ml/lwt_react[ocamlopt?] dev-ml/ocamlbuild[ocamlopt?] >=dev-ml/ocurl-0.7.9 dev-ml/ounit[ocamlopt?] >=dev-ml/ocaml-sha-1.9 dev-ml/xmlm dev-ml/yojson gtk? ( dev-ml/lablgtk[ocamlopt?] dev-ml/lwt_glib[ocamlopt?] ) >=sys-apps/sed-4
+DEPEND=<dev-lang/ocaml-4.07[ocamlopt?] <dev-ml/lwt-4.0.0[ocamlopt?] dev-ml/lwt_react[ocamlopt?] >=dev-ml/ocurl-0.7.9 >=dev-ml/ocaml-sha-1.9 dev-ml/xmlm dev-ml/yojson gtk? ( dev-ml/lablgtk[ocamlopt?] dev-ml/lwt_glib[ocamlopt?] ) dbus? ( dev-ml/obus[ocamlopt?] ) dev-ml/cppo[ocamlopt?] dev-ml/ocamlbuild[ocamlopt?] test? ( dev-ml/ounit[ocamlopt?] ) >=sys-apps/sed-4
 DESCRIPTION=Zeroinstall Injector allows regular users to install software themselves
 EAPI=6
 HOMEPAGE=http://0install.net/
-IUSE=gtk +ocamlopt test
+IUSE=gtk +ocamlopt test +dbus
 KEYWORDS=~amd64
 LICENSE=GPL-2
-RDEPEND=>=dev-lang/ocaml-4.02.3[ocamlopt?] dev-ml/cppo[ocamlopt?] dev-ml/lwt_react[ocamlopt?] dev-ml/ocamlbuild[ocamlopt?] >=dev-ml/ocurl-0.7.9 dev-ml/ounit[ocamlopt?] >=dev-ml/ocaml-sha-1.9 dev-ml/xmlm dev-ml/yojson gtk? ( dev-ml/lablgtk[ocamlopt?] dev-ml/lwt_glib[ocamlopt?] ) app-crypt/gnupg app-arch/xz-utils
+RDEPEND=<dev-lang/ocaml-4.07[ocamlopt?] <dev-ml/lwt-4.0.0[ocamlopt?] dev-ml/lwt_react[ocamlopt?] >=dev-ml/ocurl-0.7.9 >=dev-ml/ocaml-sha-1.9 dev-ml/xmlm dev-ml/yojson gtk? ( dev-ml/lablgtk[ocamlopt?] dev-ml/lwt_glib[ocamlopt?] ) dbus? ( dev-ml/obus[ocamlopt?] ) app-crypt/gnupg app-arch/xz-utils
+RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://sourceforge.net/projects/zero-install/files/0install/2.12.3/0install-2.12.3.tar.bz2
 _eclasses_=desktop	b1d22ac8bdd4679ab79c71aca235009d	epatch	a1bf4756dba418a7238f3be0cb010c54	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	6e6c2737b59a4b982de6fb3ecefd87f8	gnome2-utils	c6060f4ab634aca444c4b2176b0f3877	ltprune	08f9e1d9ee0af8f5d9a7854efbcd8c0e	multilib	b2f01ad412baf81650c23fcf0975fa33	preserve-libs	ef207dc62baddfddfd39a164d9797648	toolchain-funcs	f164325a2cdb5b3ea39311d483988861	vcs-clean	2a0f74a496fa2b1552c4f3398258b7bf	xdg-utils	93b2dfbb00a09161e1e7f6360c0f7f6b
-_md5_=db6d8edbeab16569ee1e3e138f16c854
+_md5_=b11fdd01a04e6bc3f4dcf932d211cb58
