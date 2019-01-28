@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -11,23 +11,28 @@ SRC_URI="https://sourceforge.net/projects/zero-install/files/${PN}/${PV}/${P}.ta
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="gtk +ocamlopt test"
+IUSE="gtk +ocamlopt test +dbus"
 
-DEPEND=">=dev-lang/ocaml-4.02.3[ocamlopt?]
-		dev-ml/cppo[ocamlopt?]
+COMMEN_DEPEND="<dev-lang/ocaml-4.07[ocamlopt?]
+		<dev-ml/lwt-4.0.0[ocamlopt?]
 		dev-ml/lwt_react[ocamlopt?]
-		dev-ml/ocamlbuild[ocamlopt?]
 		>=dev-ml/ocurl-0.7.9
-		dev-ml/ounit[ocamlopt?]
 		>=dev-ml/ocaml-sha-1.9
 		dev-ml/xmlm
 		dev-ml/yojson
 		gtk? ( dev-ml/lablgtk[ocamlopt?]
-			   dev-ml/lwt_glib[ocamlopt?] )"
-		#dbus? ( obus[ocamlopt?] )"
-RDEPEND="${DEPEND}
-	app-crypt/gnupg
-	app-arch/xz-utils"
+			   dev-ml/lwt_glib[ocamlopt?] )
+		dbus? ( dev-ml/obus[ocamlopt?] )"
+DEPEND="${COMMEN_DEPEND}
+		dev-ml/cppo[ocamlopt?]
+		dev-ml/ocamlbuild[ocamlopt?]
+		test? ( dev-ml/ounit[ocamlopt?] )"
+RDEPEND="${COMMEN_DEPEND}
+		app-crypt/gnupg
+		app-arch/xz-utils"
+
+# Disable test phase when test USE flag is disabled
+RESTRICT="!test? ( test )"
 
 src_compile() {
 	emake -j1 all
@@ -38,7 +43,6 @@ src_test() {
 }
 
 src_install() {
-	
 	emake DESTDIR="${D}" install_system
 	rm -rf "${D}/usr/share/0install.net"
 	einstalldocs
@@ -53,4 +57,3 @@ pkg_postrm()
 {
 	gnome2_icon_cache_update
 }
-
