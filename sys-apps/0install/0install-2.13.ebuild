@@ -29,10 +29,9 @@ DEPEND="${COMMEN_DEPEND}
 RDEPEND="${COMMEN_DEPEND}
 		app-crypt/gnupg
 		app-arch/xz-utils"
-		
+
 # Disable test phase when test USE flag is disabled
 RESTRICT="!test? ( test )"
-
 
 src_compile() {
 	emake -j1 all
