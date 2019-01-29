@@ -19,6 +19,7 @@ RESTRICT="test"
 COMMEN_DEPEND="
 >=dev-lang/ocaml-4.02.3[ocamlopt?]
 >=dev-ml/lwt-2.7[camlp4]
+dev-ml/camlp4
 dev-ml/lwt_react[ocamlopt?]
 dev-ml/react
 dev-ml/type-conv[ocamlopt?]
