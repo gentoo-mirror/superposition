@@ -1,1 +1,3 @@
 app-crypt/gorilla 1.5.3.7: Password Safe in secure way with GUI interface
+dev-qt/qtgraphicaleffects 5.11.1 5.11.3: Set of QML types for adding visual effects to user interfaces
+dev-qt/qtquickcontrols2 5.11.1 5.11.3: Set of next generation Qt Quick controls for the Qt5 framework
