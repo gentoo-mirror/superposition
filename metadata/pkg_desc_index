@@ -28,4 +28,4 @@ games-rpg/infamousmachine 1: A adventure about Kelvin, a crazy scientist, and a 
 games-sports/monstertruckdestruction 1: Great physics, real-time destruction and over 60 licensed trucks.
 games-strategy/revenge-of-the-titans 201512192: Defeat the returning Titan horde in a series of epic ground battles.
 media-sound/pd 0.46_p7-r1 0.47_p1: real-time music and multimedia environment
-sys-apps/0install 1.16 2.3.5 2.12.3 2.13: Zeroinstall Injector allows regular users to install software themselves
+sys-apps/0install 1.16 2.3.5 2.3.6 2.12.3 2.13: Zeroinstall Injector allows regular users to install software themselves
