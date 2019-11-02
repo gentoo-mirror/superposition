@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit toolchain-funcs
+inherit flag-o-matic toolchain-funcs
 
 DESCRIPTION="generate random, yet real-looking, personal data"
 HOMEPAGE="https://sourceforge.net/projects/rig/ "
@@ -34,11 +34,9 @@ src_compile() {
 	sed -i -e "s:g++ :$(tc-getCXX) ${CXXFLAGS} ${LDFLAGS} :" Makefile \
 		|| die "sed fix failed. Uh-oh..."
 	emake
-	echo 'hello'
 }
 
 src_install() {
-	echo 'hi'
 	dodir /usr/bin
 	dodir /usr/man
 	dodir /usr/share/rig
@@ -47,5 +45,6 @@ src_install() {
 	if [[ -f Makefile ]] || [[ -f GNUmakefile ]] || [[ -f makefile ]] ; then
 		emake DESTDIR="${D}" install
 	fi
+	rm "${D}/usr/man/man6/rig.6"
 	einstalldocs
 }
