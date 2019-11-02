@@ -22,7 +22,7 @@ PATCHES=(
 	"${FILESDIR}/${P}-useDestDirAndImportMemcpy.patch"
 )
 
-DOCS=( "README" "Changlelog" "rig.6" )
+DOCS=( "README" "Changelog" "rig.6" )
 
 src_configure() {
 	if use devrandom ; then
@@ -42,6 +42,7 @@ src_install() {
 	dodir /usr/bin
 	dodir /usr/man
 	dodir /usr/share/rig
+	dodir /usr/man/man6
 
 	if [[ -f Makefile ]] || [[ -f GNUmakefile ]] || [[ -f makefile ]] ; then
 		emake DESTDIR="${D}" install
