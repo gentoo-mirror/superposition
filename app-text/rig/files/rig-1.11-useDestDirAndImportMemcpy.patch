@@ -1,0 +1,23 @@
+Use DestDir for install, dont install into /usr/local,
+and #include cstring for memcpy to fix compilation error
+FROM:Phil Miess <pmiess@yahoo.com>
+Bug found by pmiess
+
+--- before/Makefile	2002-06-04 22:07:50.000000000 -0400
++++ after/Makefile	2019-11-02 07:28:13.787725115 -0400
+@@ -1,4 +1,4 @@
+-PREFIX=/usr/local
++PREFIX=$(DESTDIR)/usr
+ BINDIR=${PREFIX}/bin
+ MANDIR=${PREFIX}/man
+ DATADIR=${PREFIX}/share/rig
+--- before/rig.cc	2006-04-23 10:42:22.000000000 -0400
++++ after/rig.cc	2019-11-01 16:52:47.025118177 -0400
+@@ -21,6 +21,7 @@
+ #include <fstream>
+ #include <vector>
+ #include <string>
++#include <cstring>
+ #include <stdlib.h>
+ #include <unistd.h>
+ #include <time.h>
