@@ -22,7 +22,7 @@ PATCHES=(
 	"${FILESDIR}/${P}-useDestDirAndImportMemcpy.patch"
 )
 
-DOCS=( "README" "Changlelog" "rig.6" )
+DOCS=( "README" "Changelog" "rig.6" )
 
 src_configure() {
 	if use devrandom ; then
