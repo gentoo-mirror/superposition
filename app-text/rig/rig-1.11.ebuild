@@ -22,7 +22,7 @@ PATCHES=(
 	"${FILESDIR}/${P}-useDestDirAndImportMemcpy.patch"
 )
 
-DOCS=( "README" "Changelog" "rig.6" )
+DOCS=( "README" "Changelog" )
 
 src_compile() {
 	sed -i -e "s:g++ :$(tc-getCXX) ${CXXFLAGS} ${LDFLAGS} :" Makefile \
@@ -40,5 +40,6 @@ src_install() {
 		emake DESTDIR="${D}" install
 	fi
 	rm -rf "${D}/usr/man"
+	doman rig.6
 	einstalldocs
 }
