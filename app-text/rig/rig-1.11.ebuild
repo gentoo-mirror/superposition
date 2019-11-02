@@ -42,6 +42,7 @@ src_install() {
 	dodir /usr/bin
 	dodir /usr/man
 	dodir /usr/share/rig
+	dodir /usr/man/man6
 
 	if [[ -f Makefile ]] || [[ -f GNUmakefile ]] || [[ -f makefile ]] ; then
 		emake DESTDIR="${D}" install
