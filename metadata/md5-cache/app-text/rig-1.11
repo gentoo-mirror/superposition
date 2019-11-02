@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile configure install
+DESCRIPTION=generate random, yet real-looking, personal data
+EAPI=7
+HOMEPAGE=https://sourceforge.net/projects/rig/
+IUSE=+devrandom
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+SLOT=0
+SRC_URI=https://sourceforge.net/projects/rig/files/rig/1.11/rig-1.11.tar.gz
+_eclasses_=multilib	1d91b03d42ab6308b5f4f6b598ed110e	toolchain-funcs	2f8b8f320bee13b71a8a54cc6d09e08a
+_md5_=eeac346b2fb0c2999947b904b7439e96
