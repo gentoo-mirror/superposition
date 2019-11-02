@@ -2,7 +2,6 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
-app-text/rig:devrandom - Use /dev/random for randomness
 dev-lang/squeakvm:X - Build the X11 drive plugin for display
 dev-lang/squeakvm:alsa - Build the alsa driver plugin for sound
 dev-lang/squeakvm:dbus - Build the dbus driver plugin
