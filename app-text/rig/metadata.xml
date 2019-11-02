@@ -6,9 +6,4 @@ A program that generates fake identities.
 RIG comes with the top 1000 names from the US census at
 http://www.census.gov/genealogy/names/
 </longdescription>
-<use>
-	<flag name="devrandom">
-	Use /dev/random for randomness
-	</flag>
-</use>
 </pkgmetadata>

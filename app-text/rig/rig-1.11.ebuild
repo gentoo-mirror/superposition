@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit flag-o-matic toolchain-funcs
+inherit toolchain-funcs
 
 DESCRIPTION="generate random, yet real-looking, personal data"
 HOMEPAGE="https://sourceforge.net/projects/rig/ "
@@ -12,7 +12,7 @@ SRC_URI="https://sourceforge.net/projects/rig/files/rig/1.11/rig-1.11.tar.gz"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="+devrandom"
+IUSE=""
 
 DEPEND=""
 RDEPEND="${DEPEND}"
@@ -23,12 +23,6 @@ PATCHES=(
 )
 
 DOCS=( "README" "Changelog" "rig.6" )
-
-src_configure() {
-	if use devrandom ; then
-		append-cxxflags "-DDEVRANDOM"
-	fi
-}
 
 src_compile() {
 	sed -i -e "s:g++ :$(tc-getCXX) ${CXXFLAGS} ${LDFLAGS} :" Makefile \
