@@ -39,6 +39,6 @@ src_install() {
 	if [[ -f Makefile ]] || [[ -f GNUmakefile ]] || [[ -f makefile ]] ; then
 		emake DESTDIR="${D}" install
 	fi
-	rm "${D}/usr/man/man6/rig.6"
+	rm -rf "${D}/usr/man"
 	einstalldocs
 }
