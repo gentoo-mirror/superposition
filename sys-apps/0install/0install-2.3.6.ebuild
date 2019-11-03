@@ -5,7 +5,7 @@ EAPI="5"
 PYTHON_COMPAT=( python2_7 )
 DISTUTILS_SINGLE_IMPL=1
 PYTHON_REQ_USE="xml(+)"
-inherit distutils-r1
+inherit xdg-utils distutils-r1
 
 DESCRIPTION="Zeroinstall Injector allows regular users to install software themselves"
 HOMEPAGE="http://0install.net/"
@@ -40,4 +40,12 @@ python_install_all() {
 	newins "${FILESDIR}/global.cfg" global
 
 	dodir "${BASE_XDG_DATA}/native_feeds"
+}
+
+pkg_postinst() {
+	xdg_icon_cache_update
+}
+
+pkg_postrm() {
+	xdg_icon_cache_update
 }
