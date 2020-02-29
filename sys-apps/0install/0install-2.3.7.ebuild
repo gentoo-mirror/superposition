@@ -1,8 +1,8 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="5"
-PYTHON_COMPAT=( python3_7 )
+PYTHON_COMPAT=( python3_{6,7,8} )
 DISTUTILS_SINGLE_IMPL=1
 PYTHON_REQ_USE="xml(+)"
 inherit xdg-utils distutils-r1
@@ -13,11 +13,6 @@ SRC_URI="https://sourceforge.net/projects/zero-install/files/${PN}/${PV}/${P}.ta
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86"
-
-DEPEND=""
-RDEPEND=">=dev-python/pygtk-2.0[python,${PYTHON_SINGLE_USEDEP}]
-	app-crypt/gnupg
-	"
 
 python_prepare_all() {
 	# Change manpage install path (Bug 207495)
