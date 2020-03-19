@@ -7,9 +7,6 @@ dev-lang/squeakvm 4.10.2.2614: Highly-portable Smalltalk-80 implementation
 dev-ml/obus 1.1 1.1.8: OBus is a pure ocaml implementation of DBus
 dev-python/freecode-submit 2.9: Client for Freshcode and Freecode-like sites.
 dev-python/shipper 1.12: Automated shipping of open-source project releases.
-dev-qt/qt3d 5.11.1 5.11.3: The 3D module for the Qt5 framework
-dev-qt/qtgraphicaleffects 5.11.1 5.11.3: Set of QML types for adding visual effects to user interfaces
-dev-qt/qtquickcontrols2 5.11.1 5.11.3: Set of next generation Qt Quick controls for the Qt5 framework
 games-action/Raft 1.04: Survive the harsh life of being stuck on a raft in the middle of the ocean!
 games-action/droidassault 20151219: Blaster battles with hordes of rampaging killer robots!
 games-action/ultratron 20151219: Destroy the robots Avenge the Human Race!
