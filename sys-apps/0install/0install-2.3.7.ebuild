@@ -1,9 +1,8 @@
 # Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="5"
-PYTHON_COMPAT=( python3_{6,7,8} )
-DISTUTILS_SINGLE_IMPL=1
+EAPI="7"
+PYTHON_COMPAT=( python3_{6,7} )
 PYTHON_REQ_USE="xml(+)"
 inherit xdg-utils distutils-r1
 
@@ -12,7 +11,17 @@ HOMEPAGE="http://0install.net/"
 SRC_URI="https://sourceforge.net/projects/zero-install/files/${PN}/${PV}/${P}.tar.bz2"
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86"
+KEYWORDS="~amd64 ~ppc ~sparc ~x86"
+RDEPEND="
+	$(python_gen_any_dep '
+		dev-python/pygobject:3[${PYTHON_USEDEP}]
+	')
+	app-crypt/gnupg
+"
+
+python_check_deps() {
+	has_version ">=dev-python/pygobject:3[${PYTHON_USEDEP}]"
+}
 
 python_prepare_all() {
 	# Change manpage install path (Bug 207495)
