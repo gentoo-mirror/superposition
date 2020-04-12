@@ -25,7 +25,7 @@ dev-ml/ppx_core
 dev-ml/menhir
 dev-ml/ocaml-migrate-parsetree"
 DEPEND="${COMMEN_DEPEND}
-		dev-ml/dune"
+		~dev-ml/dune-1.11.4"
 RDEPEND="${COMMEN_DEPEND}"
 
 DOCS=( CHANGES.md README.md )
