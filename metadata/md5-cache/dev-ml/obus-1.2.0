@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install test
+DEPEND=>=dev-lang/ocaml-4.02.3[ocamlopt?] >=dev-ml/lwt-2.7.0 dev-ml/lwt_react[ocamlopt?] dev-ml/react dev-ml/type-conv[ocamlopt?] dev-ml/xmlm dev-ml/ppx_core dev-ml/menhir dev-ml/ocaml-migrate-parsetree dev-ml/dune
+DESCRIPTION=OBus is a pure ocaml implementation of DBus
+EAPI=7
+HOMEPAGE=https://github.com/diml/obus
+IUSE=ocamlopt
+KEYWORDS=~amd64
+LICENSE=BSD
+RDEPEND=>=dev-lang/ocaml-4.02.3[ocamlopt?] >=dev-ml/lwt-2.7.0 dev-ml/lwt_react[ocamlopt?] dev-ml/react dev-ml/type-conv[ocamlopt?] dev-ml/xmlm dev-ml/ppx_core dev-ml/menhir dev-ml/ocaml-migrate-parsetree
+RESTRICT=test
+SLOT=0
+SRC_URI=https://github.com/diml/obus/archive/1.2.0.tar.gz -> obus-1.2.0.tar.gz
+_md5_=b95ba588536fe0deaf3dbc9ac06c25ce
