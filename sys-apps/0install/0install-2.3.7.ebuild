@@ -20,7 +20,7 @@ RDEPEND="
 "
 
 python_check_deps() {
-	has_version ">=dev-python/pygobject:3[${PYTHON_USEDEP}]"
+	has_version "dev-python/pygobject:3[${PYTHON_USEDEP}]"
 }
 
 python_prepare_all() {
