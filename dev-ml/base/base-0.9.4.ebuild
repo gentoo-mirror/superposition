@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2020 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -9,7 +9,7 @@ SRC_URI="https://github.com/janestreet/base/archive/v${PV}.tar.gz -> ${P}.tar.gz
 
 LICENSE="Apache-2.0"
 SLOT="0/${PV}"
-KEYWORDS="~amd64 ~ppc ~x86"
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND="
@@ -18,7 +18,7 @@ RDEPEND="
 	<dev-ml/sexplib-100
 "
 DEPEND="${RDEPEND} dev-ml/opam
-	|| ( dev-ml/jbuilder <dev-ml/dune-2.0.0 )"
+	~dev-ml/dune-1.11.4"
 
 src_test() {
 	jbuilder runtest || die
