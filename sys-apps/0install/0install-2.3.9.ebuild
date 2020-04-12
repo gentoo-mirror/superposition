@@ -26,7 +26,6 @@ python_check_deps() {
 python_prepare_all() {
 	# Change manpage install path (Bug 207495)
 	sed -i 's:man/man1:share/man/man1:' setup.py || die 'Documentation path fix sed failed.'
-	sed -i 's:from async_compat import:from zeroinstall.support.async_compat import:' zeroinstall/support/tasks.py || die 'async import sed failed.'
 	distutils-r1_python_prepare_all
 }
 
