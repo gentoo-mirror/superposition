@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="7"
-PYTHON_COMPAT=( python3_6 )
+PYTHON_COMPAT=( python3_{6,7} )
 PYTHON_REQ_USE="xml(+)"
 inherit xdg-utils distutils-r1
 
@@ -27,6 +27,11 @@ python_prepare_all() {
 	# Change manpage install path (Bug 207495)
 	sed -i 's:man/man1:share/man/man1:' setup.py || die 'Documentation path fix sed failed.'
 	distutils-r1_python_prepare_all
+}
+
+python_prepare(){
+[[ ${EPYTHON} == python3_6 ]] && continue
+	sed -i 's:def async:def aasync:' zeroinstall/support/async_compat.py || die 'async name sed failed.'
 }
 
 python_install_all() {
