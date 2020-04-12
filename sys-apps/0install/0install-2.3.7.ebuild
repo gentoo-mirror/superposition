@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="7"
-PYTHON_COMPAT=( python3_{6,7} )
+PYTHON_COMPAT=( python3_6 )
 PYTHON_REQ_USE="xml(+)"
 inherit xdg-utils distutils-r1
 
@@ -20,22 +20,17 @@ RDEPEND="
 "
 
 python_check_deps() {
-	has_version ">=dev-python/pygobject:3[${PYTHON_USEDEP}]"
+	has_version "dev-python/pygobject:3[${PYTHON_USEDEP}]"
 }
 
 python_prepare_all() {
 	# Change manpage install path (Bug 207495)
 	sed -i 's:man/man1:share/man/man1:' setup.py || die 'Documentation path fix sed failed.'
-	cp "${FILESDIR}/0distutils-r2" "${WORKDIR}/0distutils" || die 'Copying 0distutils to work directory failed.'
-	python_fix_shebang .
 	distutils-r1_python_prepare_all
 }
 
 python_install_all() {
 	distutils-r1_python_install_all
-
-	exeinto "/usr/sbin/"
-	doexe "${WORKDIR}/0distutils"
 
 	local BASE_XDG_CONFIG="/etc/xdg/0install.net"
 	local BASE_XDG_DATA="/usr/share/0install.net"
