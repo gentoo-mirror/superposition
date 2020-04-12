@@ -15,6 +15,8 @@ dev-lang/squeakvm:oss - Build the oss driver plugin for sound
 dev-lang/squeakvm:pulseaudio - Build the pulse audio driver plugin for sound
 dev-lang/squeakvm:threads - Enable pthread support in Mpeg3Plugin
 dev-lang/squeakvm:v4l - Build the camera plugin which uses v4l
+dev-ml/lwt:camlp4 - Enable camlp4 syntax extension
+dev-ml/lwt:libev - Enable the dev-libs/libev-based backend.
 dev-python/shipper:email - For shipping email announcements. Either classic mail-mta/sendmail or mail-mta/postfix sendmail will work. All it has to be able to do is ship mail presented on standard input to a list of addresses specified as arguments.
 dev-python/shipper:freshcode - Install dev-python/freecode-submit For shipping release notifications to freshcode.club.
 dev-python/shipper:irker - Install net-irc/irker for shipping notices to IRC channels.
