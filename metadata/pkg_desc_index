@@ -7,9 +7,11 @@ dev-lang/squeakvm 4.10.2.2614: Highly-portable Smalltalk-80 implementation
 dev-ml/base 0.9.4: Standard library for OCaml
 dev-ml/dune 1.11.4: A composable build system for OCaml
 dev-ml/lwt 3.1.0: Cooperative light-weight thread library for OCaml
+dev-ml/lwt_glib 1.0.1: GLib integration for Lwt
 dev-ml/obus 1.1 1.1.8 1.2.0: OBus is a pure ocaml implementation of DBus
 dev-ml/ocaml-compiler-libs 0.9.0: Repackage the OCaml compiler libs so they do not expose everything at toplevel
 dev-ml/ocaml-migrate-parsetree 1.0.7: Convert OCaml parsetrees between different major versions
+dev-ml/ocaml-sha 1.9: A binding for SHA interface code in OCaml
 dev-ml/ppx_ast 0.9.1: AST used in Jane Street ppx rewriters
 dev-ml/ppx_core 0.9.0-r1: Standard library for ppx rewriters
 dev-ml/ppx_traverse_builtins 0.9.0: Builtins for ppx_traverse
