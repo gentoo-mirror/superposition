@@ -1,0 +1,13 @@
+DEFINED_PHASES=install
+DEPEND=>=dev-lang/ocaml-3.11:=[ocamlopt?] dev-ml/easy-format:=[ocamlopt?] ~dev-ml/dune-1.11.4 dev-ml/opam >=dev-ml/findlib-1.0.4-r1
+DESCRIPTION=A binary data serialization format inspired by JSON for OCaml
+EAPI=5
+HOMEPAGE=https://github.com/mjambon/biniou
+IUSE=+ocamlopt
+KEYWORDS=~amd64
+LICENSE=BSD
+RDEPEND=>=dev-lang/ocaml-3.11:=[ocamlopt?] dev-ml/easy-format:=[ocamlopt?]
+SLOT=0/1.2.0
+SRC_URI=https://github.com/mjambon/biniou/archive/v1.2.0.tar.gz -> biniou-1.2.0.tar.gz
+_eclasses_=findlib	17c71a5d96323df925f9f6db1215668a
+_md5_=db92bb7899145aa97bea7bac9ca0bb78
