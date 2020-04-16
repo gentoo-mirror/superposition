@@ -15,6 +15,9 @@ dev-ml/ocaml-migrate-parsetree 1.0.7: Convert OCaml parsetrees between different
 dev-ml/ocaml-sha 1.9: A binding for SHA interface code in OCaml
 dev-ml/ppx_ast 0.9.1: AST used in Jane Street ppx rewriters
 dev-ml/ppx_core 0.9.0-r1: Standard library for ppx rewriters
+dev-ml/ppx_driver 0.9.1-r1: Feature-full driver for OCaml AST transformers
+dev-ml/ppx_metaquot 0.9.0: Write OCaml AST fragment using OCaml syntax
+dev-ml/ppx_optcomp 0.9.0-r3: Optional compilation for OCaml
 dev-ml/ppx_traverse_builtins 0.9.0: Builtins for ppx_traverse
 dev-ml/sexplib 0.9.3: Library for automated conversion of OCaml-values to and from S-expressions
 dev-ml/stdio 0.9.1: Standard IO Library for OCaml
