@@ -22,6 +22,7 @@ dev-ml/react
 dev-ml/type-conv[ocamlopt?]
 dev-ml/xmlm
 dev-ml/ppx_core
+dev-ml/ppx_metaquot
 dev-ml/menhir
 dev-ml/ocaml-migrate-parsetree"
 DEPEND="${COMMEN_DEPEND}
