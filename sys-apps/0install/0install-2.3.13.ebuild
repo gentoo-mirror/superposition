@@ -29,6 +29,10 @@ python_prepare_all() {
 	distutils-r1_python_prepare_all
 }
 
+python_prepare(){
+	sed -i 's:def async:def aasync:' zeroinstall/support/async_compat.py || die 'async name sed failed.'
+}
+
 python_install_all() {
 	distutils-r1_python_install_all
 
