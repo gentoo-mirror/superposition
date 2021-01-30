@@ -1,8 +1,8 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="7"
-PYTHON_COMPAT=( python3_6 )
+PYTHON_COMPAT=( python3_{7,8,9} )
 PYTHON_REQ_USE="xml(+)"
 inherit xdg-utils distutils-r1
 
@@ -26,8 +26,11 @@ python_check_deps() {
 python_prepare_all() {
 	# Change manpage install path (Bug 207495)
 	sed -i 's:man/man1:share/man/man1:' setup.py || die 'Documentation path fix sed failed.'
-	sed -i 's:from async_compat import:from zeroinstall.support.async_compat import:' zeroinstall/support/tasks.py || die 'async import sed failed.'
 	distutils-r1_python_prepare_all
+}
+
+python_prepare(){
+	sed -i 's:def async:def aasync:' zeroinstall/support/async_compat.py || die 'async name sed failed.'
 }
 
 python_install_all() {
