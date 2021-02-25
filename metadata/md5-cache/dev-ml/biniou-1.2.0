@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=>=dev-lang/ocaml-3.11:=[ocamlopt?] dev-ml/easy-format:=[ocamlopt?]
 SLOT=0/1.2.0
 SRC_URI=https://github.com/mjambon/biniou/archive/v1.2.0.tar.gz -> biniou-1.2.0.tar.gz
-_eclasses_=findlib	9674d5e3d151793fecab20e2bb73e6c6
+_eclasses_=findlib	3d3de4bef686774baeeabfa2b916631c
 _md5_=db92bb7899145aa97bea7bac9ca0bb78
