@@ -1,5 +1,4 @@
 app-crypt/gorilla 1.5.3.7: Password Safe in secure way with GUI interface
-app-text/presage 0.9.1: The intelligent predictive text entry system
 app-text/rig 1.11: generate random, yet real-looking, personal data
 dev-java/lwjgl3 3.1.3: LWJGL is a Java library that enables cross-platform access to popular native APIs useful in the development of graphics (OpenGL), audio (OpenAL) and parallel computing (OpenCL) applications.
 dev-lang/squeak 4.6.15102 5.0.15133: Squeak image file
