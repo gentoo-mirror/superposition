@@ -1,8 +1,8 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
-PYTHON_COMPAT=( python2_7 python3_3 python3_4 )
+PYTHON_COMPAT=( python3_6 python3_7 python3_8 )
 PYTHON_REQ_USE="ssl(+)"
 
 inherit python-single-r1
@@ -14,12 +14,11 @@ SRC_URI="http://www.catb.org/~esr/shipper/${PF}.tar.gz"
 LICENSE="BSD-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="freshcode irker lftp email scp"
+IUSE="irker lftp email scp"
 DEPEND="${PYTHON_DEPS}"
 RDEPEND="${DEPEND}
 	lftp? ( net-ftp/lftp )
 	email? ( || ( mail-mta/sendmail mail-mta/postfix ) )
 	scp? ( virtual/ssh )
-	irker? ( net-irc/irker )
-	freshcode? ( dev-python/freecode-submit )"
+	irker? ( net-irc/irker )"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
