@@ -18,7 +18,6 @@ dev-lang/squeakvm:v4l - Build the camera plugin which uses v4l
 dev-ml/lwt:camlp4 - Enable camlp4 syntax extension
 dev-ml/lwt:libev - Enable the dev-libs/libev-based backend.
 dev-python/shipper:email - For shipping email announcements. Either classic mail-mta/sendmail or mail-mta/postfix sendmail will work. All it has to be able to do is ship mail presented on standard input to a list of addresses specified as arguments.
-dev-python/shipper:freshcode - Install dev-python/freecode-submit For shipping release notifications to freshcode.club.
 dev-python/shipper:irker - Install net-irc/irker for shipping notices to IRC channels.
 dev-python/shipper:lftp - Install net-ftp/lftp for shipping to ftp sites.
 dev-python/shipper:scp - Install virtual/ssh for shipping to websites. There are several different implementations of scp
