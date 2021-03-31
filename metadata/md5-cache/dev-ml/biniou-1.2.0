@@ -3,6 +3,7 @@ DEPEND=>=dev-lang/ocaml-3.11:=[ocamlopt?] dev-ml/easy-format:=[ocamlopt?] ~dev-m
 DESCRIPTION=A binary data serialization format inspired by JSON for OCaml
 EAPI=5
 HOMEPAGE=https://github.com/mjambon/biniou
+INHERIT=findlib
 IUSE=+ocamlopt
 KEYWORDS=~amd64
 LICENSE=BSD
