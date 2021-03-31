@@ -3,10 +3,11 @@ DEPEND=dev-ml/ppx_core:= dev-ml/ppx_driver:= dev-ml/ppx_traverse_builtins:= dev-
 DESCRIPTION=Write OCaml AST fragment using OCaml syntax
 EAPI=6
 HOMEPAGE=https://github.com/janestreet/ppx_metaquot
+INHERIT=opam
 KEYWORDS=~amd64 ~x86
 LICENSE=Apache-2.0
 RDEPEND=dev-ml/ppx_core:= dev-ml/ppx_driver:= dev-ml/ppx_traverse_builtins:= dev-ml/ocaml-migrate-parsetree:= <dev-ml/ppx_core-100 >=dev-lang/ocaml-4:=
 SLOT=0/0.9.0
 SRC_URI=https://github.com/janestreet/ppx_metaquot/archive/v0.9.0.tar.gz -> ppx_metaquot-0.9.0.tar.gz
-_eclasses_=opam	b2f22dc6e8db7cf1649d72fd9ee5a986
+_eclasses_=opam	b961a62d9389bc7b60bcadb0c851459b
 _md5_=d257d32ed8b05d994a1aa19bc269ae5e
