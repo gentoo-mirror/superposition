@@ -9,5 +9,5 @@ LICENSE=Apache-2.0
 RDEPEND=dev-ml/base:= dev-ml/ocaml-compiler-libs:= dev-ml/ppx_ast:= dev-ml/ppx_traverse_builtins:= dev-ml/stdio:= dev-ml/ocaml-migrate-parsetree:= >=dev-lang/ocaml-4:=
 SLOT=0/0.9.0
 SRC_URI=https://github.com/janestreet/ppx_core/archive/v0.9.0.tar.gz -> ppx_core-0.9.0.tar.gz
-_eclasses_=opam	b961a62d9389bc7b60bcadb0c851459b
+_eclasses_=opam	bb6e97cce1eab4343c4db2c51acf1349
 _md5_=3ad07ac966ba582f60f44a58ce5cda7c

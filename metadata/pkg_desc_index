@@ -7,7 +7,6 @@ dev-ml/base 0.9.4: Standard library for OCaml
 dev-ml/biniou 1.2.0: A binary data serialization format inspired by JSON for OCaml
 dev-ml/dune 1.11.4: A composable build system for OCaml
 dev-ml/lwt 3.1.0: Cooperative light-weight thread library for OCaml
-dev-ml/lwt_glib 1.0.1: GLib integration for Lwt
 dev-ml/obus 1.1 1.1.8 1.2.0: OBus is a pure ocaml implementation of DBus
 dev-ml/ocaml-compiler-libs 0.9.0: Repackage the OCaml compiler libs so they do not expose everything at toplevel
 dev-ml/ocaml-migrate-parsetree 1.0.7: Convert OCaml parsetrees between different major versions
