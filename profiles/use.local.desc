@@ -32,3 +32,5 @@ games-kids/scratch:oss - Use the oss driver plugin for sound
 games-kids/scratch:pulseaudio - Use the pulse audio driver plugin for sound
 games-kids/scratch:v4l - Use the camera plugin
 games-roguelike/gnomoria:system-libs - Use the systems libraries instead of the bundled ones
+net-libs/opendht:python - Install Python bindings. Requires dev-python/cython.
+net-libs/opendht:tools - Install extra opendht tools (dhtchat, dhtnode and dhtscanner).
