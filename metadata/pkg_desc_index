@@ -42,4 +42,4 @@ games-sports/monstertruckdestruction 1: Great physics, real-time destruction and
 games-strategy/revenge-of-the-titans 201512192: Defeat the returning Titan horde in a series of epic ground battles.
 media-sound/pd 0.46_p7-r1 0.47_p1: real-time music and multimedia environment
 net-libs/opendht 1.10.1-r1: A lightweight C++11 Distributed Hash Table implementation
-sys-apps/0install 2.3.9 2.3.10 2.3.11 2.3.12 2.3.13 2.12.3 2.13 2.15.1: Zeroinstall Injector allows regular users to install software themselves
+sys-apps/0install 2.3.12 2.3.13 2.12.3 2.13 2.15.1: Zeroinstall Injector allows regular users to install software themselves
