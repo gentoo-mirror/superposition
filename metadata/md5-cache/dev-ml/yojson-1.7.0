@@ -4,11 +4,11 @@ DESCRIPTION=JSON parsing and pretty-printing library for OCaml
 EAPI=5
 HOMEPAGE=https://github.com/ocaml-community/yojson
 INHERIT=findlib opam
-IUSE=examples
+IUSE=examples ocamlopt
 KEYWORDS=~amd64
 LICENSE=BSD
 RDEPEND=>=dev-lang/ocaml-4.02.3:=[ocamlopt] dev-ml/easy-format:=[ocamlopt] >=dev-ml/biniou-1.2:=[ocamlopt] dev-lang/ocaml:=[ocamlopt?] >=dev-lang/ocaml-4:=
 SLOT=0/1.7.0
 SRC_URI=https://github.com/ocaml-community/yojson/archive/1.7.0.tar.gz -> yojson-1.7.0.tar.gz
-_eclasses_=findlib	34a4bb0c0d4e2f20b27aeadab3dc9641	opam	bb6e97cce1eab4343c4db2c51acf1349
+_eclasses_=findlib	5650c438662492e827d9f565d656ec5f	opam	bb6e97cce1eab4343c4db2c51acf1349
 _md5_=de7af16dbe39446f0850c3efb3a31ca5
