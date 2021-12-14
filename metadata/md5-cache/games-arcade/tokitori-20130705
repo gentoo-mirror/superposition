@@ -9,5 +9,5 @@ RDEPEND=media-libs/libsdl2 media-libs/openal sys-libs/zlib
 RESTRICT=fetch
 SLOT=0
 SRC_URI=TokiTori-Linux-2013-07-05.sh
-_eclasses_=toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	4b66d835ec72e021e359bb81eacfe988	unpacker	928e1f35ef78ba9fc2b214e29c2b55a4	unpacker-nixstaller	850de22907d109efbf45d47a3bcd02cd
+_eclasses_=toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	4b66d835ec72e021e359bb81eacfe988	unpacker	928e1f35ef78ba9fc2b214e29c2b55a4	unpacker-nixstaller	850de22907d109efbf45d47a3bcd02cd
 _md5_=fcc135269c12b1708c8a5a621005b8e2
