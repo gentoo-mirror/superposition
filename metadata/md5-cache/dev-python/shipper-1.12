@@ -1,5 +1,5 @@
 DEFINED_PHASES=setup
-DEPEND=python_single_target_python3_8? ( dev-lang/python:3.8[ssl(+)] >=dev-lang/python-exec-2:=[python_targets_python3_8] )
+DEPEND=python_single_target_python3_8? ( >=dev-lang/python-3.8.12_p1-r1:3.8[ssl(+)] )
 DESCRIPTION=Automated shipping of open-source project releases.
 EAPI=6
 HOMEPAGE=http://www.catb.org/~esr/shipper/
@@ -7,9 +7,9 @@ INHERIT=python-single-r1
 IUSE=irker lftp email scp +python_single_target_python3_8
 KEYWORDS=~amd64 ~x86
 LICENSE=BSD-2
-RDEPEND=python_single_target_python3_8? ( dev-lang/python:3.8[ssl(+)] >=dev-lang/python-exec-2:=[python_targets_python3_8] ) lftp? ( net-ftp/lftp ) email? ( || ( mail-mta/sendmail mail-mta/postfix ) ) scp? ( virtual/ssh ) irker? ( net-irc/irker )
+RDEPEND=python_single_target_python3_8? ( >=dev-lang/python-3.8.12_p1-r1:3.8[ssl(+)] ) lftp? ( net-ftp/lftp ) email? ( || ( mail-mta/sendmail mail-mta/postfix ) ) scp? ( virtual/ssh ) irker? ( net-irc/irker )
 REQUIRED_USE=^^ ( python_single_target_python3_8 )
 SLOT=0
 SRC_URI=http://www.catb.org/~esr/shipper/shipper-1.12.tar.gz
-_eclasses_=eapi8-dosym	cd7d420bb5be5ee079f27239ce76b8f5	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	de4beb52bfa93c4c5d96792a6b5e1784	python-utils-r1	a8b7938ade305f087865de7e52d079b5	python-single-r1	d46c125afba8be02eb1cd7104bac6e9c
+_eclasses_=eapi8-dosym	cd7d420bb5be5ee079f27239ce76b8f5	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	de4beb52bfa93c4c5d96792a6b5e1784	python-utils-r1	b601c48fe339b4c9bc03ffe4f25283e0	python-single-r1	9783802d3840cbbd78c02b313df760cc
 _md5_=1f401c9948f5af8bd5fe0ec548682e4b
