@@ -7,7 +7,7 @@ HOMEPAGE="http://www.squeak.org/"
 SRC_URI="http://squeakvm.org/unix/release/Squeak-${PV}-src.tar.gz"
 LICENSE="Apple"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS="~amd64 ~x86"
 IUSE="+X +mmx +threads +iconv +opengl image64 alsa oss pulseaudio nas +v4l fbcon dbus +scratch examples"
 
 
