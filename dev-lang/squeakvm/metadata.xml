@@ -45,6 +45,9 @@ This is the virtual machine Squeak runs on.
 	<flag name="dbus">
 	Build the dbus driver plugin
 	</flag>
+	<flag name="scratch">
+	Build the Scratch plugin
+	</flag>
 
 </use>
 </pkgmetadata>
