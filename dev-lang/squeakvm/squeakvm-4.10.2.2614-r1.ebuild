@@ -138,7 +138,7 @@ src_configure() {
 	#use dbus		|| myconf="${myconf} --without-DBusPlugin"
 	#use scratch		|| myconf="${myconf} --without-ScratchPlugin"
 
-	cd ${S}
+	cd "${S}"
 	touch unix/npsqueak/CMakeLists.txt
 	mkdir build
 	cd build
@@ -159,8 +159,8 @@ src_configure() {
 
 src_install() {
 	dodoc README unix/ChangeLog
-	cd ${S}/build
-	emake DESTDIR=${D} ROOT=${D} docdir=/usr/share/doc/${PF} install || die
+	cd "${S}/build"
+	emake DESTDIR="${D}" ROOT="${D}" docdir="/usr/share/doc/${PF}" install || die
 	exeinto /usr/lib/squeak
 	exeinto /usr/lib/ckformat
 }
