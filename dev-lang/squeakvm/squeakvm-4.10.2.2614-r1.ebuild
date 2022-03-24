@@ -11,8 +11,7 @@ KEYWORDS="~x86 ~amd64"
 IUSE="+X +mmx +threads +iconv +opengl image64 alsa oss pulseaudio nas +v4l fbcon dbus +scratch examples"
 
 
-DEPEND="X? ( x11-libs/libX11 x11-libs/libXext x11-libs/libXt ) 
-	dev-util/cmake
+RDEPEND="X? ( x11-libs/libX11 x11-libs/libXext x11-libs/libXt ) 
 	media-libs/freetype
     >=x11-libs/cairo-1.8.6
 	>=x11-libs/pango-1.20.5
@@ -27,7 +26,8 @@ DEPEND="X? ( x11-libs/libX11 x11-libs/libXext x11-libs/libXt )
 	pulseaudio? ( media-sound/pulseaudio )
 	nas? ( media-libs/nas )
 	dbus? ( sys-apps/dbus )"
-RDEPEND="${DEPEND}"
+DEPEND="dev-util/cmake
+${RDEPEND}"
 
 S="${WORKDIR}/Squeak-${PV}-src"
 
