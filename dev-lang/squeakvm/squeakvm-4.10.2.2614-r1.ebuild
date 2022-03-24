@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
-inherit versionator fixheadtails
+inherit fixheadtails
 DESCRIPTION="Highly-portable Smalltalk-80 implementation"
 HOMEPAGE="http://www.squeak.org/"
 SRC_URI="http://squeakvm.org/unix/release/Squeak-${PV}-src.tar.gz"
