@@ -37,7 +37,7 @@ This is the virtual machine Squeak runs on.
 	Build the nas driver plugin for sound
 	</flag>
 	<flag name="v4l">
-    Build the camera plugin which uses v4l
+	Build the camera plugin which uses v4l
 	</flag>
 	<flag name="fbcon">
 	Build the fbcon driver plugin for display
