@@ -13,6 +13,7 @@ dev-lang/squeakvm:nas - Build the nas driver plugin for sound
 dev-lang/squeakvm:opengl - Enable everything that depends on OpenGL
 dev-lang/squeakvm:oss - Build the oss driver plugin for sound
 dev-lang/squeakvm:pulseaudio - Build the pulse audio driver plugin for sound
+dev-lang/squeakvm:scratch - Build the Scratch plugin
 dev-lang/squeakvm:threads - Enable pthread support in Mpeg3Plugin
 dev-lang/squeakvm:v4l - Build the camera plugin which uses v4l
 dev-ml/lwt:camlp4 - Enable camlp4 syntax extension
