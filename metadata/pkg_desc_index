@@ -1,4 +1,3 @@
-app-crypt/gorilla 1.5.3.7: Password Safe in secure way with GUI interface
 app-text/rig 1.11: generate random, yet real-looking, personal data
 dev-java/apple-java-extensions-bin 1.5-r2: Apple eAWT and eIO APIs for Java on Mac OS X
 dev-java/lwjgl3 3.1.3: LWJGL is a Java library that enables cross-platform access to popular native APIs useful in the development of graphics (OpenGL), audio (OpenAL) and parallel computing (OpenCL) applications.
@@ -26,7 +25,6 @@ games-action/droidassault 20151219: Blaster battles with hordes of rampaging kil
 games-action/minecraft-launcher 928-r3: An open-world game whose gameplay revolves around breaking and placing blocks
 games-action/ultratron 20151219: Destroy the robots Avenge the Human Race!
 games-arcade/titanattacks 20151219: single-handedly turn back the evil invading alien army
-games-arcade/tokitori 20130705: Help a baby chicken save all the eggs.
 games-kids/byob 3.1.1: BYOB (Build Your Own Blocks) is an advanced offshoot of Scratch
 games-kids/scratch 1.4.0.7: A programming environment for creating stories, animations, games, and music.
 games-puzzle/Armikrog 2015.10.07: Armikrog is a unique stop motion clay animated point and click adventure game
@@ -40,5 +38,4 @@ games-roguelike/gnomoria 1: Gnomoria is a sandbox village management game
 games-rpg/infamousmachine 1: A adventure about Kelvin, a crazy scientist, and a time machine.
 games-sports/monstertruckdestruction 1: Great physics, real-time destruction and over 60 licensed trucks.
 games-strategy/revenge-of-the-titans 201512192: Defeat the returning Titan horde in a series of epic ground battles.
-media-sound/pd 0.46_p7-r1 0.47_p1: real-time music and multimedia environment
 sys-apps/0install 2.3.12 2.3.13 2.12.3 2.13 2.15.1: Zeroinstall Injector allows regular users to install software themselves
