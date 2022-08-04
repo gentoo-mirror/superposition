@@ -49,10 +49,11 @@ src_install() {
 	exeinto "${dir}"
 	insinto "${dir}"
 
-	make_desktop_entry "${PN}" "${MY_PN}" "${PN}"
-
 	newexe "${MY_PN}.bin.${arch}" "${PN}"
+
 	newicon "${MY_PN}.png" "${PN}.png"
+
+	make_desktop_entry "${PN}" "${MY_PN}" "${PN}"
 
 	doins -r \
 		"namespace.txt" \
