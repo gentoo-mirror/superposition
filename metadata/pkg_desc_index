@@ -1,3 +1,4 @@
+app-crypt/gorilla 1.5.3.7-r1: Password Safe in secure way with GUI interface
 app-text/rig 1.11: generate random, yet real-looking, personal data
 dev-java/apple-java-extensions-bin 1.5-r2: Apple eAWT and eIO APIs for Java on Mac OS X
 dev-java/lwjgl3 3.1.3: LWJGL is a Java library that enables cross-platform access to popular native APIs useful in the development of graphics (OpenGL), audio (OpenAL) and parallel computing (OpenCL) applications.
