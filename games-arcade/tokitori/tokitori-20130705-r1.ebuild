@@ -42,7 +42,7 @@ src_unpack() {
 }
 
 src_install() {
-	local dir="${GAMES_PREFIX_OPT}/${PN}"
+	local dir="/opt/${PN}"
 	local arch=x86
 	use amd64 && arch=x86_64
 
@@ -50,7 +50,6 @@ src_install() {
 	insinto "${dir}"
 
 	make_desktop_entry "${PN}" "${MY_PN}" "${PN}"
-	games_make_wrapper "${PN}" "./${PN}" "${dir}"
 
 	newexe "${MY_PN}.bin.${arch}" "${PN}"
 	newicon "${MY_PN}.png" "${PN}.png"
@@ -71,8 +70,6 @@ src_install() {
 		"menu" \
 		"splash" \
 		"textures"
-
-	prepgamesdirs
 
 	base_src_install_docs
 }
