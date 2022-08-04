@@ -42,7 +42,6 @@ src_install() {
 	exeinto ${PREFIX}
 	doexe sources/gorilla.tcl
 	make_desktop_entry "${PREFIX}/gorilla.tcl" "Gorilla" "${PN}" "Security;Utility;"
-	domenu gorilla
 }
 pkg_preinst() {
 	gnome2_icon_savelist
