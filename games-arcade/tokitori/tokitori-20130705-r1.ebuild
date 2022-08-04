@@ -3,7 +3,7 @@
 
 EAPI="6"
 
-inherit eutils unpacker-nixstaller
+inherit eutils gnome2-utils unpacker-nixstaller
 
 MY_PN="${PN^^t}"
 MY_P="${MY_PN}-Linux-${PV:0:4}-${PV:4:2}-${PV:6:2}"
@@ -49,10 +49,11 @@ src_install() {
 	exeinto "${dir}"
 	insinto "${dir}"
 
-	make_desktop_entry "${PN}" "${MY_PN}" "${PN}"
-
 	newexe "${MY_PN}.bin.${arch}" "${PN}"
+
 	newicon "${MY_PN}.png" "${PN}.png"
+
+	make_desktop_entry "${PN}" "${MY_PN}" "${PN}"
 
 	doins -r \
 		"namespace.txt" \
@@ -71,5 +72,17 @@ src_install() {
 		"splash" \
 		"textures"
 
-	base_src_install_docs
+	dodoc
+}
+pkg_preinst() {
+	gnome2_icon_savelist
+}
+
+pkg_postinst() {
+	gnome2_icon_cache_update
+
+}
+
+pkg_postrm() {
+	gnome2_icon_cache_update
 }
