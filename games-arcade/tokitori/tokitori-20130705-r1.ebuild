@@ -3,7 +3,7 @@
 
 EAPI="6"
 
-inherit eutils gnome2-utils unpacker-nixstaller
+inherit eutils xdg-utils unpacker-nixstaller
 
 MY_PN="${PN^^t}"
 MY_P="${MY_PN}-Linux-${PV:0:4}-${PV:4:2}-${PV:6:2}"
@@ -74,15 +74,11 @@ src_install() {
 
 	dodoc
 }
-pkg_preinst() {
-	gnome2_icon_savelist
-}
 
 pkg_postinst() {
-	gnome2_icon_cache_update
-
+	xdg_icon_cache_update
 }
 
 pkg_postrm() {
-	gnome2_icon_cache_update
+	xdg_icon_cache_update
 }
