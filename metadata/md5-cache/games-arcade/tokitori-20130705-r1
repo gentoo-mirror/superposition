@@ -1,0 +1,13 @@
+DEFINED_PHASES=install nofetch unpack
+DESCRIPTION=Help a baby chicken save all the eggs.
+EAPI=6
+HOMEPAGE=http://www.tokitori.com/
+INHERIT=unpacker-nixstaller
+KEYWORDS=-* ~amd64 ~x86
+LICENSE=all-rights-reserved
+RDEPEND=media-libs/libsdl2 media-libs/openal sys-libs/zlib
+RESTRICT=fetch
+SLOT=0
+SRC_URI=TokiTori-Linux-2013-07-05.sh
+_eclasses_=toolchain-funcs	1542e649be915f43f6908a9e93909961	multilib	5ca4e49abed8e3a2f7b56920eadee157	unpacker	697382d119fd3d195f110b7979184285	unpacker-nixstaller	850de22907d109efbf45d47a3bcd02cd
+_md5_=836c6b965d4e709d9297748c59ad2772
