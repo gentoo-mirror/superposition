@@ -53,7 +53,7 @@ src_install() {
 
 	newicon "${MY_PN}.png" "${PN}.png"
 
-	make_desktop_entry "${PN}" "${MY_PN}" "${PN}"
+	make_desktop_entry "${dir}/${PN}" "${MY_PN}" "${PN}"
 
 	doins -r \
 		"namespace.txt" \
