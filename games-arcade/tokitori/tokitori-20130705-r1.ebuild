@@ -3,7 +3,7 @@
 
 EAPI="6"
 
-inherit unpacker-nixstaller
+inherit eutils unpacker-nixstaller
 
 MY_PN="${PN^^t}"
 MY_P="${MY_PN}-Linux-${PV:0:4}-${PV:4:2}-${PV:6:2}"
