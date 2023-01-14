@@ -9,12 +9,7 @@ shipper is a power distribution tool for developers with multiple projects who d
 </longdescription>
 <use>
 	<flag name="lftp">Install <pkg>net-ftp/lftp</pkg> for shipping to ftp sites.</flag>
-	<flag name="email">For shipping email announcements. Either classic
-<pkg>mail-mta/sendmail</pkg> or <pkg>mail-mta/postfix</pkg> sendmail will work. All it has to be able to do
-is ship mail presented on standard input to a list of addresses
-specified as arguments.</flag>
-	<flag name="scp">Install <pkg>virtual/ssh</pkg> for shipping to websites. There are several different
-implementations of scp</flag>
+	<flag name="twython">Install <pkg>dev-python/twython</pkg> for shipping notices to twitter</flag>
 	<flag name="irker">Install <pkg>net-irc/irker</pkg> for shipping notices to IRC channels.</flag>
 </use>
 </pkgmetadata>
