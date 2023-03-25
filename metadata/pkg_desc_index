@@ -12,10 +12,10 @@ dev-ml/ocaml-sha 1.9: A binding for SHA interface code in OCaml
 dev-ml/xmlm 1.3.0: Ocaml XML manipulation module
 dev-python/shipper 1.18: Automated shipping of open-source project releases.
 games-action/Raft 1.04: Survive the harsh life of being stuck on a raft in the middle of the ocean!
-games-action/droidassault 20151219 20151219-r1: Blaster battles with hordes of rampaging killer robots!
+games-action/droidassault 20151219-r1: Blaster battles with hordes of rampaging killer robots!
 games-action/minecraft-launcher 928-r3: An open-world game whose gameplay revolves around breaking and placing blocks
 games-action/ultratron 20151219: Destroy the robots Avenge the Human Race!
-games-arcade/titanattacks 20151219: single-handedly turn back the evil invading alien army
+games-arcade/titanattacks 20151219 20151219-r1: single-handedly turn back the evil invading alien army
 games-arcade/tokitori 20130705-r1: Help a baby chicken save all the eggs.
 games-kids/byob 3.1.1: BYOB (Build Your Own Blocks) is an advanced offshoot of Scratch
 games-kids/scratch 1.4.0.7: A programming environment for creating stories, animations, games, and music.
