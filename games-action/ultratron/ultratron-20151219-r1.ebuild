@@ -1,4 +1,4 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -17,7 +17,7 @@ IUSE=""
 DEPEND=">=virtual/jre-1.7:*
 	virtual/opengl
 	media-libs/openal
-	dev-java/gson:2.2.2
+	dev-java/gson:2.6
 	dev-java/lwjgl:2.9"
 RDEPEND="${DEPEND}"
 
