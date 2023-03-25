@@ -1,13 +1,13 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
 
 inherit eutils java-pkg-2
 
-DESCRIPTION="Defeat the returning Titan horde in a series of epic ground battles."
-HOMEPAGE="http://www.puppygames.net/revenge-of-the-titans"
-SRC_URI="RevengeOfTheTitans-HIB-201512192.tar.gz"
+DESCRIPTION="Destroy the robots Avenge the Human Race!"
+HOMEPAGE="http://www.puppygames.net/ultratron"
+SRC_URI="Ultratron-HIB-20151219.tar.gz"
 
 LICENSE="all-rights-reserved"
 SLOT="0"
@@ -17,12 +17,12 @@ IUSE=""
 DEPEND=">=virtual/jre-1.7:*
 	virtual/opengl
 	media-libs/openal
-	dev-java/gson
-	dev-java/lwjgl"
+	dev-java/gson:2.6
+	dev-java/lwjgl:2.9"
 RDEPEND="${DEPEND}"
 
 RESTRICT="bindist fetch mirror strip"
-S="${WORKDIR}/revenge"
+S="${WORKDIR}/ultratron"
 
 pkg_nofetch() {
 	einfo "Please download ${SRC_URI}"
@@ -57,9 +57,9 @@ src_install() {
 	java-pkg_doso libgdx.so libgdx64.so
 
 	exeinto "${dir}"
-	doexe revenge.sh || die "doexe"
+	doexe ultratron.sh || die "doexe"
 
-	make_wrapper ${PN} ./revenge.sh "${dir}" "${dir}"
-	doicon revenge.png
-	make_desktop_entry ${PN} "Revenge of the Titans" revenge Game
+	make_wrapper ${PN} ./ultratron.sh "${dir}" "${dir}"
+	doicon ultratron.png
+	make_desktop_entry ${PN} "Ultratron" ultratron Game
 }

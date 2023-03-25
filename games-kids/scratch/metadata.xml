@@ -25,7 +25,7 @@ a deeper understanding of the process of design.
 	Use the nas driver plugin for sound
 	</flag>
 	<flag name="v4l">
-    Use the camera plugin
+	Use the camera plugin
 	</flag>
 </use>
 </pkgmetadata>
