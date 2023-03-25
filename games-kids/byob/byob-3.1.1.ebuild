@@ -1,4 +1,4 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -29,8 +29,8 @@ REQUIRED_USE="?? ( alsa oss pulseaudio nas )"
 S="${WORKDIR}"
 
 src_prepare() {
-	cp "$DISTDIR/BYOB-Pi.image" ${S}
-	cp "$DISTDIR/byob.png" ${S}
+	cp "$DISTDIR/BYOB-Pi.image" "${S}"
+	cp "$DISTDIR/byob.png" "${S}"
 	mv Help/en/allscreens.html Help/en/allscreens-BYOB.html
 	rm Help/en/index.html \
      Help/en/ScratchGettingStartedv14.pdf \
