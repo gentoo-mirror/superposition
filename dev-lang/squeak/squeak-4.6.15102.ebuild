@@ -1,6 +1,6 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
-# $HEADER
+
 EAPI=6
 
 DESCRIPTION="Squeak image file"
@@ -10,9 +10,9 @@ SRC_URI="
 	http://ftp.squeak.org/4.6/Squeak4.6-15102.zip
 	http://ftp.squeak.org/4.6/SqueakV46.sources.zip"
 
-LICENSE="Apple"
+LICENSE="Apache-2.0 MIT BitstreamVera"
 SLOT="4.6"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 DEPEND="app-arch/unzip
