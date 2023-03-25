@@ -1,13 +1,13 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
 
 inherit eutils java-pkg-2
 
-DESCRIPTION="Blaster battles with hordes of rampaging killer robots!"
-HOMEPAGE="http://www.puppygames.net/droid-assault"
-SRC_URI="DroidAssault-HIB-20151219.tar.gz"
+DESCRIPTION="single-handedly turn back the evil invading alien army"
+HOMEPAGE="http://www.puppygames.net/titan-attacks"
+SRC_URI="TitanAttacks-HIB-20151219.tar.gz"
 
 LICENSE="all-rights-reserved"
 SLOT="0"
@@ -17,12 +17,12 @@ IUSE=""
 DEPEND=">=virtual/jre-1.7:*
 	virtual/opengl
 	media-libs/openal
-	dev-java/gson:2.2.2
-	dev-java/lwjgl:2.9"
+	dev-java/gson:2.6
+	dev-java/lwjgl"
 RDEPEND="${DEPEND}"
 
 RESTRICT="bindist fetch mirror strip"
-S="${WORKDIR}/droidassault"
+S="${WORKDIR}/titanattacks"
 
 pkg_nofetch() {
 	einfo "Please download ${SRC_URI}"
@@ -57,9 +57,9 @@ src_install() {
 	java-pkg_doso libgdx.so libgdx64.so
 
 	exeinto "${dir}"
-	doexe droidassault.sh || die "doexe"
+	doexe titanattacks.sh || die "doexe"
 
-	make_wrapper ${PN} ./droidassault.sh "${dir}" "${dir}"
-	doicon droidassault.png
-	make_desktop_entry ${PN} "Droid Assault" droidassault Game
+	make_wrapper ${PN} ./titanattacks.sh "${dir}" "${dir}"
+	doicon titanattacks.png
+	make_desktop_entry ${PN} "Titans Attacks" titanattacks  Game
 }
