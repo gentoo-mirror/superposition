@@ -14,8 +14,8 @@ dev-python/shipper 1.18: Automated shipping of open-source project releases.
 games-action/Raft 1.04: Survive the harsh life of being stuck on a raft in the middle of the ocean!
 games-action/droidassault 20151219-r1: Blaster battles with hordes of rampaging killer robots!
 games-action/minecraft-launcher 928-r3: An open-world game whose gameplay revolves around breaking and placing blocks
-games-action/ultratron 20151219: Destroy the robots Avenge the Human Race!
-games-arcade/titanattacks 20151219 20151219-r1: single-handedly turn back the evil invading alien army
+games-action/ultratron 20151219-r1: Destroy the robots Avenge the Human Race!
+games-arcade/titanattacks 20151219-r1: single-handedly turn back the evil invading alien army
 games-arcade/tokitori 20130705-r1: Help a baby chicken save all the eggs.
 games-kids/byob 3.1.1: BYOB (Build Your Own Blocks) is an advanced offshoot of Scratch
 games-kids/scratch 1.4.0.7: A programming environment for creating stories, animations, games, and music.
@@ -29,5 +29,5 @@ games-roguelike/NEOScavenger 20160912: survive in the wasteland long enough to f
 games-roguelike/gnomoria 1: Gnomoria is a sandbox village management game
 games-rpg/infamousmachine 1: A adventure about Kelvin, a crazy scientist, and a time machine.
 games-sports/monstertruckdestruction 1: Great physics, real-time destruction and over 60 licensed trucks.
-games-strategy/revenge-of-the-titans 201512192: Defeat the returning Titan horde in a series of epic ground battles.
+games-strategy/revenge-of-the-titans 201512192-r1: Defeat the returning Titan horde in a series of epic ground battles.
 sys-apps/0install 2.3.12 2.3.13 2.12.3 2.13 2.15.1: Zeroinstall Injector allows regular users to install software themselves
