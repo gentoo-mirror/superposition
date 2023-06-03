@@ -1,4 +1,4 @@
-# Copyright 2021 Gentoo Authors
+# Copyright 2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="7"
@@ -8,7 +8,7 @@ inherit xdg-utils distutils-r1
 
 DESCRIPTION="Zeroinstall Injector allows regular users to install software themselves"
 HOMEPAGE="http://0install.net/"
-SRC_URI="https://sourceforge.net/projects/zero-install/files/${PN}/${PV}/${P}.tar.bz2"
+SRC_URI="https://github.com/0install/${PN}/releases/download/v${PV}/${P}.tar.bz2"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~ppc ~sparc ~x86"
