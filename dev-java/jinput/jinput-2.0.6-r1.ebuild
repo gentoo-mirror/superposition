@@ -1,12 +1,12 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
 COMMIT="790b666"
 JAVA_PKG_IUSE="doc source"
 
-inherit epatch toolchain-funcs java-pkg-2 java-ant-2 vcs-snapshot
+inherit toolchain-funcs java-pkg-2 java-ant-2 vcs-snapshot
 
 DESCRIPTION="An implementation of an API for game controller discovery and polled input"
 HOMEPAGE="https://java.net/projects/jinput"
@@ -30,7 +30,7 @@ EANT_BUILD_TARGET="dist"
 src_prepare() {
 	# http://java.net/jira/browse/JINPUT-44
 	# http://java.net/jira/browse/JINPUT-45
-	epatch "${FILESDIR}"/{javah-classpath,nostrip,remove-getDeviceUsageBits,unbundle}.patch
+	eapply "${FILESDIR}"/{javah-classpath,nostrip,remove-getDeviceUsageBits,unbundle}.patch
 
 	sed -i \
 		-e "s/\"cc\"/\"$(tc-getCC)\"/g" \
