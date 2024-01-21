@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install nofetch unpack
+DEPEND=app-arch/unzip
+DESCRIPTION=Survive the harsh life of being stuck on a raft in the middle of the ocean!
+EAPI=7
+HOMEPAGE=https://raft.itch.io/raft
+INHERIT=unpacker
+KEYWORDS=~amd64 ~x86
+LICENSE=all-rights-reserved
+RDEPEND=app-arch/unzip
+RESTRICT=bindist fetch
+SLOT=0
+SRC_URI=V1.04_Raft_LinuxUniversal.zip
+_eclasses_=multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	unpacker	7b40f3faa3e2e12f5cf6d36d0fbfcd09
+_md5_=5a2467051210006abf75c1b6a2bae56e
