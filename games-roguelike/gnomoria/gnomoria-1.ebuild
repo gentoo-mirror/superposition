@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit unpacker eutils gnome2-utils
+inherit unpacker gnome2-utils
 
 DESCRIPTION="Gnomoria is a sandbox village management game"
 HOMEPAGE="http://www.gnomoria.com"

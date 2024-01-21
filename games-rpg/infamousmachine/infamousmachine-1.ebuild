@@ -3,8 +3,6 @@
 
 EAPI=7
 
-inherit eutils
-
 DESCRIPTION="A adventure about Kelvin, a crazy scientist, and a time machine."
 HOMEPAGE="http://www.infamousmachine.com"
 SRC_URI="infamousmachine_unix_1_0.sh.zip"
