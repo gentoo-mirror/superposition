@@ -1,7 +1,7 @@
-# Copyright 1999-2020 Gentoo Foundation
+# Copyright 2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
 DESCRIPTION="Standard library for OCaml"
 HOMEPAGE="https://github.com/janestreet/base"
