@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit eutils java-pkg-2
+inherit java-pkg-2
 
 DESCRIPTION="Blaster battles with hordes of rampaging killer robots!"
 HOMEPAGE="http://www.puppygames.net/droid-assault"
