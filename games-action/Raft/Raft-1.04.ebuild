@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit unpacker eutils
+inherit unpacker
 
 DESCRIPTION="Survive the harsh life of being stuck on a raft in the middle of the ocean!"
 HOMEPAGE="https://raft.itch.io/raft"

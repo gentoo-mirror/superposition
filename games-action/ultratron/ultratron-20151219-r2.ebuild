@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit eutils java-pkg-2
+inherit java-pkg-2
 
 DESCRIPTION="Destroy the robots Avenge the Human Race!"
 HOMEPAGE="http://www.puppygames.net/ultratron"
