@@ -1,0 +1,12 @@
+DEFINED_PHASES=install nofetch prepare unpack
+DEPEND=>=virtual/jre-1.7:* virtual/opengl media-libs/openal app-arch/p7zip
+DESCRIPTION=A adventure about Kelvin, a crazy scientist, and a time machine.
+EAPI=7
+HOMEPAGE=http://www.infamousmachine.com
+KEYWORDS=~amd64 ~x86
+LICENSE=all-rights-reserved
+RDEPEND=>=virtual/jre-1.7:* virtual/opengl media-libs/openal app-arch/p7zip
+RESTRICT=bindist fetch mirror strip
+SLOT=0
+SRC_URI=infamousmachine_unix_1_0.sh.zip
+_md5_=2658ac743a299d838f9e9e89c9057c53
