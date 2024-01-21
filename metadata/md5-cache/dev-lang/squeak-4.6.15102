@@ -1,10 +1,10 @@
 DEFINED_PHASES=compile install postinst
 DEPEND=app-arch/unzip dev-lang/squeakvm
 DESCRIPTION=Squeak image file
-EAPI=6
+EAPI=7
 HOMEPAGE=http://www.squeak.org/
 KEYWORDS=~amd64 ~x86
 LICENSE=Apache-2.0 MIT BitstreamVera
 SLOT=4.6
 SRC_URI=http://ftp.squeak.org/4.6/Squeak4.6-15102.zip http://ftp.squeak.org/4.6/SqueakV46.sources.zip
-_md5_=559b32f5018a4b8d91cadcc75bba4c12
+_md5_=865240c1fc01803056daadd9c3eaaca5
