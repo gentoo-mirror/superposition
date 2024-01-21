@@ -1,9 +1,9 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
-inherit eutils java-pkg-2
+inherit java-pkg-2
 
 DESCRIPTION="single-handedly turn back the evil invading alien army"
 HOMEPAGE="http://www.puppygames.net/titan-attacks"
