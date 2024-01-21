@@ -11,4 +11,4 @@ RDEPEND=>=virtual/jre-1.5 >=dev-java/java-config-2.2.0-r3 source? ( app-arch/zip
 SLOT=0
 SRC_URI=mirror://gentoo/apt-mirror-1.0.tar.bz2
 _eclasses_=java-utils-2	b346c3901e71ba37137bae0b25b00221	java-pkg-2	b6d755b4f6afabfd933932be28b46368	java-pkg-simple	67f37f8db9bdf7868f26504fd7bcbb22
-_md5_=7205a1b6556b7b7be3b9b6d2d60402c9
+_md5_=671d1a8d9f58d6aff564b8e86e2a441e
