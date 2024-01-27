@@ -1,7 +1,7 @@
 DEFINED_PHASES=configure install postinst postrm preinst prepare
 DEPEND=dev-lang/squeakvm[scratch] games-kids/scratch alsa? ( dev-lang/squeakvm[alsa] ) oss? ( dev-lang/squeakvm[oss] ) pulseaudio? ( dev-lang/squeakvm[pulseaudio] ) nas? ( dev-lang/squeakvm[nas] ) v4l? ( dev-lang/squeakvm[v4l] )
 DESCRIPTION=BYOB (Build Your Own Blocks) is an advanced offshoot of Scratch
-EAPI=6
+EAPI=7
 HOMEPAGE=http://snap.berkeley.edu/old-byob.html
 INHERIT=gnome2-utils
 IUSE=+alsa oss pulseaudio nas +v4l
@@ -12,4 +12,4 @@ REQUIRED_USE=?? ( alsa oss pulseaudio nas )
 SLOT=0
 SRC_URI=https://www.dropbox.com/s/cevf5my91pjy0t1/BYOB-Pi.image http://snap.berkeley.edu/byoblib.tgz https://dl.dropbox.com/s/6dexo1gzyldapwm/BYOB.png -> byob.png
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	xdg-utils	baea6080dd821f5562d715887954c9d3	gnome2-utils	b0183db3b2e07b18f3b77bffec72e116
-_md5_=c14bf127c4f3ed070132e21118105e79
+_md5_=954cecfe52fddd444cd35bfca0a5898d
