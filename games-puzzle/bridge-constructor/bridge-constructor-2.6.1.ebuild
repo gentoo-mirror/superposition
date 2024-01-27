@@ -1,9 +1,9 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
-inherit unpacker eutils
+inherit unpacker
 
 DESCRIPTION="Become an appraised bridge engineer and architect in Bridge Constructor"
 HOMEPAGE="http://www.headupgames.com/conpresso/_rubric/index.php?rubric=EN+Games+Bridge-Constructor"
@@ -37,7 +37,6 @@ RDEPEND="${DEPEND}
 "
 S="${WORKDIR}"
 
-
 pkg_nofetch() {
 	einfo "Please buy & download ${SRC_URI} from:"
 	einfo "  https://www.humblebundle.com/store"
@@ -65,15 +64,14 @@ src_install() {
 }
 
 pkg_preinst() {
-    gnome2_icon_savelist
+	gnome2_icon_savelist
 }
 
 pkg_postinst() {
-    gnome2_icon_cache_update
+	gnome2_icon_cache_update
 
 }
 
 pkg_postrm() {
-    gnome2_icon_cache_update
+	gnome2_icon_cache_update
 }
-
