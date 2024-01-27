@@ -1,9 +1,9 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
-inherit unpacker eutils gnome2-utils
+inherit unpacker gnome2-utils
 
 DESCRIPTION="Build factories that assemble products for your alien overlords, and don't die."
 HOMEPAGE="http://www.zachtronics.com/infinifactory/"
