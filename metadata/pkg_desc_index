@@ -31,6 +31,7 @@ games-puzzle/bridge-constructor 2.6.1: Become an appraised bridge engineer and a
 games-puzzle/infinifactory 1: Build factories that assemble products for your alien overlords, and don't die.
 games-puzzle/mousecraft 1.2: MouseCraft a cross between Tetris and Lemmings.
 games-puzzle/train-valley 1.1.5: Build railways, manage traffic and stay accident-free.
+games-roguelike/FTL 1.6.12.0-r1: Faster Than Light: A spaceship simulation real-time roguelike-like game
 games-roguelike/NEOScavenger 20160912: survive in the wasteland long enough to figure out who you are
 games-roguelike/gnomoria 1: Gnomoria is a sandbox village management game
 games-rpg/infamousmachine 1: A adventure about Kelvin, a crazy scientist, and a time machine.

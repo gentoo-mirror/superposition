@@ -32,4 +32,5 @@ games-kids/scratch:nas - Use the nas driver plugin for sound
 games-kids/scratch:oss - Use the oss driver plugin for sound
 games-kids/scratch:pulseaudio - Use the pulse audio driver plugin for sound
 games-kids/scratch:v4l - Use the camera plugin
+games-roguelike/FTL:bundled-libs - Use bundled libraries.
 games-roguelike/gnomoria:system-libs - Use the systems libraries instead of the bundled ones
