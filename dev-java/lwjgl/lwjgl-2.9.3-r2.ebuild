@@ -1,11 +1,11 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
 JAVA_PKG_IUSE="doc source"
 
-inherit eutils java-pkg-2 java-ant-2
+inherit java-pkg-2 java-ant-2
 
 DESCRIPTION="The Lightweight Java Game Library (LWJGL)"
 HOMEPAGE="http://www.lwjgl.org"
@@ -24,11 +24,10 @@ CDEPEND="dev-java/apple-java-extensions-bin:0
 	x11-libs/libXcursor
 	x11-libs/libXrandr
 	x11-libs/libXxf86vm
-	gles? ( media-libs/mesa[egl,gles2] )"
+	gles? ( media-libs/mesa[gles2] )"
 
 DEPEND="${CDEPEND}
-	>=virtual/jdk-1.7
-	x11-proto/xproto"
+	>=virtual/jdk-1.7"
 
 RDEPEND="${CDEPEND}
 	>=virtual/jre-1.7
