@@ -5,9 +5,9 @@ EAPI=7
 
 inherit java-pkg-2
 
-DESCRIPTION="Destroy the robots Avenge the Human Race!"
-HOMEPAGE="http://www.puppygames.net/ultratron"
-SRC_URI="Ultratron-HIB-20151219.tar.gz"
+DESCRIPTION="Defeat the returning Titan horde in a series of epic ground battles."
+HOMEPAGE="http://www.puppygames.net/revenge-of-the-titans"
+SRC_URI="RevengeOfTheTitans-HIB-201512192.tar.gz"
 
 LICENSE="all-rights-reserved"
 SLOT="0"
@@ -17,12 +17,12 @@ IUSE=""
 DEPEND=">=virtual/jre-1.7:*
 	virtual/opengl
 	media-libs/openal
-	dev-java/gson:2.6
-	dev-java/lwjgl:2.9"
+	dev-java/gson
+	dev-java/lwjgl"
 RDEPEND="${DEPEND}"
 
 RESTRICT="bindist fetch mirror strip"
-S="${WORKDIR}/ultratron"
+S="${WORKDIR}/revenge"
 
 pkg_nofetch() {
 	einfo "Please download ${SRC_URI}"
@@ -57,9 +57,9 @@ src_install() {
 	java-pkg_doso libgdx.so libgdx64.so
 
 	exeinto "${dir}"
-	doexe ultratron.sh || die "doexe"
+	doexe revenge.sh || die "doexe"
 
-	make_wrapper ${PN} ./ultratron.sh "${dir}" "${dir}"
-	doicon ultratron.png
-	make_desktop_entry ${PN} "Ultratron" ultratron Game
+	make_wrapper ${PN} ./revenge.sh "${dir}" "${dir}"
+	doicon revenge.png
+	make_desktop_entry ${PN} "Revenge of the Titans" revenge Game
 }

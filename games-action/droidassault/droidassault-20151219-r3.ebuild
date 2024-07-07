@@ -5,9 +5,9 @@ EAPI=7
 
 inherit java-pkg-2
 
-DESCRIPTION="single-handedly turn back the evil invading alien army"
-HOMEPAGE="http://www.puppygames.net/titan-attacks"
-SRC_URI="TitanAttacks-HIB-20151219.tar.gz"
+DESCRIPTION="Blaster battles with hordes of rampaging killer robots!"
+HOMEPAGE="http://www.puppygames.net/droid-assault"
+SRC_URI="DroidAssault-HIB-20151219.tar.gz"
 
 LICENSE="all-rights-reserved"
 SLOT="0"
@@ -17,12 +17,12 @@ IUSE=""
 DEPEND=">=virtual/jre-1.7:*
 	virtual/opengl
 	media-libs/openal
-	dev-java/gson:2.6
+	dev-java/gson
 	dev-java/lwjgl"
 RDEPEND="${DEPEND}"
 
 RESTRICT="bindist fetch mirror strip"
-S="${WORKDIR}/titanattacks"
+S="${WORKDIR}/droidassault"
 
 pkg_nofetch() {
 	einfo "Please download ${SRC_URI}"
@@ -57,9 +57,9 @@ src_install() {
 	java-pkg_doso libgdx.so libgdx64.so
 
 	exeinto "${dir}"
-	doexe titanattacks.sh || die "doexe"
+	doexe droidassault.sh || die "doexe"
 
-	make_wrapper ${PN} ./titanattacks.sh "${dir}" "${dir}"
-	doicon titanattacks.png
-	make_desktop_entry ${PN} "Titans Attacks" titanattacks  Game
+	make_wrapper ${PN} ./droidassault.sh "${dir}" "${dir}"
+	doicon droidassault.png
+	make_desktop_entry ${PN} "Droid Assault" droidassault Game
 }
