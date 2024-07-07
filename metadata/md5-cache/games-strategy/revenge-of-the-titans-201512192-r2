@@ -1,14 +1,14 @@
 DEFINED_PHASES=compile install nofetch preinst prepare setup
-DEPEND=>=virtual/jre-1.7:* virtual/opengl media-libs/openal dev-java/gson:2.6 dev-java/lwjgl >=dev-java/java-config-2.2.0-r3
+DEPEND=>=virtual/jre-1.7:* virtual/opengl media-libs/openal dev-java/gson dev-java/lwjgl >=dev-java/java-config-2.2.0-r3
 DESCRIPTION=Defeat the returning Titan horde in a series of epic ground battles.
 EAPI=7
 HOMEPAGE=http://www.puppygames.net/revenge-of-the-titans
 INHERIT=java-pkg-2
 KEYWORDS=~amd64 ~x86
 LICENSE=all-rights-reserved
-RDEPEND=>=virtual/jre-1.7:* virtual/opengl media-libs/openal dev-java/gson:2.6 dev-java/lwjgl >=dev-java/java-config-2.2.0-r3
+RDEPEND=>=virtual/jre-1.7:* virtual/opengl media-libs/openal dev-java/gson dev-java/lwjgl >=dev-java/java-config-2.2.0-r3
 RESTRICT=bindist fetch mirror strip
 SLOT=0
 SRC_URI=RevengeOfTheTitans-HIB-201512192.tar.gz
 _eclasses_=java-utils-2	d2bf348d35fd96d97944269dfbaf0f97	java-pkg-2	b6d755b4f6afabfd933932be28b46368
-_md5_=a82dfc7af3aed86d5d33d19a1f5f1301
+_md5_=c7622d041a9030d830b2108eed89298c
