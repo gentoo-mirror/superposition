@@ -30,7 +30,7 @@ EANT_BUILD_TARGET="dist"
 src_prepare() {
 	# http://java.net/jira/browse/JINPUT-44
 	# http://java.net/jira/browse/JINPUT-45
-	eapply "${FILESDIR}"/{javah-classpath,nostrip,remove-getDeviceUsageBits,unbundle}.patch
+	eapply -p0 "${FILESDIR}"/{javah-classpath,nostrip,remove-getDeviceUsageBits,unbundle}.patch
 
 	sed -i \
 		-e "s/\"cc\"/\"$(tc-getCC)\"/g" \

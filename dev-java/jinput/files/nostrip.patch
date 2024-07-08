@@ -1,4 +1,4 @@
---- plugins/linux/src/native/build.xml	2013-03-25 18:01:56.000000000 +0000
+--- plugins/linux/src/native/build.xml.orig	2013-03-25 18:01:56.000000000 +0000
 +++ plugins/linux/src/native/build.xml	2015-04-12 17:36:36.020105790 +0100
 @@ -46,9 +46,6 @@
  			<arg line="-shared -O2 -Wall -o ${libname}"/>
