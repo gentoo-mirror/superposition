@@ -10,5 +10,5 @@ RDEPEND=>=virtual/jre-1.7:* virtual/opengl media-libs/openal dev-java/gson dev-j
 RESTRICT=bindist fetch mirror strip
 SLOT=0
 SRC_URI=RevengeOfTheTitans-HIB-201512192.tar.gz
-_eclasses_=java-utils-2	098b99f0d5d0caeed4c24a9334375dcd	java-pkg-2	b6d755b4f6afabfd933932be28b46368
+_eclasses_=java-utils-2	b2e92a8220dc7b1bd2062ca11774798a	java-pkg-2	b6d755b4f6afabfd933932be28b46368
 _md5_=c7622d041a9030d830b2108eed89298c
