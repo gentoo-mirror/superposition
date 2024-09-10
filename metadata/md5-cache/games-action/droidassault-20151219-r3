@@ -10,5 +10,5 @@ RDEPEND=>=virtual/jre-1.7:* virtual/opengl media-libs/openal dev-java/gson dev-j
 RESTRICT=bindist fetch mirror strip
 SLOT=0
 SRC_URI=DroidAssault-HIB-20151219.tar.gz
-_eclasses_=java-utils-2	4d4ed3633ff7d706ae7d81e5fe4e94fc	java-pkg-2	72587187cd548a5dcdb6a13453a3614d
+_eclasses_=java-utils-2	504ec83d568c22f28aa6399df0c96de8	java-pkg-2	72587187cd548a5dcdb6a13453a3614d
 _md5_=ff29169bcf00bff290ef3e937458ab2f
