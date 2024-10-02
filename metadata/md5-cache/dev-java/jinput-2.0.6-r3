@@ -1,4 +1,4 @@
-DEFINED_PHASES=compile configure install preinst prepare setup unpack
+DEFINED_PHASES=configure install preinst prepare setup unpack
 DEPEND=>=virtual/jdk-1.4 dev-java/jutils:0 >=dev-java/java-config-2.2.0-r3 source? ( app-arch/zip ) >=dev-java/ant-1.10.14-r2:0 dev-java/javatoolkit
 DESCRIPTION=An implementation of an API for game controller discovery and polled input
 EAPI=7
@@ -10,5 +10,5 @@ LICENSE=BSD
 RDEPEND=>=virtual/jre-1.4 dev-java/jutils:0 >=dev-java/java-config-2.2.0-r3 source? ( app-arch/zip )
 SLOT=0
 SRC_URI=https://github.com/jinput/jinput/archive/790b666.tar.gz -> jinput-2.0.6.tar.gz
-_eclasses_=toolchain-funcs	948855ec7ad9f11351edf9066708dfa9	multilib	7e1347c006a76bb812f3a9f663b79991	java-utils-2	505f237da61d30569dcc6d5df8c51262	java-pkg-2	72587187cd548a5dcdb6a13453a3614d	java-ant-2	ad653f6ce057f94c49254ace4f0f8335	vcs-snapshot	3d327d546f76e4c2054573ff0d78fad2
+_eclasses_=toolchain-funcs	948855ec7ad9f11351edf9066708dfa9	multilib	7e1347c006a76bb812f3a9f663b79991	java-utils-2	f1da644b1cb86c9aca40b31a544a9906	java-pkg-2	cc4b7c2e885aaf57a8bbea685bd9fbe3	java-ant-2	ad653f6ce057f94c49254ace4f0f8335	vcs-snapshot	3d327d546f76e4c2054573ff0d78fad2
 _md5_=766239e20a225a373901370af8ddd4a8
