@@ -1,12 +1,12 @@
 # Copyright 2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=8
+EAPI=7
 
 COMMIT="790b666"
 JAVA_PKG_IUSE="doc source"
 
-inherit toolchain-funcs java-pkg-2 vcs-snapshot
+inherit toolchain-funcs java-pkg-2 java-ant-2 vcs-snapshot
 
 DESCRIPTION="An implementation of an API for game controller discovery and polled input"
 HOMEPAGE="https://java.net/projects/jinput"
