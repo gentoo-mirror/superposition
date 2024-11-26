@@ -1,0 +1,15 @@
+DEFINED_PHASES=configure preinst prepare setup
+DEPEND=>=virtual/jdk-1.8 dev-java/kotlin dev-java/testng dev-java/jcommander dev-java/snakeyaml >=dev-java/java-config-2.2.0-r3 source? ( app-arch/zip ) >=dev-java/ant-1.10.14-r2:0 dev-java/javatoolkit
+DESCRIPTION=LWJGL is a Java library that enables cross-platform access to popular native API
+EAPI=7
+HOMEPAGE=https://www.lwjgl.org/
+INHERIT=java-pkg-2 java-ant-2
+IUSE=doc source test
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD
+RDEPEND=>=virtual/jre-1.8 >=dev-java/java-config-2.2.0-r3 source? ( app-arch/zip )
+RESTRICT=!test? ( test )
+SLOT=3.1
+SRC_URI=https://github.com/LWJGL/lwjgl3/archive/3.1.3.tar.gz
+_eclasses_=java-utils-2	df5a29aeeb243804a2f5ef024c8467a9	java-pkg-2	6e6478d8b78f18251c008bad32994df9	multilib	b2a329026f2e404e9e371097dda47f96	toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	java-ant-2	d3f6ffc6629499cbc0d4cd71b9d7e7dc
+_md5_=9639020cab62fb04f3bb918b93268898
