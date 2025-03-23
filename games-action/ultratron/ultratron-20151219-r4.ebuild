@@ -1,13 +1,13 @@
 # Copyright 2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 inherit java-pkg-2
 
-DESCRIPTION="Blaster battles with hordes of rampaging killer robots!"
-HOMEPAGE="http://www.puppygames.net/droid-assault"
-SRC_URI="DroidAssault-HIB-20151219.tar.gz"
+DESCRIPTION="Destroy the robots Avenge the Human Race!"
+HOMEPAGE="http://www.puppygames.net/ultratron"
+SRC_URI="Ultratron-HIB-20151219.tar.gz"
 
 LICENSE="all-rights-reserved"
 SLOT="0"
@@ -18,11 +18,11 @@ DEPEND=">=virtual/jre-1.7:*
 	virtual/opengl
 	media-libs/openal
 	dev-java/gson
-	dev-java/lwjgl"
+	dev-java/lwjgl:2.9"
 RDEPEND="${DEPEND}"
 
 RESTRICT="bindist fetch mirror strip"
-S="${WORKDIR}/droidassault"
+S="${WORKDIR}/ultratron"
 
 pkg_nofetch() {
 	einfo "Please download ${SRC_URI}"
@@ -57,9 +57,9 @@ src_install() {
 	java-pkg_doso libgdx.so libgdx64.so
 
 	exeinto "${dir}"
-	doexe droidassault.sh || die "doexe"
+	doexe ultratron.sh || die "doexe"
 
-	make_wrapper ${PN} ./droidassault.sh "${dir}" "${dir}"
-	doicon droidassault.png
-	make_desktop_entry ${PN} "Droid Assault" droidassault Game
+	make_wrapper ${PN} ./ultratron.sh "${dir}" "${dir}"
+	doicon ultratron.png
+	make_desktop_entry ${PN} "Ultratron" ultratron Game
 }

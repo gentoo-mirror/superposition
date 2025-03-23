@@ -1,13 +1,13 @@
 # Copyright 2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 inherit java-pkg-2
 
-DESCRIPTION="Defeat the returning Titan horde in a series of epic ground battles."
-HOMEPAGE="http://www.puppygames.net/revenge-of-the-titans"
-SRC_URI="RevengeOfTheTitans-HIB-201512192.tar.gz"
+DESCRIPTION="single-handedly turn back the evil invading alien army"
+HOMEPAGE="http://www.puppygames.net/titan-attacks"
+SRC_URI="TitanAttacks-HIB-20151219.tar.gz"
 
 LICENSE="all-rights-reserved"
 SLOT="0"
@@ -22,7 +22,7 @@ DEPEND=">=virtual/jre-1.7:*
 RDEPEND="${DEPEND}"
 
 RESTRICT="bindist fetch mirror strip"
-S="${WORKDIR}/revenge"
+S="${WORKDIR}/titanattacks"
 
 pkg_nofetch() {
 	einfo "Please download ${SRC_URI}"
@@ -57,9 +57,9 @@ src_install() {
 	java-pkg_doso libgdx.so libgdx64.so
 
 	exeinto "${dir}"
-	doexe revenge.sh || die "doexe"
+	doexe titanattacks.sh || die "doexe"
 
-	make_wrapper ${PN} ./revenge.sh "${dir}" "${dir}"
-	doicon revenge.png
-	make_desktop_entry ${PN} "Revenge of the Titans" revenge Game
+	make_wrapper ${PN} ./titanattacks.sh "${dir}" "${dir}"
+	doicon titanattacks.png
+	make_desktop_entry ${PN} "Titans Attacks" titanattacks  Game
 }
