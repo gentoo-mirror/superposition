@@ -16,7 +16,7 @@
 # or java-pkg-opt-2 eclass.
 
 case ${EAPI} in
-	7|8) ;;
+	8) ;;
 	*) die "${ECLASS}: EAPI ${EAPI:-0} not supported" ;;
 esac
 
