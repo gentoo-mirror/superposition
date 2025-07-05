@@ -9,5 +9,5 @@ LICENSE=GPL-2 BSD
 RDEPEND=>=dev-lang/tcl-8.5:* >=dev-lang/tk-8.5:* dev-tcltk/iwidgets dev-tcltk/bwidget
 SLOT=0
 SRC_URI=https://github.com/zdia/gorilla/archive/v1.5.3.7.tar.gz -> gorilla-1.5.3.7.tar.gz
-_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	gnome2-utils	a8cf148ec7f5ae0b1f1d33ae5f7f9e88
+_eclasses_=toolchain-funcs	a6df79c1e9bc84369dbf3d44206ac772	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	gnome2-utils	a8cf148ec7f5ae0b1f1d33ae5f7f9e88
 _md5_=b28d533b8f271590b5e2b7a3e2e6408a
