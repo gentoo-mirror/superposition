@@ -11,5 +11,5 @@ RDEPEND=>=virtual/jre-1.8 >=dev-java/java-config-2.2.0-r3 source? ( app-arch/zip
 RESTRICT=!test? ( test )
 SLOT=3.1
 SRC_URI=https://github.com/LWJGL/lwjgl3/archive/3.1.3.tar.gz
-_eclasses_=java-utils-2	a080d4947ca188a48725a375b6184bc5	java-pkg-2	38fd81c7880666a00a638ca8deb64d72	toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	multilib	b2a329026f2e404e9e371097dda47f96	java-ant-2	efbea37c61b18aad33318d899bbb3e1c
+_eclasses_=java-utils-2	a080d4947ca188a48725a375b6184bc5	java-pkg-2	38fd81c7880666a00a638ca8deb64d72	toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	multilib	a199af442898963433d6f038a88cce9c	java-ant-2	efbea37c61b18aad33318d899bbb3e1c
 _md5_=93cd144da8220ef7eccc160faac92483

@@ -11,5 +11,5 @@ REQUIRED_USE=amd64? ( multilib )
 RESTRICT=fetch mirror
 SLOT=0
 SRC_URI=NEOScavenger.tar.gz
-_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	multilib	b2a329026f2e404e9e371097dda47f96
+_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	multilib	a199af442898963433d6f038a88cce9c
 _md5_=61eb605863bade83ce66658ae61cc55b
