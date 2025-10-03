@@ -10,5 +10,5 @@ RDEPEND=>=virtual/jre-1.7:* virtual/opengl media-libs/openal dev-java/gson dev-j
 RESTRICT=bindist fetch mirror strip
 SLOT=0
 SRC_URI=Ultratron-HIB-20151219.tar.gz
-_eclasses_=java-utils-2	a080d4947ca188a48725a375b6184bc5	java-pkg-2	38fd81c7880666a00a638ca8deb64d72
+_eclasses_=java-utils-2	3febdd17a5820c438f6368dde60d4848	java-pkg-2	38fd81c7880666a00a638ca8deb64d72
 _md5_=2a5c9a20ca10117557b8f099be29901d
