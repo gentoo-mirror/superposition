@@ -10,5 +10,5 @@ RDEPEND=app-arch/unzip
 RESTRICT=bindist fetch
 SLOT=0
 SRC_URI=V1.04_Raft_LinuxUniversal.zip
-_eclasses_=multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	unpacker	3b4ee72d1e2e0374fd8cd3eddfa00627
+_eclasses_=multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	unpacker	3b4ee72d1e2e0374fd8cd3eddfa00627
 _md5_=5a2467051210006abf75c1b6a2bae56e
